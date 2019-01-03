@@ -1,0 +1,203 @@
+<div class="page-header">
+	<h1><img src="assets/img/convert.png" title="Converters">&emsp;CONVERTERS</h1>
+</div>
+<br>
+<br>
+<h3>Choose your Converter:</h3>
+<br>
+<div class="row margin" style="margin-bottom:2.5%">
+    <div class="col">
+        <button ng-disabled="converter.dsblcp" ng-click="converter.cp()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Contribution Points EXP
+        </button>
+    </div>
+    <div class="col">
+        <button ng-disabled="converter.dsblls" ng-click="converter.ls()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Professions EXP
+        </button>
+    </div>
+    <div class="col">
+        <button ng-disabled="converter.dsblimg" ng-click="converter.img()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Screenshots to CP %
+        </button>
+    </div>
+</div>
+<div ng-show="converter.cpCalc">
+	<div ng-hide="converter.calculated2">
+        <h3>Contribution Points Exp Converter: <i style="font-size:15px" ng-show="!cooking.okok">Premium only</i><br> <i style="font-size:15px"> Convert CP Exp to your CP level</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        <form class="register-form" id="cp" style="width:100%" ng-submit="converter.precp(cpData)" novalidate>
+        	<div class="row margin" style="margin:0 auto;width:89%">
+        		<input  class="form-control" type="number" min="0" ng-model="cpData.amount" placeholder='Contribution Points Exp'>
+        	</div><br>
+        	<div class="row margin" style="margin:0 auto;width:89%">
+        		<input  class="form-control" type="number" min="0" max="500" ng-model="cpData.level" placeholder='Your Contribution Points Level (between 0-500)'>
+        	</div><br>
+            <div class="row margin" style="margin:0 auto;width:89%">
+                <input  class="form-control" type="number" min="0" max="99" ng-model="cpData.percent" placeholder='Your Contribution Points Level Percentage (between 0%-99%)'>
+            </div><br>
+        	
+            <div style="width:80%;margin:0 auto">
+                <button class="form-control btn" ng-disabled="converter.disabled" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit">Convert</button>                
+            </div>
+        </form>
+    </div>
+    <br><hr class="style14"><br>    
+    <div ng-show="converter.calculated2">
+    	<br><hr class="style14"><br>
+        <table class="table table-stripped table-responsive">
+        	<tr>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			Contribution Points Level
+        		</th>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			Contribution Points Percentage
+        		</th>
+        	</tr>
+        	<tr>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			{{converter.rnk2}}
+        		</th>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			{{converter.prctRnk2}}%
+        		</th>
+        	</tr>
+        </table>
+        <div class="row margin">
+            <div class="col"><button  style="float:right" class="form-control" ng-click="converter.back2()">Back</button></div>
+        </div>
+    </div>
+
+</div>
+<div ng-show="converter.lsCalc">
+	<div ng-hide="converter.calculated">
+        <h3>Life Skills Exp Converter: <i style="font-size:15px" ng-show="!cooking.okok">Premium only</i><br> <i style="font-size:15px"> Convert Profession Exp to your Profession level</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        <form class="register-form" id="ls" style="width:100%" ng-submit="converter.prels(lsData)" novalidate>
+        	<div class="row margin" style="margin:0 auto;width:89%">
+        		<input  class="form-control" type="number" id="amountls" min="0" ng-model="lsData.amount" placeholder='Life SKill Exp'>
+        	</div><br>
+        	<div class="row margin" style="margin:0 auto;width:90%">
+        		<div class="col-xs-12 col-sm-12">
+        			<select class="lifes" name="life" id="lifes" ng-model="lsData.life" style="margin:0 auto; width:100%">
+        				<option value=""></option><option value="1">Beginner 1</option><option value="2">Beginner 2</option><option value="3">Beginner 3</option><option value="4">Beginner 4</option><option value="5">Beginner 5</option><option value="6">Beginner 6</option><option value="7">Beginner 7</option><option value="8">Beginner 8</option><option value="9">Beginner 9</option><option value="10">Beginner 10</option><option value="11">Apprentice 1</option><option value="12">Apprentice 2</option><option value="13">Apprentice 3</option><option value="14">Apprentice 4</option><option value="15">Apprentice 5</option><option value="16">Apprentice 6</option><option value="17">Apprentice 7</option><option value="18">Apprentice 8</option><option value="19">Apprentice 9</option><option value="20">Apprentice 10</option><option value="21">Skilled 1</option><option value="22">Skilled 2</option><option value="23">Skilled 3</option><option value="24">Skilled 4</option><option value="25">Skilled 5</option><option value="26">Skilled 6</option><option value="27">Skilled 7</option><option value="28">Skilled 8</option><option value="29">Skilled 9</option><option value="30">Skilled 10</option><option value="31">Professional 1</option><option value="32">Professional 2</option><option value="33">Professional 3</option><option value="34">Professional 4</option><option value="35">Professional 5</option><option value="36">Professional 6</option><option value="37">Professional 7</option><option value="38">Professional 8</option><option value="39">Professional 9</option><option value="40">Professional 10</option><option value="41">Artisan 1</option><option value="42">Artisan 2</option><option value="43">Artisan 3</option><option value="44">Artisan 4</option><option value="45">Artisan 5</option><option value="46">Artisan 6</option><option value="47">Artisan 7</option><option value="48">Artisan 8</option><option value="49">Artisan 9</option><option value="50">Artisan 10</option><option value="51">Master 1</option><option value="52">Master 2</option><option value="53">Master 3</option><option value="54">Master 4</option><option value="55">Master 5</option><option value="56">Master 6</option><option value="57">Master 7</option><option value="58">Master 8</option><option value="59">Master 9</option><option value="60">Master 10</option><option value="61">Master 11</option><option value="62">Master 12</option><option value="63">Master 13</option><option value="64">Master 14</option><option value="65">Master 15</option><option value="66">Master 16</option><option value="67">Master 17</option><option value="68">Master 18</option><option value="69">Master 19</option><option value="70">Master 20</option><option value="71">Master 21</option><option value="72">Master 22</option><option value="73">Master 23</option><option value="74">Master 24</option><option value="75">Master 25</option><option value="76">Master 26</option><option value="77">Master 27</option><option value="78">Master 28</option><option value="79">Master 29</option><option value="80">Master 30</option><option value="80">Guru 1</option><option value="82">Guru 2</option><option value="83">Guru 3</option><option value="84">Guru 4</option><option value="85">Guru 5</option><option value="86">Guru 6</option><option value="87">Guru 7</option><option value="88">Guru 8</option><option value="89">Guru 9</option><option value="90">Guru 10</option><option value="91">Guru 11</option><option value="92">Guru 12</option><option value="93">Guru 13</option><option value="94">Guru 14</option><option value="95">Guru 15</option><option value="96">Guru 16</option><option value="97">Guru 17</option><option value="98">Guru 18</option><option value="99">Guru 19</option><option value="100">Guru 20</option>
+        			</select>
+        		</div>
+        	</div>
+        	<br>
+        	<div class="row margin" style="margin:0 auto;width:90%">
+        		<div class="col-xs-12 col-sm-12">
+        			<select class="levels" name="level" id="levels" ng-model="lsData.level" style="margin:0 auto; width:100%">
+        				<option value=""></option>
+        				<option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option><option value="72">72</option><option value="73">73</option><option value="74">74</option><option value="75">75</option><option value="76">76</option><option value="77">77</option><option value="78">78</option><option value="79">79</option><option value="80">80</option><option value="81">81</option><option value="82">82</option><option value="83">83</option><option value="84">84</option><option value="85">85</option><option value="86">86</option><option value="87">87</option><option value="88">88</option><option value="89">89</option><option value="90">90</option><option value="91">91</option><option value="92">92</option><option value="93">93</option><option value="94">94</option><option value="95">95</option><option value="96">96</option><option value="97">97</option><option value="98">98</option><option value="99">99</option>
+        			</select>
+        		</div>
+        	</div>
+        	<br>    
+            <div style="width:80%;margin:0 auto">
+                <button class="form-control btn" ng-disabled="converter.disabled" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit"><span ng-hide="converter.loading" class="ng-scope">Convert</span><span ng-show="converter.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>                
+            </div>
+        </form>
+    </div>
+    <br><hr class="style14"><br>
+    <div ng-show="converter.calculated">
+        <table class="table table-stripped table-responsive">
+        	<tr>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			Profession Level
+        		</th>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			Profession Percentage
+        		</th>
+        	</tr>
+        	<tr>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			{{converter.rnk}}
+        		</th>
+        		<th style="width:20%;vertical-align:middle;text-align:center">
+        			{{converter.prctRnk}}%
+        		</th>
+        	</tr>
+        </table>
+        <div class="row margin">
+            <div class="col"><button  style="float:right" class="form-control" ng-click="converter.back()">Back</button></div>
+        </div>
+    </div>
+</div>
+
+<div ng-show="converter.imgCalc">
+		<h3>Contribution Points Percentage Bar: <br> <i style="font-size:15px"> Get your CP percentage from your screenshots</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        <div class="row margin">
+            <div class="col" style="max-width: 384px;min-width:384px;margin: 20px auto;">
+                <div class="demo">
+                    <!--<img id="image" src="assets/img/screen.png" alt="Picture" style="max-width: 100%;">-->
+                    <input type='file' id="imgInp" />
+                </div>    
+                <br>
+                <rzslider class="custom-slider" rz-slider-model="converter.slider.value" rz-slider-options="converter.slider.options"></rzslider>
+                <div class="table">
+                  <div class="tableRow">
+                    <div class="tableCell box"  ng-disabled="true" style="cursor:not-allowed;">
+                        <canvas  id="panel" width="351" height="27"></canvas>
+
+                    </div>
+
+                    <div class="tableCell box" style="display:none">
+                        <img id="crop_result" />
+                    </div>
+                </div>
+                <div class="tableRow" style="display:none">
+                    <div class="tableCell">
+                        Zoom it:
+                        <input id='scaleSlider' type='hidden' min='1' max='3.0' step='0.01' value='1.0' />
+                    </div>
+                    <div class="tableCell" style="display:none">
+                      <button id="cropImgButtn">Crop It</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <br>
+        <div ng-disabled="true" style="width:100%;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;text-align:center"><i class="fa fa-exclamation-triangle"></i>&emsp;Open a Black Desert screenshot where the User Interface must be visible <i style="font-size: 12px">(e.g.: C:\Users\cmputer\Documents\Black Desert\ScreenShot)</i> <br>
+            <ul style="list-style-type: none;">
+                <li>
+                    <b>- The Screenshot resolution size must be equal to the Current Resolution</b>
+                </li>
+                <li>
+                    <b>- The game window settings must be set to the Window Mode</b>
+                </li>
+                <li>
+                    <b>- The in game interface scaling must be set to 100%</b>
+                </li>
+            </ul> 
+            <table >
+                <tr>
+                    <td><img src="assets/img/interface3.png" alt="interfacesettings"></td>
+                    <td><img src="assets/img/interfacex.png" alt="interfacesettings"></td>
+                    <td><img src="assets/img/interface.png" alt="interfacesettings"></td>                    
+                </tr>
+            </table>
+        </div>        
+</div>
+
+        
+
+	</div>
+</div>
+<br><br>
+<div class="row" style="padding: 0 30px 10px;">
+    <div class="show-hide-message" ng-show="converter.success_msg">
+        <div class="text-info ng-binding">{{ converter.success_msg }}</div>
+    </div>
+    <small class="show-hide-message" ng-show="converter.err_msg">
+		<pre>{{ converter.err_msg }}</pre>
+	</small>
+
+</div>

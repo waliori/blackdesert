@@ -1,0 +1,84 @@
+<div class="page-header"><h1>&emsp;Subscribe to Bdoteach.me</h1></div>
+
+ <!--<button type="button" ng-disabled="payment.disabled" ng-click="payment.getToken(a)" class="form-control btn btn-lg">$0.99/month</button>-->
+
+ <div class="row" style="width:80%;margin:0 auto" >
+  <div class="col-lg-6 col-push-12 animated bounceInUp">
+    <div id="pricing-table">
+      <div id="pricing-table-header">
+        <h1>Premium</h1>
+      </div>
+
+      <div id="pricing-table-content" style="text-align: left;">
+        <ul style="margin-bottom:0;padding:0">
+          <li><strong>Recipes</strong>&emsp;<i style="font-size:15px"> ingredients <i class="fa fa-arrows-h"></i> recipe / ingredients <i class="fa fa-arrows-h"></i> ingredients</i></li>
+          <li><strong>Byproducts</strong>&emsp; Average Byproducts gained</li>
+          <li><strong>Experience</strong>&emsp; Experience and levels gained with an amount of crafted product</li>
+          <li><strong>Leveling</strong>&emsp; Batch numbers and ingredients quantities needed to level up alchemy/cooking</li>
+          <li><strong>Screenshot to CP</strong>&emsp; Get CP% from IG Screenshots</li>
+          <li><strong>Bids Notificator</strong>&emsp; Get unlimited bids notifications to all your devices</li>
+          <li><strong>Time</strong>&emsp; Time to go AFK while Alchemizing or Cooking</li>          
+          <li><strong>CP EXP Converter</strong>&emsp; Convert CP Exp to your CP level</li>
+          <li><strong>Profession EXP Converter</strong>&emsp; Convert Profession Exp to your Profession level</li>
+          <li><strong>Marketplace Notificator</strong>&emsp; Get unlimited marketplace registration notifications to all your devices when an item is registred in the marketplace</li>
+        </ul>
+      </div>
+
+      <div id="pricing-table-footer">
+        <h2><sup>$</sup>1.99</h2>
+        <p>per month</p>
+        <button type="button" ng-disabled="payment.disabled" ng-click="payment.getToken(a)" class="form-control btn" style="width:40%">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 col-pull-12 animated bounceInUp">                            
+    <div id="pricing-table">
+      <div id="pricing-table-header">
+        <h1>Free</h1>
+      </div>
+
+      <div id="pricing-table-content" style="text-align: left;">
+        <ul style="margin-bottom:0;padding:0">
+          <li><strong>Recipes</strong>&emsp;<i style="font-size:15px"> ingredients <i class="fa fa-arrows-h"></i> recipe / ingredients <i class="fa fa-arrows-h"></i> ingredients</i></li>
+          <li><strong>Byproducts</strong>&emsp; Average Byproducts gained</li>
+          <li><strong>Experience</strong>&emsp; Experience and levels gained with an amount of crafted product</li>
+          <li><strong>Leveling</strong>&emsp; Batch numbers and ingredients quantities needed to level up alchemy/cooking</li>
+          <li><strong>Screenshot to CP</strong>&emsp; Get CP% from IG Screenshots</li>
+          <li><strong>Bids Notificator</strong>&emsp; Get unlimited bids notifications to all your devices</li>
+        </ul>
+      </div>
+
+      <div id="pricing-table-footer">
+        <h2>Free*</h2>
+        <p>* limited to the credits you have</p>
+      </div>
+    </div>                                                 
+  </div>
+</div>
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog" style="top: 5%;">
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{ payment.modalHeader }}</h4>
+        
+      </div>
+      <div class="modal-body" style="position: relative;">
+        <div class='loader show-hide-message'>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+    
+  </div>
+</div>

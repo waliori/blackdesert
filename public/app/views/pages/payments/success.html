@@ -1,0 +1,46 @@
+<h1 style="margin-bottom: 5%">subscription <span ng-hide="success.success_msg || success.err_msg" >almost</span> <span ng-hide="success.err_msg">done</span><span ng-show="success.err_msg">error</span></h1>
+
+
+ <!--<div class='loader show-hide-message' ng-hide="success.success_msg || success.err_msg">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+ Modal -->
+ <div class="modal fade" id="myModal" role="dialog" ng-hide="success.success_msg || success.err_msg">>
+  <div class="modal-dialog" style="top: 5%;">
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{ success.modalHeader }}</h4>
+        
+      </div>
+      <div class="modal-body" style="position: relative;">
+        <div class='loader show-hide-message'>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="row" style="padding: 0 30px 10px;">
+    <div class="show-hide-message" ng-show="success.success_msg">
+    	<div class="text-info ng-binding">{{ success.success_msg }}</div>
+    </div>
+    <div class="show-hide-message" ng-show="success.err_msg">
+        <div class="text-danger ng-binding"><pre>{{ success.err_msg }}</pre></div>
+    </div>
+</div>

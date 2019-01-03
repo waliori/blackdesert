@@ -1,0 +1,185 @@
+{"req_lvl": "1", "type_attack": [], "name": "Asura", "effect": ["Stun"]}
+{"req_lvl": "1", "type_attack": [], "name": "Awakening - Narusawa's Sura Katana", "effect": []}
+{"req_lvl": "1", "type_attack": [], "name": "Corrupt Sword Dance I", "effect": []}
+{"req_lvl": "1", "type_attack": ["Down Attack"], "name": "Ankle Cutter I", "effect": ["Bound"]}
+{"req_lvl": "1", "type_attack": [], "name": "Brace I", "effect": []}
+{"req_lvl": "1", "type_attack": ["Air Attack"], "name": "Crescent Slash I", "effect": ["Floating"]}
+{"req_lvl": "1", "type_attack": [], "name": "Emergency Escape", "effect": []}
+{"req_lvl": "1", "type_attack": ["Counter Attack", "Air Attack"], "name": "Fatal Blow I", "effect": ["Stiffness"]}
+{"req_lvl": "1", "type_attack": [], "name": "Flow- Sky Stepping", "effect": []}
+{"req_lvl": "1", "type_attack": ["Air Attack", "Down Attack"], "name": "Fox Claw I", "effect": ["Stiffness"]}
+{"req_lvl": "1", "type_attack": ["Down Attack", "Air Attack"], "name": "Ghost Greeting I", "effect": ["Floating", "Stiffness"]}
+{"req_lvl": "1", "type_attack": [], "name": "Ghost Step I", "effect": []}
+{"req_lvl": "1", "type_attack": ["Down Attack"], "name": "Kunai Throw I", "effect": ["Stiffness"]}
+{"req_lvl": "1", "type_attack": [], "name": "Kunai- Evasive Throw", "effect": []}
+{"req_lvl": "1", "type_attack": [], "name": "Ninja Evasion I", "effect": []}
+{"req_lvl": "1", "type_attack": ["Air Attack"], "name": "Ninjutsu- Shadow Stomp I", "effect": ["Floating"]}
+{"req_lvl": "1", "type_attack": [], "name": "Shadow Slash I", "effect": []}
+{"req_lvl": "1", "type_attack": ["Down Attack"], "name": "Shuriken Throw I", "effect": []}
+{"req_lvl": "1", "type_attack": [], "name": "Shuriken- Moving Throw", "effect": []}
+{"req_lvl": "1", "type_attack": [], "name": "Smokescreen I", "effect": ["Stun"]}
+{"req_lvl": "1", "type_attack": ["Down Attack"], "name": "Suicide Fall I", "effect": ["Bound", "Kicks and Bounds targets that have Grapple immunity"]}
+{"req_lvl": "1", "type_attack": ["Air Attack"], "name": "Throwing Kick I", "effect": ["Floating"]}
+{"req_lvl": "1", "type_attack": ["Down Attack"], "name": "Wind Slash I", "effect": ["Stiffness"]}
+{"req_lvl": "8", "type_attack": [], "name": "Ninjutsu- Concealment", "effect": []}
+{"req_lvl": "9", "type_attack": [], "name": "Shadow Slash II", "effect": []}
+{"req_lvl": "9", "type_attack": ["Down Attack"], "name": "Wind Slash II", "effect": ["Stiffness"]}
+{"req_lvl": "11", "type_attack": ["Counter Attack", "Air Attack"], "name": "Fatal Blow II", "effect": ["Stiffness"]}
+{"req_lvl": "11", "type_attack": ["Down Attack"], "name": "Floor Sweeping I", "effect": ["Bound", "Down Smash"]}
+{"req_lvl": "13", "type_attack": ["Down Attack"], "name": "Kunai Throw II", "effect": ["Stiffness"]}
+{"req_lvl": "13", "type_attack": [], "name": "Ninja Step I", "effect": []}
+{"req_lvl": "13", "type_attack": [], "name": "Target Chase I", "effect": []}
+{"req_lvl": "14", "type_attack": [], "name": "Kunai- Paralysis I", "effect": []}
+{"req_lvl": "14", "type_attack": ["Down Attack"], "name": "Shuriken Throw II", "effect": []}
+{"req_lvl": "14", "type_attack": [], "name": "Shuriken- Malice I", "effect": ["Stiffness"]}
+{"req_lvl": "14", "type_attack": ["Down Attack"], "name": "Wind Slash III", "effect": ["Stiffness"]}
+{"req_lvl": "15", "type_attack": ["Down Attack"], "name": "Ankle Cutter II", "effect": ["Bound"]}
+{"req_lvl": "15", "type_attack": [], "name": "Ghost Step II", "effect": []}
+{"req_lvl": "17", "type_attack": ["Down Attack"], "name": "Boss Slaughter I", "effect": ["Floating", "Bound"]}
+{"req_lvl": "17", "type_attack": [], "name": "Ninjutsu- Block Jump", "effect": ["Floating", "Stiffness"]}
+{"req_lvl": "17", "type_attack": ["Down Attack"], "name": "Ninjutsu- Shackles I", "effect": ["Stun"]}
+{"req_lvl": "17", "type_attack": ["Down Attack", "Air Attack"], "name": "Ninjutsu- Shadow Clone I", "effect": ["Down Smash", "Air Smash"]}
+{"req_lvl": "17", "type_attack": ["Down Attack"], "name": "Suicide Fall II", "effect": ["Bound", "Kicks and Bounds targets that have Grapple immunity"]}
+{"req_lvl": "18", "type_attack": [], "name": "Beheading the Dead I", "effect": ["Stun"]}
+{"req_lvl": "18", "type_attack": ["Counter Attack"], "name": "Heart Aiming I", "effect": ["Stun"]}
+{"req_lvl": "18", "type_attack": [], "name": "Shadow Slash III", "effect": []}
+{"req_lvl": "18", "type_attack": ["Air Attack"], "name": "Shuriken- Flight I", "effect": ["Floating", "Air Smash"]}
+{"req_lvl": "19", "type_attack": [], "name": "Brace II", "effect": []}
+{"req_lvl": "19", "type_attack": ["Down Attack"], "name": "Ninjutsu- Black Moonlight I", "effect": ["Stiffness"]}
+{"req_lvl": "19", "type_attack": ["Down Attack"], "name": "Wind Slash IV", "effect": ["Stiffness"]}
+{"req_lvl": "21", "type_attack": [], "name": "Flow- Fatal Blow Combo", "effect": []}
+{"req_lvl": "21", "type_attack": ["Air Attack"], "name": "Ninjutsu- Shadow Stomp II", "effect": ["Floating"]}
+{"req_lvl": "22", "type_attack": ["Air Attack"], "name": "Crescent Slash II", "effect": ["Floating"]}
+{"req_lvl": "22", "type_attack": ["Counter Attack", "Air Attack"], "name": "Fatal Blow III", "effect": ["Stiffness"]}
+{"req_lvl": "22", "type_attack": ["Down Attack", "Air Attack"], "name": "Ghost Greeting II", "effect": ["Floating", "Stiffness"]}
+{"req_lvl": "22", "type_attack": ["Down Attack"], "name": "Ground Thrust I", "effect": ["Bound"]}
+{"req_lvl": "22", "type_attack": [], "name": "Ninja Evasion II", "effect": []}
+{"req_lvl": "23", "type_attack": [], "name": "Smokescreen II", "effect": ["Stun"]}
+{"req_lvl": "23", "type_attack": ["Down Attack"], "name": "Wind Slash V", "effect": ["Stiffness"]}
+{"req_lvl": "24", "type_attack": ["Air Attack", "Down Attack"], "name": "Fox Claw II", "effect": ["Stiffness"]}
+{"req_lvl": "25", "type_attack": [], "name": "Fatal Wind I", "effect": []}
+{"req_lvl": "25", "type_attack": ["Air Attack"], "name": "Throwing Kick II", "effect": ["Floating"]}
+{"req_lvl": "26", "type_attack": ["Down Attack"], "name": "Boss Slaughter II", "effect": ["Floating", "Bound"]}
+{"req_lvl": "26", "type_attack": ["Down Attack"], "name": "Ninjutsu- Shackles II", "effect": ["Stun"]}
+{"req_lvl": "27", "type_attack": ["Down Attack"], "name": "Ninjutsu- Black Moonlight II", "effect": ["Stiffness"]}
+{"req_lvl": "27", "type_attack": [], "name": "Shadow Slash IV", "effect": []}
+{"req_lvl": "27", "type_attack": ["Down Attack"], "name": "Wind Slash VI", "effect": ["Stiffness"]}
+{"req_lvl": "28", "type_attack": ["Down Attack"], "name": "Floor Sweeping II", "effect": ["Bound", "Down Smash"]}
+{"req_lvl": "29", "type_attack": [], "name": "Kunai- Paralysis II", "effect": []}
+{"req_lvl": "29", "type_attack": [], "name": "Ninja Step II", "effect": []}
+{"req_lvl": "29", "type_attack": [], "name": "Shuriken- Malice II", "effect": ["Stiffness"]}
+{"req_lvl": "29", "type_attack": [], "name": "Target Chase II", "effect": []}
+{"req_lvl": "31", "type_attack": ["Down Attack"], "name": "Ankle Cutter III", "effect": ["Bound"]}
+{"req_lvl": "31", "type_attack": ["Down Attack"], "name": "Wind Slash VII", "effect": ["Stiffness"]}
+{"req_lvl": "32", "type_attack": [], "name": "Fatal Wind II", "effect": []}
+{"req_lvl": "32", "type_attack": ["Counter Attack"], "name": "Heart Aiming II", "effect": ["Stun"]}
+{"req_lvl": "32", "type_attack": ["Air Attack"], "name": "Ninjutsu- Shadow Stomp III", "effect": ["Floating"]}
+{"req_lvl": "33", "type_attack": ["Counter Attack", "Air Attack"], "name": "Fatal Blow IV", "effect": ["Stiffness"]}
+{"req_lvl": "33", "type_attack": ["Air Attack"], "name": "Shuriken- Flight II", "effect": ["Floating", "Air Smash"]}
+{"req_lvl": "34", "type_attack": ["Down Attack"], "name": "Ground Thrust II", "effect": ["Bound"]}
+{"req_lvl": "34", "type_attack": ["Down Attack", "Air Attack"], "name": "Ninjutsu- Shadow Clone II", "effect": ["Down Smash", "Air Smash"]}
+{"req_lvl": "35", "type_attack": ["Down Attack"], "name": "Flow- Kick Down", "effect": ["Bound"]}
+{"req_lvl": "35", "type_attack": ["Down Attack"], "name": "Ninjutsu- Black Moonlight III", "effect": ["Stiffness"]}
+{"req_lvl": "35", "type_attack": ["Down Attack"], "name": "Ninjutsu- Shackles III", "effect": ["Stun"]}
+{"req_lvl": "35", "type_attack": ["Down Attack"], "name": "Wind Slash VIII", "effect": ["Stiffness"]}
+{"req_lvl": "36", "type_attack": [], "name": "Beheading the Dead II", "effect": ["Stun"]}
+{"req_lvl": "36", "type_attack": ["Air Attack", "Down Attack"], "name": "Fox Claw III", "effect": ["Stiffness"]}
+{"req_lvl": "36", "type_attack": ["Down Attack", "Air Attack"], "name": "Ghost Greeting III", "effect": ["Floating", "Stiffness"]}
+{"req_lvl": "36", "type_attack": [], "name": "Shadow Slash V", "effect": []}
+{"req_lvl": "36", "type_attack": ["Down Attack"], "name": "Shuriken Throw III", "effect": []}
+{"req_lvl": "36", "type_attack": ["Down Attack"], "name": "Suicide Fall III", "effect": ["Bound", "Kicks and Bounds targets that have Grapple immunity"]}
+{"req_lvl": "37", "type_attack": ["Down Attack"], "name": "Kunai Throw III", "effect": ["Stiffness"]}
+{"req_lvl": "37", "type_attack": ["Air Attack", "Down Attack"], "name": "Ninjutsu- Blade Spin", "effect": ["Floating", "Down Smash"]}
+{"req_lvl": "38", "type_attack": [], "name": "Brace III", "effect": []}
+{"req_lvl": "38", "type_attack": [], "name": "Smokescreen III", "effect": ["Stun"]}
+{"req_lvl": "39", "type_attack": [], "name": "Fatal Wind III", "effect": []}
+{"req_lvl": "39", "type_attack": [], "name": "Ninja Evasion III", "effect": []}
+{"req_lvl": "39", "type_attack": ["Down Attack"], "name": "Wind Slash IX", "effect": ["Stiffness"]}
+{"req_lvl": "40", "type_attack": [], "name": "Ghost Step III", "effect": []}
+{"req_lvl": "41", "type_attack": ["Down Attack"], "name": "Ground Thrust III", "effect": ["Bound"]}
+{"req_lvl": "42", "type_attack": [], "name": "Smokescreen IV", "effect": ["Stun"]}
+{"req_lvl": "43", "type_attack": ["Down Attack"], "name": "Ninjutsu- Black Moonlight IV", "effect": ["Stiffness"]}
+{"req_lvl": "43", "type_attack": ["Air Attack"], "name": "Ninjutsu- Shadow Stomp IV", "effect": ["Floating"]}
+{"req_lvl": "43", "type_attack": ["Down Attack"], "name": "Wind Slash X", "effect": ["Stiffness"]}
+{"req_lvl": "44", "type_attack": ["Down Attack"], "name": "Boss Slaughter III", "effect": ["Floating", "Bound"]}
+{"req_lvl": "44", "type_attack": ["Counter Attack", "Air Attack"], "name": "Fatal Blow V", "effect": ["Stiffness"]}
+{"req_lvl": "44", "type_attack": ["Down Attack"], "name": "Ninjutsu- Shackles IV", "effect": ["Stun"]}
+{"req_lvl": "45", "type_attack": ["Down Attack"], "name": "Ankle Cutter IV", "effect": ["Bound"]}
+{"req_lvl": "45", "type_attack": [], "name": "Kunai- Paralysis III", "effect": []}
+{"req_lvl": "45", "type_attack": [], "name": "Ninja Step III", "effect": []}
+{"req_lvl": "45", "type_attack": [], "name": "Shuriken- Malice III", "effect": ["Stiffness"]}
+{"req_lvl": "45", "type_attack": [], "name": "Target Chase III", "effect": []}
+{"req_lvl": "46", "type_attack": [], "name": "Fatal Wind IV", "effect": []}
+{"req_lvl": "46", "type_attack": ["Counter Attack"], "name": "Heart Aiming III", "effect": ["Stun"]}
+{"req_lvl": "47", "type_attack": ["Air Attack"], "name": "Crescent Slash III", "effect": ["Floating"]}
+{"req_lvl": "48", "type_attack": ["Air Attack", "Down Attack"], "name": "Fox Claw IV", "effect": ["Stiffness"]}
+{"req_lvl": "49", "type_attack": ["Air Attack"], "name": "Shuriken- Flight III", "effect": ["Floating", "Air Smash"]}
+{"req_lvl": "50", "type_attack": ["Down Attack"], "name": "Ground Thrust IV", "effect": ["Bound"]}
+{"req_lvl": "51", "type_attack": ["Down Attack"], "name": "Ninjutsu- Black Moonlight V", "effect": ["Stiffness"]}
+{"req_lvl": "51", "type_attack": ["Down Attack", "Air Attack"], "name": "Ninjutsu- Shadow Clone III", "effect": ["Down Smash", "Air Smash"]}
+{"req_lvl": "52", "type_attack": [], "name": "Beheading the Dead III", "effect": ["Stun"]}
+{"req_lvl": "53", "type_attack": ["Down Attack"], "name": "Ankle Cutter V", "effect": ["Bound"]}
+{"req_lvl": "54", "type_attack": [], "name": "Smokescreen V", "effect": ["Stun"]}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Absolute- Ankle Cutter", "effect": ["Bound"]}
+{"req_lvl": "56", "type_attack": [], "name": "Absolute- Brace", "effect": []}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Absolute- Floor Sweeping", "effect": ["Bound", "Down Smash"]}
+{"req_lvl": "56", "type_attack": ["Air Attack", "Down Attack"], "name": "Absolute- Fox Claw", "effect": ["Stiffness"]}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Absolute- Kunai Throw", "effect": ["Stiffness"]}
+{"req_lvl": "56", "type_attack": [], "name": "Absolute- Shadow Slash", "effect": []}
+{"req_lvl": "56", "type_attack": ["Air Attack"], "name": "Absolute- Shadow Stomp", "effect": ["Floating"]}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Absolute- Shuriken Throw", "effect": []}
+{"req_lvl": "56", "type_attack": ["Air Attack"], "name": "Absolute- Throwing Kick", "effect": ["Floating"]}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Absolute- Wind Slash", "effect": ["Stiffness"]}
+{"req_lvl": "56", "type_attack": ["Air Attack", "Down Attack"], "name": "Bloodthirst- Katana Shower I", "effect": ["Floating"]}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Drastic Measure I", "effect": ["Bound"]}
+{"req_lvl": "56", "type_attack": [], "name": "Flash Bondage", "effect": ["Bound", "Kicks and Bounds targets that have Grapple immunity"]}
+{"req_lvl": "56", "type_attack": [], "name": "Flow- Block Jump", "effect": ["Floating", "Stiffness"]}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Murderous Intent I", "effect": ["Stiffness"]}
+{"req_lvl": "56", "type_attack": [], "name": "Ninjutsu- Oni Shadow", "effect": []}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Seamless", "effect": ["Bound"]}
+{"req_lvl": "56", "type_attack": ["Air Attack", "Down Attack"], "name": "Serpent Ascension I", "effect": ["Floating"]}
+{"req_lvl": "56", "type_attack": [], "name": "Shadow Cloak", "effect": []}
+{"req_lvl": "56", "type_attack": ["Air Attack"], "name": "Shuriken- Moon Dive", "effect": ["Floating"]}
+{"req_lvl": "56", "type_attack": [], "name": "Silent Charge", "effect": []}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Sudden Decapitation I", "effect": ["Bound", "Floating"]}
+{"req_lvl": "56", "type_attack": [], "name": "Sura Katana Training I", "effect": ["Basic Stance", "Transition Stance"]}
+{"req_lvl": "56", "type_attack": ["Down Attack"], "name": "Vengeful Barrier", "effect": ["Stun"]}
+{"req_lvl": "57", "type_attack": ["Counter Attack", "Air Attack"], "name": "Absolute- Fatal Blow", "effect": ["Stiffness"]}
+{"req_lvl": "57", "type_attack": ["Down Attack"], "name": "Absolute- Shackles", "effect": ["Stun"]}
+{"req_lvl": "57", "type_attack": ["Air Attack"], "name": "Absolute- Shuriken Flight", "effect": ["Floating", "Air Smash"]}
+{"req_lvl": "57", "type_attack": ["Down Attack"], "name": "Absolute- Suicide Fall", "effect": ["Bound", "Kicks and Bounds targets that have Grapple immunity"]}
+{"req_lvl": "57", "type_attack": [], "name": "Corrupt Sword Dance II", "effect": []}
+{"req_lvl": "57", "type_attack": ["Down Attack"], "name": "Illusion of Restraint", "effect": ["Stiffness"]}
+{"req_lvl": "57", "type_attack": [], "name": "Ninjutsu- Decapitation", "effect": ["Stiffness"]}
+{"req_lvl": "57", "type_attack": ["Down Attack"], "name": "Sudden Decapitation II", "effect": ["Bound", "Floating"]}
+{"req_lvl": "57", "type_attack": [], "name": "Sura Katana Training II", "effect": ["Basic Stance", "Transition Stance"]}
+{"req_lvl": "57", "type_attack": ["Air Attack"], "name": "Vacuum Slash", "effect": ["Floating", "Knockdown"]}
+{"req_lvl": "58", "type_attack": ["Air Attack", "Down Attack"], "name": "Absolute- Blade Spin", "effect": ["Floating", "Down Smash"]}
+{"req_lvl": "58", "type_attack": ["Air Attack"], "name": "Absolute- Crescent Slash", "effect": ["Floating"]}
+{"req_lvl": "58", "type_attack": ["Down Attack"], "name": "Absolute- Ground Thrust", "effect": ["Bound"]}
+{"req_lvl": "58", "type_attack": ["Counter Attack"], "name": "Absolute- Heart Aiming", "effect": ["Stun"]}
+{"req_lvl": "58", "type_attack": [], "name": "Absolute- Shuriken Malice", "effect": ["Stiffness"]}
+{"req_lvl": "58", "type_attack": ["Air Attack", "Down Attack"], "name": "Bloodthirst- Katana Shower II", "effect": ["Floating"]}
+{"req_lvl": "58", "type_attack": [], "name": "Corrupt Sword Dance III", "effect": []}
+{"req_lvl": "58", "type_attack": ["Down Attack"], "name": "Drastic Measure II", "effect": ["Bound"]}
+{"req_lvl": "58", "type_attack": ["Air Attack", "Down Attack"], "name": "Flow- Execution", "effect": ["Knockdown"]}
+{"req_lvl": "58", "type_attack": ["Down Attack"], "name": "Murderous Intent II", "effect": ["Stiffness"]}
+{"req_lvl": "58", "type_attack": ["Air Attack", "Down Attack"], "name": "Serpent Ascension II", "effect": ["Floating"]}
+{"req_lvl": "58", "type_attack": ["Down Attack"], "name": "Sudden Decapitation III", "effect": ["Bound", "Floating"]}
+{"req_lvl": "58", "type_attack": [], "name": "Sura Katana Training III", "effect": ["Basic Stance", "Transition Stance"]}
+{"req_lvl": "59", "type_attack": [], "name": "Absolute- Beheading the Dead", "effect": ["Stun"]}
+{"req_lvl": "59", "type_attack": ["Down Attack"], "name": "Absolute- Boss Slaughter", "effect": ["Floating", "Bound"]}
+{"req_lvl": "59", "type_attack": ["Down Attack", "Air Attack"], "name": "Absolute- Ghost Greeting", "effect": ["Floating", "Stiffness"]}
+{"req_lvl": "59", "type_attack": ["Air Attack", "Down Attack"], "name": "Bloodthirst- Katana Shower III", "effect": ["Floating"]}
+{"req_lvl": "59", "type_attack": [], "name": "Corrupt Sword Dance IV", "effect": []}
+{"req_lvl": "59", "type_attack": ["Down Attack"], "name": "Murderous Intent III", "effect": ["Stiffness"]}
+{"req_lvl": "59", "type_attack": ["Down Attack"], "name": "Sudden Decapitation IV", "effect": ["Bound", "Floating"]}
+{"req_lvl": "59", "type_attack": [], "name": "Sura ChaoSpree", "effect": ["Stun"]}
+{"req_lvl": "59", "type_attack": [], "name": "Sura Katana Training IV", "effect": ["Basic Stance", "Transition Stance"]}
+{"req_lvl": "60", "type_attack": ["Down Attack"], "name": "Absolute- Black Moonlight", "effect": ["Stiffness"]}
+{"req_lvl": "60", "type_attack": ["Down Attack", "Air Attack"], "name": "Absolute- Shadow Clone", "effect": ["Down Smash", "Air Smash"]}
+{"req_lvl": "60", "type_attack": ["Air Attack", "Down Attack"], "name": "Bloodthirst- Katana Shower IV", "effect": ["Floating"]}
+{"req_lvl": "60", "type_attack": ["Down Attack"], "name": "Drastic Measure III", "effect": ["Bound"]}
+{"req_lvl": "60", "type_attack": ["Down Attack"], "name": "Flow- Mach Explosion", "effect": ["Bound"]}
+{"req_lvl": "60", "type_attack": ["Air Attack", "Down Attack"], "name": "Serpent Ascension III", "effect": ["Floating"]}
+{"req_lvl": "60", "type_attack": [], "name": "Sura Katana Training V", "effect": ["Basic Stance", "Transition Stance"]}

@@ -1,0 +1,86 @@
+<div class="page-header na_reach" >
+    <h1><img src="assets/img/marketplace.png" title="Marketplace">&emsp;Marketplace Registation Notficator</h1><i>Best experience in:&emsp;<i class="fa fa-chrome"></i></i>
+</div>
+<div style="text-align:center;width:100%;">  
+	<button ng-show="market.start" ng-disabled="market.disabled" id="capture-screen" class="box und" ng-click="market.begin()" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Start
+        </button>
+        <br>
+        <br>
+        <hr class="style14">
+        <br>
+      <div ng-show="market.link"><br><a href="https://chrome.google.com/webstore/detail/screen-capturing/ajhifddimkapgcifgcodmmfdlknahffk" target="_blank">Install Chrome Extension <img src="assets/img/extension.png"></a></div>
+      <table style="width:100%">
+        <tr>
+          <th style="width:50%;text-align: center">Input Stream</th>
+          <th style="width:50%;text-align: center">Processed Stream<br></th>
+        </tr>
+        <tr>
+          <td style="width:50%;padding:2.5px"><video id="videoInput" no-controls muted autoplay style="width:100%;height: auto;background-color: #000/*display: none;"></video></td>
+          <td style="width:50%;padding:2.5px">
+            <canvas id="canvasOutput" style="width:100%;background-color: #000"></canvas></td>
+          </tr>
+          <tr> 
+            <td style="width:50%"> </td>
+            <td style="width:50%"><span>Marketplace registation notice score: <b>{{market.popup}}%</b></span></td>
+          </tr>
+        </table>          
+	<canvas id="canvasOutput2" style="display: none;/*width:100%"></canvas>
+
+</div>
+
+ <!--Modal -->
+ <div class="modal fade" id="myModal" role="dialog" ng-hide="market.success_msg || market.err_msg">>
+  <div class="modal-dialog" style="top: 5%;">
+    
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">{{ market.modalHeader }}</h4>        
+      </div>
+      <div class="modal-body" style="position: relative;">
+        <div class='loader show-hide-message'>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<img src="assets/img/notice.png" alt="" id="imageSrc" style="/*display: none">
+<canvas id="outout"></canvas>
+<br>
+<button ng-show="market.exit" class="box und" ng-click="market.finish()" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+           Exit
+        </button>
+          <br><br>
+<div class="row" style="padding: 0 30px 10px;">
+    <div class="show-hide-message" ng-show="market.success_msg">
+        <div class="text-info ng-binding">{{ market.success_msg }}</div>
+    </div>
+    <small class="show-hide-message" ng-show="market.err_msg">
+    <pre>{{ market.err_msg }}</pre>
+  </small>
+
+</div>
+<br>
+<div ng-disabled="true" style="width:fit-content;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;text-align:center;margin: 0 auto;"><i class="fa fa-exclamation-triangle"></i>You need the following requirements:
+    <ul>
+      <li>The in-game interface scaling must be set to 100% (you can set the 100% in a preset from the "Edit UI" menu)</li>
+      <li>The "Marketplace registration notice" must be on top of a window (transparency issues)</li>
+    </ul>
+    <table >
+      <tr>
+        <td><img src="assets/img/market2.png" alt="interfacesettings"></td>
+        <td><img src="assets/img/market.png" alt="interfacesettings"></td>
+      </tr>
+    </table>
+  </div>      

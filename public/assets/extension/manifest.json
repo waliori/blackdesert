@@ -1,0 +1,28 @@
+{
+    "name" : "BDOTeach.me Screen Capturing",
+    "author": "bdoteach.me",
+    "version" : "1.0",
+    "manifest_version" : 2,
+    "minimum_chrome_version": "34",
+    "description" : "This WebRTC screen capturing extension can be used to capture Black Desert Window",
+    "homepage_url": "https://bdoteach.me",
+    "background": {
+        "scripts": ["background-script.js"],
+        "persistent": false
+    },
+    "content_scripts": [ {
+       "js": [ "content-script.js" ],
+       "all_frames": true,
+       "run_at": "document_end",
+       "matches": ["https://bdoteach.me/*"]
+    }],
+    "icons" : {
+        "48" : "icon.png"
+    },
+    "permissions": [
+        "desktopCapture"
+    ],
+    "web_accessible_resources": [
+        "icon.png"
+    ]
+}

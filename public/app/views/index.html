@@ -1,0 +1,479 @@
+<!--
+       __ ________   __   ____  __
+      / // / __/ /  / /  / __ \/ /
+     / _  / _// /__/ /__/ /_/ /_/
+    /_//_/___/____/____/\____(_)
+
+    If you'd like to get to know "How it's made"
+    contact me:
+    > waliori@gmail.com
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta name="description" content="A Black Desert Online Multi-Tools to make your life skill adventure easier and organized. Complete Cooking, Alchemy, Processing calculators, and much more ...">
+    <meta name="author" content="walid lahnine">
+    <meta name="keywords" content="black desert, bdo, bdo tool, bdo calculator, cooking, alchemy, processing, gathering, black desert calculator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type='image/x-icon' href="Favicon.png">
+    <!--<link rel="manifest" href="/manifest.json">-->
+    <title>Waliori's - BDO Multi-Tools</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script src="assets/js/lib.js"></script>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+    <script src="assets/js/angular-animate.js"></script>
+    <script src="https://bdoteach.me/molchi.js"></script>
+
+    <link  href="/assets/css/croppie.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/rzslider.min.css"/>
+    
+
+
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+
+    <script src="app/controlers/userCtrl.js"></script>
+    <script src="app/controlers/mainCtrl.js"></script>
+    <script src="app/controlers/emailCtrl.js"></script>
+    <script src="app/controlers/paymentCtrl.js"></script>
+    <script src="app/controlers/managementCtrl.js"></script>
+    <script src="app/controlers/settingCtrl.js"></script>
+    <script src="app/controlers/cookingCtrl.js"></script>
+    <script src="app/controlers/alchemyCtrl.js"></script>
+    <script src="app/controlers/persoCtrl.js"></script>
+    <script src="app/controlers/dashboardCtrl.js"></script>
+    <script src="app/controlers/editcharCtrl.js"></script>
+    <script src="app/controlers/xptolvlCtrl.js"></script>
+    <script src="app/controlers/marketCtrl.js"></script>
+    <script src="app/controlers/contactCtrl.js"></script>
+    <script src="app/controlers/somethingCtrl.js"></script>
+    <script src="app/controlers/comboCtrl.js"></script>
+
+    <script src="app/services/userServices.js"></script>
+    <script src="app/services/managementServices.js"></script>
+    <script src="app/services/authServices.js"></script>
+    <script src="app/services/paymentServices.js"></script>
+    <script src="app/services/cookServices.js"></script>
+    <script src="app/services/alchemyServices.js"></script>
+    <script src="app/services/persoServices.js"></script>
+    <script src="app/services/dashboardServices.js"></script>
+
+        
+    
+    <script src='assets/js/nprogress.js'></script>
+    <link rel='stylesheet' href='assets/css/nprogress.css'/>
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(["init",{
+    appId: "4833465f-bc24-477b-8343-2dee45220b0e",
+    autoRegister: false,/* Set to true to automatically prompt visitors */
+    httpPermissionRequest: {
+        enable: true
+    },
+    notifyButton: {
+      enable: true, /* Required to use the Subscription Bell */
+      /* SUBSCRIPTION BELL CUSTOMIZATIONS START HERE */
+      size: 'medium', /* One of 'small', 'medium', or 'large' */
+      theme: 'inverse', /* One of 'default' (red-white) or 'inverse" (white-red) */
+      position: 'bottom-right', /* Either 'bottom-left' or 'bottom-right' */
+      offset: {
+        bottom: '0px',
+        left: '0px', /* Only applied if bottom-left */
+        right: '0px' /* Only applied if bottom-right */
+      },
+      prenotify: true, /* Show an icon with 1 unread message for first-time site visitors */
+      showCredit: false, /* Hide the OneSignal logo */
+      text: {
+        'tip.state.unsubscribed': 'Subscribe to notifications',
+        'tip.state.subscribed': "You're subscribed to notifications",
+        'tip.state.blocked': "You've blocked notifications",
+        'message.prenotify': 'Click to subscribe to notifications',
+        'message.action.subscribed': "Thanks for subscribing!",
+        'message.action.resubscribed': "You're subscribed to notifications",
+        'message.action.unsubscribed': "You won't receive notifications again",
+        'dialog.main.title': 'Manage Site Notifications',
+        'dialog.main.button.subscribe': 'SUBSCRIBE',
+        'dialog.main.button.unsubscribe': 'UNSUBSCRIBE',
+        'dialog.blocked.title': 'Unblock Notifications',
+        'dialog.blocked.message': "Follow these instructions to allow notifications:"
+      },
+        colors: { // Customize the colors of the main button and dialog popup button
+         'circle.background': 'rgb(84,110,123)',
+         'circle.foreground': 'white',
+         'badge.background': 'rgb(84,110,123)',
+         'badge.foreground': 'white',
+         'badge.bordercolor': 'white',
+         'pulse.color': 'white',
+         'dialog.button.background.hovering': 'rgb(77, 101, 113)',
+         'dialog.button.background.active': 'rgb(70, 92, 103)',
+         'dialog.button.background': 'rgb(84,110,123)',
+         'dialog.button.foreground': 'white'
+       },
+       /* HIDE SUBSCRIPTION BELL WHEN USER SUBSCRIBED */
+       displayPredicate: function() {
+        return OneSignal.isPushNotificationsEnabled()
+        .then(function(isPushEnabled) {
+          return !isPushEnabled;
+        });
+      }
+    }
+  }]);
+</script>
+
+    <!-- Custom styles for this template -->
+    <style>
+      .show-hide-message.ng-hide-remove{
+          -webkit-animation:fadeInDown 0.5s both ease;
+          -moz-animation:fadeInDown 0.5s both ease;
+          animation:fadeInDown 0.5s both ease;
+      }
+    </style>
+    <link href="assets/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    
+    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link href="assets/css/flags.css" rel="stylesheet">
+    <link href="assets/css/calendar.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/form.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+    <link href="assets/css/generics.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap.min.css">
+
+
+
+  </head>
+
+  <body id="window.localStorage['bodyId']" ng-app="userApp" class="ng-scope" ng-controller="mainCtrl as main" ng-show="main.loadme" ng-cloak>
+<nav id="dice-theme0" class="navbar navbar-expand-md navbar-dark">
+      <a ui-sref="dice" class="navbar-brand" href="/">
+        <div class="logo-navbar"></div>Waliori's BDO Multi-Tools
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav mr-auto">
+          <li class="divider-vertical visible-lg" style="margin-right: 35px"></li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/">HOME <span class="sr-only"></span></a>
+          </li>
+          <li class="divider-vertical visible-lg" ng-show="main.isLoggedIn" style="margin: 2px; height: 30px; margin-top: 10px;"></li>
+          <li class="nav-item active" ng-show="main.isLoggedIn && main.authorized2">
+            <a class="nav-link" href="/management">MANAGEMENT</a>
+          </li>
+          <li class="divider-vertical visible-lg"  ng-show="main.isLoggedIn && main.authorized2" style="margin: 2px; height: 30px; margin-top: 10px;"></li>
+          <li class="nav-item active" ng-show="main.isLoggedIn && !main.authorized && !main.authorized2">
+            <a class="nav-link" href="/payment">SUBSCRIPTION</a>
+          </li>
+          <li class="divider-vertical visible-lg" ng-show="main.isLoggedIn && !main.authorized && !main.authorized2" style="margin: 2px; height: 30px; margin-top: 10px;"></li>
+          <li class="nav-item active" ng-show="main.isLoggedIn">
+            <a class="nav-link" href="/converter">CONVERTERS</a>
+          </li>
+          <li class="divider-vertical visible-lg" ng-show="(main.isLoggedIn && main.authorized) || (main.isLoggedIn && main.authorized2)" style="margin: 2px; height: 30px; margin-top: 10px;"></li>
+          <li class="nav-item active" ng-show="(main.isLoggedIn && main.authorized) || (main.isLoggedIn && main.authorized2) ">
+            <a class="nav-link" href="/marketplace">MARKETPLACE</a>
+          </li>
+          <li class="divider-vertical visible-lg" ng-show="main.isLoggedIn" style="margin: 2px; height: 30px; margin-top: 10px;"></li>
+         <li class="nav-item dropdown active" ng-show="main.isLoggedIn">
+            <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROFESSIONS</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+              <!--<a class="dropdown-item" href="#"><i class="fa fa-leaf" aria-hidden="true"></i><span class="m-l-5 ng-scope">GATHERING </span></a>
+              <div class="divider"></div>
+              <a class="dropdown-item" href="#"><i class="fa fa-gavel" aria-hidden="true"></i><span class="m-l-5 ng-scope">PROCESSING </span></a>
+              <div class="divider"></div>-->
+              <a class="dropdown-item" href="/cooking"><img src="assets/img/cookUten/advenced.png" width="15px"><!--<i class="fa fa-beer" aria-hidden="true"></i>--><span class="m-l-5 ng-scope">COOKING </span></a>
+              <div class="divider"></div>
+              <a class="dropdown-item" href="/alchemy"><img src="assets/img/alchemyTool/advanced.png" width="15px"><!--<i class="fa fa-eyedropper" aria-hidden="true"></i>--><span class="m-l-5 ng-scope">ALCHEMY </span></a>              
+            </div>
+          </li>
+          
+          
+        </ul>
+  
+        
+        <ul class="navbar-nav navbar-right mr-auto">
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">WEBSITE</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04" style="padding-right: 10px;">
+              <a class="dropdown-item" href="/contact" ng-show="main.isLoggedIn"><span class="m-l-5 ng-scope"><img src="assets/img/mail.png" width="15px">&emsp;CONTACT</span></a>
+              <div class="divider" ng-show="main.isLoggedIn"></div>
+              <a class="dropdown-item" href="/privacy"><span class="m-l-5 ng-scope"><img src="assets/img/pri.png" width="15px">&emsp;PRIVACY POLICY</span></a>
+              <div class="divider"></div>
+              <a class="dropdown-item" href="/gcu"><span class="m-l-5 ng-scope"><img src="assets/img/cgu.png" width="15px">&emsp;GENERAL CONDITIONS OF USE</span></a>      
+              <div class="divider"></div>
+              <a class="dropdown-item" href="/qa"><span class="m-l-5 ng-scope"><img src="assets/img/qa.png" width="15px">&emsp;Q&A</span></a>        
+            </div>
+          </li>
+          <li class="divider-vertical visible-lg" ng-show="main.displayPoints" style="margin: 2px; height: 30px; margin-top: 10px;">
+            <li class="visible-xlg" ng-show="main.displayPoints"><p class="nav navbar-text"><span class="lbl ng-binding">Credits</span>: <span amount="site.currentSite.wagered" fraclen="4" class="h-coin ng-isolate-scope"><span ng-class="{ &quot;coin-negative&quot;: coin.s < 0, &quot;text-success&quot;: win, &quot;text-danger&quot;: !win &amp;&amp; win !== undefined }" class="coin"><span class="coin-i ng-binding"><span ng-show="!main.numbers">...</span>{{main.balance}}</span></span></span></p></li>
+            
+            <li class="visible-xlg" ng-show="main.displayPoints"><p class="nav navbar-text ng-binding"><span class="lbl ng-binding">Used</span>: <span ng-show="!main.numbers">...</span>{{main.withdrawn}}</p></li>
+
+            <li class="visible-xlg" ng-show="main.displayPoints"><p class="nav navbar-text ng-binding"><span class="lbl ng-binding">Total</span>: <span ng-show="!main.numbers">...</span>{{main.total}}</p></li>
+          
+            <li class="divider-vertical visible-lg" style="margin-right: 20px"></li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/register" ng-show='!main.isLoggedIn'>REGISTER</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/login" ng-show='!main.isLoggedIn'>LOGIN</a>
+            </li>
+            <!--  quand il est conneté affiché son nom-->
+            <li class="nav-item dropdown active" ng-show='main.isLoggedIn'>
+                    <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ main.username.toUpperCase() }}</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown04">
+                    <a  class="dropdown-item" href="/profile"><img width="20px" src="assets/img/profile.png"><!--<i class="fa fa-tachometer" aria-hidden="true"></i>&emsp;--><span class="m-l-5 ng-scope">Profile</span></a>                    
+                    <div class="divider" ></div>
+                    <a  class="dropdown-item" href="/settings"><img width="20px" src="assets/img/settings.png"><!--<i class="fa fa-sliders" aria-hidden="true"></i>--><span class="m-l-5 ng-scope">Settings</span></a>
+                    <div class="divider" ></div>
+                    <a class="dropdown-item" href="#" ng-click='main.logout()'><img width="20px" src="assets/img/exit.png"><!--<i class="fa fa-sign-out" aria-hidden="true"></i>--><span class="m-l-5 ng-scope">Sign out </span></a>
+                    </div>
+            </li>
+        </ul>
+      </div>
+</nav>
+<div id="bodyDiv" style="min-height: 100%;position:relative">
+<div id="scrollbox3">
+<div class="container" >
+      <div class="hidden-sm hidden-xs" style="position:fixed;height: 150px;right:30px">
+        <span class="text-thin mar-rgt">Opacity:</span><br>
+        <rzslider class="custom-slider2" rz-slider-model="main.slider.value" rz-slider-options="main.slider.options"></rzslider><br>
+        <span class="text-thin mar-rgt">Theme:</span><br>
+        <div style="width:50px">
+          <!--<div id="dice-theme1" class="panel dice-box" style="display: block; background: #00000054; white-space:normal !important;word-wrap:break-word;height:auto">
+            <div class="panel-body">-->
+              <div style="width:100%;text-align: center">
+                <img src="assets/img/body/white2.jpg" class="themes-bg" ng-click="main.theme('white')" title="cloud">
+                <img src="assets/img/body/wall.jpg" class="themes-bg" ng-click="main.theme('wall')" title="wall">
+                <img src="assets/img/body/ocean.jpg" class="themes-bg" ng-click="main.theme('ocean')" title="ocean">
+                <img src="assets/img/body/blue.jpg" class="themes-bg" ng-click="main.theme('blue')" title="blue">
+                <img src="assets/img/body/chrome.jpg" class="themes-bg" ng-click="main.theme('chrome')" title="chrome">
+                <img src="assets/img/body/city.jpg" class="themes-bg" ng-click="main.theme('city')" title="city">
+                <img src="assets/img/body/greenish.jpg" class="themes-bg" ng-click="main.theme('greenish')" title="greenish">
+                <img src="assets/img/body/kiwi.jpg" class="themes-bg" ng-click="main.theme('kiwi')" title="kiwi">
+                <img src="assets/img/body/lights.jpg" class="themes-bg" ng-click="main.theme('lights')" title="lights">
+                <img src="assets/img/body/night.jpg" class="themes-bg" ng-click="main.theme('night')" title="night">
+                <img src="assets/img/body/sunset.jpg" class="themes-bg" ng-click="main.theme('sunset')" title="sunset">
+                <img src="assets/img/body/yellow.jpg" class="themes-bg" ng-click="main.theme('yellow')" title="yellow">
+                <img src="assets/img/body/violate.jpg" class="themes-bg" ng-click="main.theme('violate')" title="violate">
+                <img src="assets/img/body/nexus.jpg" class="themes-bg" ng-click="main.theme('nexus')" title="nexus">
+              </div>                                  
+            <!--</div>                        
+          </div>-->
+        </div>        
+        <div style="text-align:center;width:100%">
+          <span class="text-thin mar-rgt">Text:</span><br>
+          <img src="assets/img/body/w.jpg" class="themes-bg" ng-click="main.color('rgb(255, 255, 255)')" title="white">
+          <img src="assets/img/body/b.jpg" class="themes-bg" ng-click="main.color('rgb(0, 0, 0)')" title="black">
+        </div>
+        <span class="text-thin mar-rgt">Font size:</span><br>
+        <rzslider class="custom-slider2" rz-slider-model="main.slider2.value" rz-slider-options="main.slider2.options"></rzslider><br>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 col-push-12">
+          <div style="margin-left: 0;margin-right: 0;width:100%">
+            <div id="dice-theme2" class="panel dice-box" style="display: block; background: #00000054; white-space:normal !important;word-wrap:break-word;height:auto;min-height: 115px;">
+              <div class="panel-body">
+                <b style="font-size: 18px">IG Time and Reset timers:</b><br>
+                <table style="width:100%">
+                  <tr style="text-align: center">
+                    <td style="width:25%"><b style="font-size: 18px">{{main.IGTime}} </b></td>
+                    <td><img src="assets/img/timereset.png" width="auto" height="25px" title="Day reset"></td>
+                    <td><img src="assets/img/cookimp.png" width="auto" height="30px" title="Imperial cooking/fishing/alchemy"></td>
+                    <td><img src="assets/img/imptrddeli.png" width="25px" height="auto" title="Imperial trading"></td>
+                    <td><img src="assets/img/bsa.png" width="25px" height="auto" title="Black spirit game"></td>
+                  </tr>
+                  <tr style="text-align: center">
+                    <td id="daynight"><span ng-show="main.day"><i class="fa fa-sun-o"></i></span><span ng-show="!main.day"><i class="fa fa-moon-o"></i></span> in:  <b>{{main.dayNight}}</b></td>
+                    <td id="d">{{main.d_reset}}</td>
+                    <td id="imp">{{main.imp_reset}}</td>
+                    <td id="impTrd">{{main.impTrd_reset}}</td>
+                    <td id="bg">{{main.bg_reset}}</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-pull-12">
+          <div style="margin-left: 0;margin-right: 0;width:100%">
+            <div id="dice-theme4" class="panel dice-box" style="display: block; background: #00000054; white-space:normal !important;word-wrap:break-word;height:auto;min-height: 115px;/*padding-top:10px">
+              <div class="panel-body">
+                <button id="myBtn" class="form-control btn" style="float:right;width:fit-content">Manage Bids</button>
+                <b style="font-size: 18px">Bid Timer:</b>&emsp;<i>never miss a bid</i><br>
+
+                <form ng-submit="main.bidtimer(data)">
+                  <table style="width:100%">
+                    <tr style="text-align: center">
+                      <td style="min-width:50%;padding:5px">
+                        <input class="form-control" type="text" ng-model="data.name" placeholder="Item Name" required>
+                      </td>
+                      <td style="width:30%;padding:5px">
+                        <input class="form-control" id="myTime" type="time" ng-model="data.bidtime" ng-focus="main.timerNow()">
+                      </td>
+                      <td style="width:20%;padding:5px">
+                        <button type="submit" class="form-control btn">Set Alarm</button>
+                      </td>                                              
+                    </tr>
+                  </table>
+                  
+                </form>
+                <i style="font-size: 12px; float:right">Do not close or reload this tab to edit your set alarms.</i>
+              </div>
+            </div>            
+          </div>
+          <div class="is-hidden" id="qtyCredit1" style="margin-top:-20px;float:right;text-align:center;width:100%"><span>Alarm set</span></div>
+        </div>
+      </div>
+      <small class="show-hide-message" ng-show="main.err_msg_notif">
+        <pre>{{ main.err_msg_notif }}</pre>
+      </small>
+      
+      
+
+
+      <div id="dice-theme3" class="panel dice-box" style="padding: 15px;">
+        <div ng-view class="panel-body"></div>
+      </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog" style="top: 5%;">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">{{ main.modalHeader }}</h4>
+                <button type="button" ng-click="main.endSession()" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+              <div class="modal-body" style="position: relative;">
+                <p>{{ main.modalBody }}</p>
+                <div class='loader show-hide-message' ng-show="main.hideButton">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <!--<div class="loading" ng-show="main.hideButton">
+                  <div class="bullet"></div>
+                  <div class="bullet"></div>
+                  <div class="bullet"></div>
+                  <div class="bullet"></div>
+                </div>-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" ng-hide="main.hideButton" ng-click="main.renewSession()" class="btn btn-lg" data-dismiss="modal">Yes</button>
+                <button type="button" ng-hide="main.hideButton" ng-click="main.endSession()" class="btn btn-lg" data-dismiss="modal">No</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- The Modal -->
+        <div id="myModal2" class="modal2">
+
+          <!-- Modal content -->
+          <div class="modal2-content">
+            <div class="modal2-header">
+              <span class="close2">&times;</span>
+              <h2>Bids Management</h2>
+            </div>
+            <div class="modal2-body">
+              <table class="table table-hovered" id="marketTimerTable" style="width:100%;text-align:center">
+                <thead>
+                  <tr>
+                    <th style="text-align: center">Item Name</th>
+                    <th style="text-align: center">Notice Time</th>
+                    <th style="text-align: center">Bid Start</th>
+                    <th style="text-align: center">Cancel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="bid in main.bids" id="{{bid.id}}">
+                    <td><div id="">{{bid.name}}</div></td>
+                    <td><div id="">{{bid.start}}</div></td>
+                    <td><div id="">{{bid.end}}</div></td>
+                    <td><input type="button" id="" value="X" ng-click="cancelBid($event)"></td>
+                  </tr>
+                </tbody>
+              </table>
+              </i>
+            </div>
+            <!--<div class="modal2-footer">
+              <h3>Modal Footer</h3>
+            </div>-->
+          </div>
+
+        </div>
+        
+
+
+
+</div><!-- /.container -->
+
+<!--<div  style="/*width:100%;display: -webkit-box; 
+  display: -ms-flexbox;  
+  display: -webkit-flex; 
+  display: flex;         
+  
+  justify-content: center;
+  position: fixed;
+  bottom:0;height: fit-content;">
+  test
+  <div class="panel-footer dice-box" style="padding: 15px;bottom:0;width:80%">
+    <div class="panel-body">
+      test
+    </div>
+  </div>
+</div>-->
+</div>
+<div class="footer">
+      &#169;2018 <br> Bdoteach.me
+</div>
+</div>
+
+<div class="mh" id="mh" style="display: none"></div>
+
+
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+  <script src="assets/js/jquery.dataTables.min.js"></script>
+  <script src="assets/js/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/canvasjs.min.js"></script>    
+    <script src="/assets/js/croppie.js"></script>
+    <script src="/assets/js/rzslider.min.js"></script>
+    <script src="/assets/js/getScreenId.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+    <script src="/assets/js/opencv2.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js"></script>
+    
+    
+    <script src="assets/js/push.fcm.min.js"></script><script src="assets/js/push.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src='https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js' type="text/javascript"></script>
+    <script src='https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js' type="text/javascript"></script>-->
+    <!--<script>var fuckAdBlock = false, FuckAdBlock = undefined;</script>
+    <script src="assets/js/fab.js"></script>-->
+
+  </body>
+</html>

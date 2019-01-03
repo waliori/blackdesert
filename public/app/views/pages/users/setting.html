@@ -1,0 +1,219 @@
+<div class="page-header">
+	<h1>Settings</h1>
+</div>
+
+<div class="row margin" style="margin-bottom:2.5%">
+	<div class="col">
+		<button ng-click="setting.pass()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto">
+			Change your password
+        </button>
+    </div>
+    <div class="col">
+        <button href="" ng-click="setting.email()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto">
+            Change your email
+        </button>
+    </div>
+    <div class="col">
+        <button href="" ng-click="setting.sub()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto">
+            Manage your subscription
+        </button>
+    </div>
+</div>
+
+
+<div class="row" ng-hide="setting.passHide">
+    <div class="col s12 z-depth-6 card-panel title ng-scope">
+      <form class="register-form" name="passForm" ng-submit="setting.changePassword(regData,passForm.$valid, confirmed)" novalidate ng-hide="setting.hide">
+    <input type="text" name="username" autocomplete="username" style="display:none" value="{{username}}">
+		<div class="row margin">
+          <div class="input-field col s12" ng-class="{'has-success': (passForm.previousPassword.$valid && !passForm.previousPassword.$pristine) ,'has-error':(!passForm.previousPassword.$valid && !passForm.previousPassword.$pristine) || (!passForm.previousPassword.$valid && passForm.$submitted)}">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <label for="previousPassword"></label>
+
+            <input ng-disabled="setting.disabled" id="previousPassword" type="password" name="previousPassword" class="input-lg form-control m-b-5 ng-touched" placeholder="Your previous password" ng-model="setting.regData.previousPassword" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,35}$/" ng-minlength="8" ng-maxlength="35" required autocomplete="current-password">
+
+            <small class="help-block" ng-show="(!passForm.previousPassword.$pristine && passForm.previousPassword.$error.required) || (passForm.$submitted && passForm.previousPassword.$error.required)">This field is required</small>
+
+            <small><ul class="help-block" ng-show="(!passForm.previousPassword.$pristine && passForm.previousPassword.$error.pattern)|| (!passForm.previousPassword.$pristine && passForm.previousPassword.$error.minlength) || (!passForm.previousPassword.$pristine && passForm.previousPassword.$error.maxlength)">
+              <li>Must contain between 8 and 35 characters</li>
+              <li>Must contain at least one uper case letter, one lower case letter, one special character and one number</li>
+            </ul></small>
+          </div>
+        </div>
+
+
+
+        <div class="row margin">
+          <div class="input-field col s12" ng-class="{'has-success': (passForm.firstPassword.$valid && !passForm.firstPassword.$pristine) ,'has-error':(!passForm.firstPassword.$valid && !passForm.firstPassword.$pristine) || (!passForm.firstPassword.$valid && passForm.$submitted)}">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <label for="firstPassword"></label>
+
+            <input ng-disabled="setting.disabled" id="passwordPass" type="password" name="firstPassword" class="input-lg form-control m-b-5 ng-touched" placeholder="Your new password" ng-model="firstPassword" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,35}$/" ng-minlength="8" ng-maxlength="35" required autocomplete="new-password">
+
+            <small class="help-block" ng-show="(!passForm.firstPassword.$pristine && passForm.firstPassword.$error.required) || (passForm.$submitted && passForm.firstPassword.$error.required)">This field is required</small>
+
+            <small><ul class="help-block" ng-show="(!passForm.firstPassword.$pristine && passForm.firstPassword.$error.pattern)|| (!passForm.firstPassword.$pristine && passForm.firstPassword.$error.minlength) || (!passForm.firstPassword.$pristine && passForm.firstPassword.$error.maxlength)">
+              <li>Must contain between 8 and 35 characters</li>
+              <li>Must contain at least one uper case letter, one lower case letter, one special character and one number</li>
+            </ul></small>
+          </div>
+        </div>
+
+
+
+        <div class="row margin">
+          <div class="input-field col s12" ng-class="{'has-success': confirmed && !passForm.confirm_password.$error.required ,'has-error': (!confirmed && !passForm.confirm_password.$error.required) || (passForm.confirm_password.$error.required && !passForm.confirm_password.$pristine) || (passForm.confirm_password.$error.required && passForm.$submitted)}">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <label for="confirm_password" ></label>
+
+
+            <input ng-disabled="setting.disabled"  id="confirm_password" name="confirm_password" type="password" class="input-lg form-control m-b-5 ng-touched"  placeholder="Confirm your new password" ng-model="confirm" required match="{{[firstPassword]}}" ng-change="setting.regData.password = confirm" autocomplete="new-password">
+
+
+            <small class="help-block" ng-show="(!passForm.confirm_password.$pristine && passForm.confirm_password.$error.required) || (passForm.$submitted && passForm.confirm_password.$error.required)">
+              This field is required
+            </small>
+
+            <small ng-show="(!confirmed && !passForm.confirm_password.$pristine && passForm.firstPassword.$valid)" class="help-block">
+              Passwords do not match
+            </small>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <label for="submit" ></label>
+            <button ng-disabled="setting.disabled" type="submit" class="form-control" style="white-space:normal !important;word-wrap:break-word;height:auto"><span ng-hide="setting.loading" class="ng-scope">Change password</span><span ng-show="setting.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+
+<div class="row" ng-hide="setting.emailHide">
+    <div class="col s12 z-depth-6 card-panel title ng-scope">
+      <form class="register-form" name="emailForm" ng-submit="setting.changeEmail(regData,emailForm.$valid, confirmed)" novalidate>
+        <input type="text" name="username" autocomplete="username" style="display:none" value="{{username}}">
+        <div class="row margin">
+          <div class="input-field col s12" ng-class="{'has-success': (emailForm.password.$valid && !emailForm.password.$pristine) ,'has-error':(!emailForm.password.$valid && !emailForm.password.$pristine) || (!emailForm.password.$valid && emailForm.$submitted)}">
+            <i class="mdi-action-lock-outline prefix"></i>
+            <label for="password"></label>
+
+            <input ng-disabled="setting.disabled" id="passwordEmail" type="password" name="password" class="input-lg form-control m-b-5 ng-touched" placeholder="Your password" ng-model="setting.regData.password" ng-pattern="/^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,35}$/" ng-minlength="8" ng-maxlength="35" required autocomplete="current-password">
+
+            <small class="help-block" ng-show="(!emailForm.password.$pristine && emailForm.password.$error.required) || (emailForm.$submitted && emailForm.password.$error.required)">This field is required</small>
+
+            <small><ul class="help-block" ng-show="(!emailForm.password.$pristine && emailForm.password.$error.pattern)|| (!emailForm.password.$pristine && emailForm.password.$error.minlength) || (!emailForm.password.$pristine && emailForm.password.$error.maxlength)">
+              <li>Must contain between 8 and 35 characters</li>
+              <li>Must contain at least one uper case letter, one lower case letter, one special character and one number</li>
+            </ul></small>
+          </div>
+        </div>
+
+        <div class="row margin">
+          <div class="input-field col s12" ng-class="{'has-success': (emailForm.email.$valid && !emailForm.email.$pristine) ,'has-error':(!emailForm.email.$valid && !emailForm.email.$pristine) || (!emailForm.email.$valid && emailForm.$submitted)}">
+            <i class="mdi-communication-email prefix"></i>
+            <label for="email" class="center-align" ></label>
+            <input ng-disabled="setting.disabled" id="email" name="email" type="email" class="input-lg form-control m-b-5 ng-touched" placeholder="Type your email address" ng-model="setting.regData.email" ng-pattern='/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/' ng-minlength="5" ng-maxlength="30" required>
+            <small class="help-block" ng-show="(!emailForm.email.$pristine && emailForm.email.$error.required) || (emailForm.$submitted && emailForm.email.$error.required)">This field is required</small>
+            <small class="help-block" ng-show="(!emailForm.email.$pristine && emailForm.email.$error.pattern) || (!emailForm.email.$pristine && emailForm.email.$error.minlength) || (!emailForm.$pristine && emailForm.email.$error.maxlength)">Enter a valid email address (e.g: waliori@gmail.com)</small>
+          </div>
+        </div>
+
+
+
+        <div class="row margin">
+          <div class="input-field col s12">
+            <label for="submit" ></label>
+            <button ng-disabled="setting.disabled" type="submit" class="form-control" style="white-space:normal !important;word-wrap:break-word;height:auto"><span ng-hide="setting.loading" class="ng-scope">Change email</span><span ng-show="setting.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+
+<div class="row" ng-hide="setting.subHide" style="text-align:center">
+  <div class="row" style="width:100%">
+    <div class="col s12 z-depth-6 card-panel title ng-scope margin" ng-show="setting.notSub || setting.canceled" style="margin-top:3%">
+      <h4>You do not have a running subscription.</h4>
+      <a href="/payment" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto;width:60%">Subscribe</a>
+    </div>
+  </div>
+  <div class="row" ng-hide="setting.notSub || setting.canceled" style="width:100%">
+    <div class="col s12 z-depth-6 card-panel title ng-scope" >      
+      <table class='table table-responsive'><!-- table-bordered   -->
+        <thead>
+          <tr>
+            <th style="text-align:center">State</th>
+            <th style="text-align:center">Subscription start date</th>
+            <th style="text-align:center" ng-hide="setting.suspended">Next dayment date</th>
+            <th style="text-align:center">Last payment Date</th>
+            <th style="text-align:center">Price</th>
+            <th style="text-align:center">Subscribed for<sup> (months)</sup></th>
+          </tr>
+        </thead>
+        <tbody > 
+          <tr>
+            <td colspan="6" ng-show="setting.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></td>
+            <td ng-hide="setting.loading" >{{ setting.state }}</td>
+            <td ng-hide="setting.loading" >{{ setting.start }}</td>
+            <td ng-hide="setting.loading || setting.suspended" >{{ setting.next }}</td>
+            <td ng-hide="setting.loading" >{{ setting.last }}</td>
+            <td ng-hide="setting.loading" >{{ setting.price+" "+setting.currency }}</td>
+            <td ng-hide="setting.loading" >{{ setting.cycles }}</td>
+          </tr>         
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row margin" style="margin:auto;width:60%">
+    <div class="col" ng-hide="setting.notSub || setting.canceled">      
+      <a ng-click='setting.sure(1)' ng-disabled="setting.loading" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto">cancel subscription</a> 
+    </div>
+  </div>
+
+</div>
+<br><br>
+<div class="row" style="padding: 0 30px 10px;">
+  <div class="show-hide-message" ng-show="setting.success_msg && !setting.err_msg">
+      <div class="text-info ng-binding">{{ setting.success_msg }}</div>
+  </div>
+  <div class="show-hide-message" ng-show="setting.err_msg && !setting.success_msg">
+      <div class="text-danger ng-binding"><pre>{{ setting.err_msg }}</pre></div>
+  </div>
+</div>
+      <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog" style="top: 5%;">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">{{ setting.modalHeader }}</h4>
+                <button type="button" ng-click="setting.endSession()" class="close" data-dismiss="modal">&times;</button>
+                
+              </div>
+              <div class="modal-body" style="position: relative;">
+                <p>{{ setting.modalBody }}</p>
+                <div class='loader show-hide-message' ng-show="setting.hideButton">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <!--<div class="loading" ng-show="setting.hideButton">
+                  <div class="bullet"></div>
+                  <div class="bullet"></div>
+                  <div class="bullet"></div>
+                  <div class="bullet"></div>
+                </div>-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" ng-hide="setting.hideButton" ng-click="setting.yes()" class="btn btn-lg" data-dismiss="modal">Yes</button>
+                <button type="button" ng-hide="setting.hideButton" ng-click="setting.no()" class="btn btn-lg" data-dismiss="modal">No</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>

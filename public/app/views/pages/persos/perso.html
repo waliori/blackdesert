@@ -1,0 +1,280 @@
+<div class="page-header"><h1>Adding Character's informations</h1></div>
+
+<br><br>
+
+<div class="row margin">
+	<form class="register-form" name="persoForm" id="perso" style="width:100%" ng-submit="perso.regChar(perso.regData)" novalidate>
+		<!-- general -->
+		<div class="row margin">
+			
+
+			<div class="input-field col-12" ng-class="{'has-error':(!persoForm.name.$valid && !persoForm.name.$pristine) || (!persoForm.name.$valid && persoForm.$submitted)}">
+				<span><i class="fa fa-user" aria-hidden="true"></i> &emsp;&emsp; General informations:</span><br><br>
+				<input ng-disabled="perso.disabled" id="name" name="name" type="text" class="input-lg form-control m-b-5 ng-touched" placeholder="Enter name" ng-model="perso.regData.name" ng-minlength="3" ng-maxlength="38" ng-pattern="/^[a-zA-Z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}$/" required>
+            	<small class="help-block" ng-show="(!persoForm.name.$pristine && persoForm.name.$error.required) || (persoForm.$submitted && persoForm.name.$error.required)">This field is required</small>
+            	<small><ul class="help-block" ng-show="(!persoForm.name.$pristine && persoForm.name.$error.pattern)|| (!persoForm.name.$pristine && persoForm.name.$error.minlength) || (!persoForm.$pristine && persoForm.name.$error.maxlength)">
+	              <li>must contain between 3 and 20 characters</li>
+	              <li>Must not contain any special characters ( only "-" is allowed)</li>
+	            </ul></small>
+	        </div>
+		</div>
+
+
+		<div class="row margin" style="width:100%">	
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="warrior" value="warrior" checked>
+					<span class="link_warrior" ng-class="{'link_warrior_on' : perso.regData.class == 'warrior'}"></span><span>Warrior</span>
+				</label>
+			
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="ranger">
+					<span class="link_ranger" ng-class="{'link_ranger_on' : perso.regData.class == 'ranger'}"></span>
+					<span>Ranger</span>
+				</label>
+				
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="sorceress">
+					<span class="link_sorceress" ng-class="{'link_sorceress_on' : perso.regData.class == 'sorceress'}"></span>
+					<span>Sorceress</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="berserker">
+					<span class="link_berserker" ng-class="{'link_berserker_on' : perso.regData.class == 'berserker'}"></span>
+					<span>Berserker</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="valkyrie">
+					<span class="link_valkyrie" ng-class="{'link_valkyrie_on' : perso.regData.class == 'valkyrie'}"></span>
+					<span>Valkyrie</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="wizard">
+					<span class="link_wizard" ng-class="{'link_wizard_on' : perso.regData.class == 'wizard'}"></span>
+					<span>Wizard</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="striker">
+					<span class="link_striker" ng-class="{'link_striker_on' : perso.regData.class == 'striker'}"></span>
+					<span>Striker</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="mystic">
+					<span class="link_mystic" ng-class="{'link_mystic_on' : perso.regData.class == 'mystic'}"></span>
+					<span>Mystic</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="tamer">
+					<span class="link_tamer" ng-class="{'link_tamer_on' : perso.regData.class == 'tamer'}"></span>
+					<span>Tamer</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="witch">
+					<span class="link_witch" ng-class="{'link_witch_on' : perso.regData.class == 'witch'}"></span>
+					<span>Witch</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="ninja">
+					<span class="link_ninja" ng-class="{'link_ninja_on' : perso.regData.class == 'ninja'}"></span>
+					<span>Ninja</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="kunoichi">
+					<span class="link_kunochi" ng-class="{'link_kunochi_on' : perso.regData.class == 'kunoichi'}"></span>
+					<span>Kunoichi</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="dark knight">
+					<span class="link_dk" ng-class="{'link_dk_on' : perso.regData.class == 'dark knight'}"></span>
+					<span>Dark knight</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="musa">
+					<span class="link_musa" ng-class="{'link_musa_on' : perso.regData.class == 'musa'}"></span>
+					<span>Musa</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="maehwa">
+					<span class="link_maehwa" ng-class="{'link_maehwa_on' : perso.regData.class == 'maehwa'}"></span>
+					<span>Maehwa</span>
+				</label>
+
+				<label class="form-check-label" style="text-align:center">
+					<input class="form-check-input" ng-disabled="perso.disabled" type="radio" ng-model="perso.regData.class" name="classe" id="classe" value="lahn">
+					<span class="link_lahn" ng-class="{'link_lahn_on' : perso.regData.class == 'lahn'}"></span>
+					<span>Lahn</span>
+				</label>	
+		</div>
+
+		<br>
+		<div class="row margin">
+			<div class="input-field col-12" ng-class="{'has-error':(!persoForm.cl.$valid && !persoForm.cl.$pristine) || (!persoForm.cl.$valid && persoForm.$submitted)}">
+				<select ng-disabled="perso.disabled" ng-model="perso.regData.level" name="cl" class="form-control" id="cl" required><option style="display:none" value="">Character level</option><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option><option value="32" >32</option><option value="33" >33</option><option value="34" >34</option><option value="35" >35</option><option value="36" >36</option><option value="37" >37</option><option value="38" >38</option><option value="39" >39</option><option value="40" >40</option><option value="41" >41</option><option value="42" >42</option><option value="43" >43</option><option value="44" >44</option><option value="45" >45</option><option value="46" >46</option><option value="47" >47</option><option value="48" >48</option><option value="49" >49</option><option value="50" >50</option><option value="51" >51</option><option value="52" >52</option><option value="53" >53</option><option value="54" >54</option><option value="55" >55</option><option value="56" >56</option><option value="57" >57</option><option value="58" >58</option><option value="59" >59</option><option value="60" >60</option><option value="61" >61</option><option value="62" >62</option><option value="63" >63</option><option value="64" >64</option><option value="65" >65</option><option value="66" >66</option><option value="67" >67</option><option value="68" >68</option><option value="69" >69</option><option value="70" >70</option></select>
+				<small class="help-block" ng-show="(!persoForm.cl.$pristine && persoForm.cl.$error.required) || (persoForm.$submitted && persoForm.cl.$error.required)">This field is required</small>
+			</div>
+		</div>
+		<br><br><hr class="style14"><br><br>
+		
+		<!--gathering and processing-->
+		<div class="row">
+			<div class="col-6">
+				<span><i class="fa fa-leaf" aria-hidden="true"></i> &emsp;&emsp; Gathering informations:</span><br><br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.gr.$valid && !persoForm.gr.$pristine) || (!persoForm.gr.$valid && persoForm.$submitted)}">					
+					<select  ng-disabled="perso.disabled" name="gr" ng-model="perso.regData.gr" class="form-control" id="gr" required><option style="display:none" value="">Rank</option><option value="Beginner 1">Beginner 1</option><option value="Beginner 2" >Beginner 2</option><option value="Beginner 3" >Beginner 3</option><option value="Beginner 4" >Beginner 4</option><option value="Beginner 5" >Beginner 5</option><option value="Beginner 6" >Beginner 6</option><option value="Beginner 7" >Beginner 7</option><option value="Beginner 8" >Beginner 8</option><option value="Beginner 9" >Beginner 9</option><option value="Beginner 10" >Beginner 10</option><option value="Apprentice 1" >Apprentice 1</option><option value="Apprentice 2" >Apprentice 2</option><option value="Apprentice 3" >Apprentice 3</option><option value="Apprentice 4" >Apprentice 4</option><option value="Apprentice 5" >Apprentice 5</option><option value="Apprentice 6" >Apprentice 6</option><option value="Apprentice 7" >Apprentice 7</option><option value="Apprentice 8" >Apprentice 8</option><option value="Apprentice 9" >Apprentice 9</option><option value="Apprentice 10" >Apprentice 10</option><option value="Skilled 1" >Skilled 1</option><option value="Skilled 2" >Skilled 2</option><option value="Skilled 3" >Skilled 3</option><option value="Skilled 4" >Skilled 4</option><option value="Skilled 5" >Skilled 5</option><option value="Skilled 6" >Skilled 6</option><option value="Skilled 7" >Skilled 7</option><option value="Skilled 8" >Skilled 8</option><option value="Skilled 9" >Skilled 9</option><option value="Skilled 10" >Skilled 10</option><option value="Professional 1" >Professional 1</option><option value="Professional 2" >Professional 2</option><option value="Professional 3" >Professional 3</option><option value="Professional 4" >Professional 4</option><option value="Professional 5" >Professional 5</option><option value="Professional 6" >Professional 6</option><option value="Professional 7" >Professional 7</option><option value="Professional 8" >Professional 8</option><option value="Professional 9" >Professional 9</option><option value="Professional 10" >Professional 10</option><option value="Artisan 1" >Artisan 1</option><option value="Artisan 2" >Artisan 2</option><option value="Artisan 3" >Artisan 3</option><option value="Artisan 4" >Artisan 4</option><option value="Artisan 5" >Artisan 5</option><option value="Artisan 6" >Artisan 6</option><option value="Artisan 7" >Artisan 7</option><option value="Artisan 8" >Artisan 8</option><option value="Artisan 9" >Artisan 9</option><option value="Artisan 10" >Artisan 10</option><option value="Master 1" >Master 1</option><option value="Master 2" >Master 2</option><option value="Master 3" >Master 3</option><option value="Master 4" >Master 4</option><option value="Master 5" >Master 5</option><option value="Master 6" >Master 6</option><option value="Master 7" >Master 7</option><option value="Master 8" >Master 8</option><option value="Master 9" >Master 9</option><option value="Master 10" >Master 10</option><option value="Master 11" >Master 11</option><option value="Master 12" >Master 12</option><option value="Master 13" >Master 13</option><option value="Master 14" >Master 14</option><option value="Master 15" >Master 15</option><option value="Master 16" >Master 16</option><option value="Master 17" >Master 17</option><option value="Master 18" >Master 18</option><option value="Master 19" >Master 19</option><option value="Master 20" >Master 20</option><option value="Master 21" >Master 21</option><option value="Master 22" >Master 22</option><option value="Master 23" >Master 23</option><option value="Master 24" >Master 24</option><option value="Master 25" >Master 25</option><option value="Master 26" >Master 26</option><option value="Master 27" >Master 27</option><option value="Master 28" >Master 28</option><option value="Master 29" >Master 29</option><option value="Master 30" >Master 30</option><option value="Guru 1" >Guru 1</option><option value="Guru 2" >Guru 2</option><option value="Guru 3" >Guru 3</option><option value="Guru 4" >Guru 4</option><option value="Guru 5" >Guru 5</option><option value="Guru 6" >Guru 6</option><option value="Guru 7" >Guru 7</option><option value="Guru 8" >Guru 8</option><option value="Guru 9" >Guru 9</option><option value="Guru 10" >Guru 10</option><option value="Guru 11" >Guru 11</option><option value="Guru 12" >Guru 12</option><option value="Guru 13" >Guru 13</option><option value="Guru 14" >Guru 14</option><option value="Guru 15" >Guru 15</option><option value="Guru 16" >Guru 16</option><option value="Guru 17" >Guru 17</option><option value="Guru 18" >Guru 18</option><option value="Guru 19" >Guru 19</option><option value="Guru 20" >Guru 20</option></select>
+					<small class="help-block" ng-show="(!persoForm.gr.$pristine && persoForm.gr.$error.required) || (persoForm.$submitted && persoForm.gr.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.gp.$valid && !persoForm.gp.$pristine) || (!persoForm.gp.$valid && persoForm.$submitted)}">
+					<select  ng-disabled="perso.disabled" name="gp" ng-model="perso.regData.gp" class="form-control" id="gp" required><option style="display:none" value="">Rank percent</option><option value="0">0%</option><option value="1" >1%</option><option value="2" >2%</option><option value="3" >3%</option><option value="4" >4%</option><option value="5" >5%</option><option value="6" >6%</option><option value="7" >7%</option><option value="8" >8%</option><option value="9" >9%</option><option value="10" >10%</option><option value="11" >11%</option><option value="12" >12%</option><option value="13" >13%</option><option value="14" >14%</option><option value="15" >15%</option><option value="16" >16%</option><option value="17" >17%</option><option value="18" >18%</option><option value="19" >19%</option><option value="20" >20%</option><option value="21" >21%</option><option value="22" >22%</option><option value="23" >23%</option><option value="24" >24%</option><option value="25" >25%</option><option value="26" >26%</option><option value="27" >27%</option><option value="28" >28%</option><option value="29" >29%</option><option value="30" >30%</option><option value="31" >31%</option><option value="32" >32%</option><option value="33" >33%</option><option value="34" >34%</option><option value="35" >35%</option><option value="36" >36%</option><option value="37" >37%</option><option value="38" >38%</option><option value="39" >39%</option><option value="40" >40%</option><option value="41" >41%</option><option value="42" >42%</option><option value="43" >43%</option><option value="44" >44%</option><option value="45" >45%</option><option value="46" >46%</option><option value="47" >47%</option><option value="48" >48%</option><option value="49" >49%</option><option value="50" >50%</option><option value="51" >51%</option><option value="52" >52%</option><option value="53" >53%</option><option value="54" >54%</option><option value="55" >55%</option><option value="56" >56%</option><option value="57" >57%</option><option value="58" >58%</option><option value="59" >59%</option><option value="60" >60%</option><option value="61" >61%</option><option value="62" >62%</option><option value="63" >63%</option><option value="64" >64%</option><option value="65" >65%</option><option value="66" >66%</option><option value="67" >67%</option><option value="68" >68%</option><option value="69" >69%</option><option value="70" >70%</option><option value="71" >71%</option><option value="72" >72%</option><option value="73" >73%</option><option value="74" >74%</option><option value="75" >75%</option><option value="76" >76%</option><option value="77" >77%</option><option value="78" >78%</option><option value="79" >79%</option><option value="80" >80%</option><option value="81" >81%</option><option value="82" >82%</option><option value="83" >83%</option><option value="84" >84%</option><option value="85" >85%</option><option value="86" >86%</option><option value="87" >87%</option><option value="88" >88%</option><option value="89" >89%</option><option value="90" >90%</option><option value="91" >91%</option><option value="92" >92%</option><option value="93" >93%</option><option value="94" >94%</option><option value="95" >95%</option><option value="96" >96%</option><option value="97" >97%</option><option value="98" >98%</option><option value="99" >99%</option></select>
+					<small class="help-block" ng-show="(!persoForm.gp.$pristine && persoForm.gp.$error.required) || (persoForm.$submitted && persoForm.gp.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="row margin" >			
+					<div class="options" style="width:100%">
+						<span style="float:left"><img width="25px" height="25px" src="assets/img/clothes/gather.png">{{perso.gt}}%</span>
+						<input ng-click="perso.gtclothesF('0')" ng-disabled="perso.disabled" value="0" ng-model="perso.regData.gatheringclothes" name="gt" type="radio" id="gtnone"  ng-init="perso.regData.gatheringclothes='0'" ng-check="true">
+						<label for="gtnone">+0 or none</label>
+						<input ng-click="perso.gtclothesF('10')" ng-disabled="perso.disabled" value="10" ng-model="perso.regData.gatheringclothes" name="gt" type="radio" id="gt1" >
+						<label for="gt1">+1</label>
+						<input ng-click="perso.gtclothesF('15')" ng-disabled="perso.disabled" value="15" ng-model="perso.regData.gatheringclothes" name="gt" type="radio" id="gt2" >
+						<label for="gt2">+2</label>
+						<input ng-click="perso.gtclothesF('20')" ng-disabled="perso.disabled" value="20" ng-model="perso.regData.gatheringclothes" name="gt" type="radio" id="gt3" >
+						<label for="gt3">+3</label>
+						<input ng-click="perso.gtclothesF('25')" ng-disabled="perso.disabled" value="25" ng-model="perso.regData.gatheringclothes" name="gt" type="radio" id="gt4" >
+						<label for="gt4">+4</label>
+						<input ng-click="perso.gtclothesF('40')" ng-disabled="perso.disabled" value="40" ng-model="perso.regData.gatheringclothes" name="gt" type="radio" id="gt5" >
+						<label for="gt5">+5</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<span><i class="fa fa-gavel" aria-hidden="true"></i> &emsp;&emsp; Processing informations</span><br><br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.pr.$valid && !persoForm.pr.$pristine) || (!persoForm.pr.$valid && persoForm.$submitted)}">					
+					<select  ng-disabled="perso.disabled" name="pr" ng-model="perso.regData.pr" class="form-control" id="pr" required><option style="display:none" value="">Rank</option><option value="Beginner 1">Beginner 1</option><option value="Beginner 2" >Beginner 2</option><option value="Beginner 3" >Beginner 3</option><option value="Beginner 4" >Beginner 4</option><option value="Beginner 5" >Beginner 5</option><option value="Beginner 6" >Beginner 6</option><option value="Beginner 7" >Beginner 7</option><option value="Beginner 8" >Beginner 8</option><option value="Beginner 9" >Beginner 9</option><option value="Beginner 10" >Beginner 10</option><option value="Apprentice 1" >Apprentice 1</option><option value="Apprentice 2" >Apprentice 2</option><option value="Apprentice 3" >Apprentice 3</option><option value="Apprentice 4" >Apprentice 4</option><option value="Apprentice 5" >Apprentice 5</option><option value="Apprentice 6" >Apprentice 6</option><option value="Apprentice 7" >Apprentice 7</option><option value="Apprentice 8" >Apprentice 8</option><option value="Apprentice 9" >Apprentice 9</option><option value="Apprentice 10" >Apprentice 10</option><option value="Skilled 1" >Skilled 1</option><option value="Skilled 2" >Skilled 2</option><option value="Skilled 3" >Skilled 3</option><option value="Skilled 4" >Skilled 4</option><option value="Skilled 5" >Skilled 5</option><option value="Skilled 6" >Skilled 6</option><option value="Skilled 7" >Skilled 7</option><option value="Skilled 8" >Skilled 8</option><option value="Skilled 9" >Skilled 9</option><option value="Skilled 10" >Skilled 10</option><option value="Professional 1" >Professional 1</option><option value="Professional 2" >Professional 2</option><option value="Professional 3" >Professional 3</option><option value="Professional 4" >Professional 4</option><option value="Professional 5" >Professional 5</option><option value="Professional 6" >Professional 6</option><option value="Professional 7" >Professional 7</option><option value="Professional 8" >Professional 8</option><option value="Professional 9" >Professional 9</option><option value="Professional 10" >Professional 10</option><option value="Artisan 1" >Artisan 1</option><option value="Artisan 2" >Artisan 2</option><option value="Artisan 3" >Artisan 3</option><option value="Artisan 4" >Artisan 4</option><option value="Artisan 5" >Artisan 5</option><option value="Artisan 6" >Artisan 6</option><option value="Artisan 7" >Artisan 7</option><option value="Artisan 8" >Artisan 8</option><option value="Artisan 9" >Artisan 9</option><option value="Artisan 10" >Artisan 10</option><option value="Master 1" >Master 1</option><option value="Master 2" >Master 2</option><option value="Master 3" >Master 3</option><option value="Master 4" >Master 4</option><option value="Master 5" >Master 5</option><option value="Master 6" >Master 6</option><option value="Master 7" >Master 7</option><option value="Master 8" >Master 8</option><option value="Master 9" >Master 9</option><option value="Master 10" >Master 10</option><option value="Master 11" >Master 11</option><option value="Master 12" >Master 12</option><option value="Master 13" >Master 13</option><option value="Master 14" >Master 14</option><option value="Master 15" >Master 15</option><option value="Master 16" >Master 16</option><option value="Master 17" >Master 17</option><option value="Master 18" >Master 18</option><option value="Master 19" >Master 19</option><option value="Master 20" >Master 20</option><option value="Master 21" >Master 21</option><option value="Master 22" >Master 22</option><option value="Master 23" >Master 23</option><option value="Master 24" >Master 24</option><option value="Master 25" >Master 25</option><option value="Master 26" >Master 26</option><option value="Master 27" >Master 27</option><option value="Master 28" >Master 28</option><option value="Master 29" >Master 29</option><option value="Master 30" >Master 30</option><option value="Guru 1" >Guru 1</option><option value="Guru 2" >Guru 2</option><option value="Guru 3" >Guru 3</option><option value="Guru 4" >Guru 4</option><option value="Guru 5" >Guru 5</option><option value="Guru 6" >Guru 6</option><option value="Guru 7" >Guru 7</option><option value="Guru 8" >Guru 8</option><option value="Guru 9" >Guru 9</option><option value="Guru 10" >Guru 10</option><option value="Guru 11" >Guru 11</option><option value="Guru 12" >Guru 12</option><option value="Guru 13" >Guru 13</option><option value="Guru 14" >Guru 14</option><option value="Guru 15" >Guru 15</option><option value="Guru 16" >Guru 16</option><option value="Guru 17" >Guru 17</option><option value="Guru 18" >Guru 18</option><option value="Guru 19" >Guru 19</option><option value="Guru 20" >Guru 20</option></select>
+					<small class="help-block" ng-show="(!persoForm.pr.$pristine && persoForm.pr.$error.required) || (persoForm.$submitted && persoForm.pr.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.pp.$valid && !persoForm.pp.$pristine) || (!persoForm.pp.$valid && persoForm.$submitted)}">
+					<select  ng-disabled="perso.disabled" name="pp" ng-model="perso.regData.pp" class="form-control" id="pp" required><option style="display:none" value="">Rank percent</option><option value="0">0%</option><option value="1" >1%</option><option value="2" >2%</option><option value="3" >3%</option><option value="4" >4%</option><option value="5" >5%</option><option value="6" >6%</option><option value="7" >7%</option><option value="8" >8%</option><option value="9" >9%</option><option value="10" >10%</option><option value="11" >11%</option><option value="12" >12%</option><option value="13" >13%</option><option value="14" >14%</option><option value="15" >15%</option><option value="16" >16%</option><option value="17" >17%</option><option value="18" >18%</option><option value="19" >19%</option><option value="20" >20%</option><option value="21" >21%</option><option value="22" >22%</option><option value="23" >23%</option><option value="24" >24%</option><option value="25" >25%</option><option value="26" >26%</option><option value="27" >27%</option><option value="28" >28%</option><option value="29" >29%</option><option value="30" >30%</option><option value="31" >31%</option><option value="32" >32%</option><option value="33" >33%</option><option value="34" >34%</option><option value="35" >35%</option><option value="36" >36%</option><option value="37" >37%</option><option value="38" >38%</option><option value="39" >39%</option><option value="40" >40%</option><option value="41" >41%</option><option value="42" >42%</option><option value="43" >43%</option><option value="44" >44%</option><option value="45" >45%</option><option value="46" >46%</option><option value="47" >47%</option><option value="48" >48%</option><option value="49" >49%</option><option value="50" >50%</option><option value="51" >51%</option><option value="52" >52%</option><option value="53" >53%</option><option value="54" >54%</option><option value="55" >55%</option><option value="56" >56%</option><option value="57" >57%</option><option value="58" >58%</option><option value="59" >59%</option><option value="60" >60%</option><option value="61" >61%</option><option value="62" >62%</option><option value="63" >63%</option><option value="64" >64%</option><option value="65" >65%</option><option value="66" >66%</option><option value="67" >67%</option><option value="68" >68%</option><option value="69" >69%</option><option value="70" >70%</option><option value="71" >71%</option><option value="72" >72%</option><option value="73" >73%</option><option value="74" >74%</option><option value="75" >75%</option><option value="76" >76%</option><option value="77" >77%</option><option value="78" >78%</option><option value="79" >79%</option><option value="80" >80%</option><option value="81" >81%</option><option value="82" >82%</option><option value="83" >83%</option><option value="84" >84%</option><option value="85" >85%</option><option value="86" >86%</option><option value="87" >87%</option><option value="88" >88%</option><option value="89" >89%</option><option value="90" >90%</option><option value="91" >91%</option><option value="92" >92%</option><option value="93" >93%</option><option value="94" >94%</option><option value="95" >95%</option><option value="96" >96%</option><option value="97" >97%</option><option value="98" >98%</option><option value="99" >99%</option></select>
+					<small class="help-block" ng-show="(!persoForm.pp.$pristine && persoForm.pp.$error.required) || (persoForm.$submitted && persoForm.pp.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="row margin" >			
+					<div class="options" style="width:100%">
+						<span style="float:left"><img width="25px" height="25px" src="assets/img/clothes/process.png">{{perso.prc}}%</span>
+						<input ng-click="perso.prcclothesF('5')" ng-disabled="perso.disabled" value="5" ng-model="perso.regData.processingclothes" name="pr" type="radio" id="prcnone"  ng-init="perso.regData.processingclothes='5'" ng-check="true">
+						<label for="prcnone">+0 or none</label>
+						<input ng-click="perso.prcclothesF('10')" ng-disabled="perso.disabled" value="10" ng-model="perso.regData.processingclothes" name="pr" type="radio" id="prc1" >
+						<label for="prc1">+1</label>
+						<input ng-click="perso.prcclothesF('15')" ng-disabled="perso.disabled" value="15" ng-model="perso.regData.processingclothes" name="pr" type="radio" id="prc2" >
+						<label for="prc2">+2</label>
+						<input ng-click="perso.prcclothesF('20')" ng-disabled="perso.disabled" value="20" ng-model="perso.regData.processingclothes" name="pr" type="radio" id="prc3" >
+						<label for="prc3">+3</label>
+						<input ng-click="perso.prcclothesF('25')" ng-disabled="perso.disabled" value="25" ng-model="perso.regData.processingclothes" name="pr" type="radio" id="prc4" >
+						<label for="prc4">+4</label>
+						<input ng-click="perso.prcclothesF('40')" ng-disabled="perso.disabled" value="40" ng-model="perso.regData.processingclothes" name="pr" type="radio" id="prc5" >
+						<label for="prc5">+5</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br><br><hr class="style14"><br><br>
+		
+		<!--cooking and alchemy-->
+		<div class="row">
+			<div class="col-6">
+				<span><i class="fa fa-beer" aria-hidden="true"></i> &emsp;&emsp; Cooking informations</span><br><br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.cr.$valid && !persoForm.cr.$pristine) || (!persoForm.cr.$valid && persoForm.$submitted)}">					
+					<select  ng-disabled="perso.disabled" name="cr" ng-model="perso.regData.cr" class="form-control" id="cr" required><option style="display:none" value="">Rank</option><option value="Beginner 1">Beginner 1</option><option value="Beginner 2" >Beginner 2</option><option value="Beginner 3" >Beginner 3</option><option value="Beginner 4" >Beginner 4</option><option value="Beginner 5" >Beginner 5</option><option value="Beginner 6" >Beginner 6</option><option value="Beginner 7" >Beginner 7</option><option value="Beginner 8" >Beginner 8</option><option value="Beginner 9" >Beginner 9</option><option value="Beginner 10" >Beginner 10</option><option value="Apprentice 1" >Apprentice 1</option><option value="Apprentice 2" >Apprentice 2</option><option value="Apprentice 3" >Apprentice 3</option><option value="Apprentice 4" >Apprentice 4</option><option value="Apprentice 5" >Apprentice 5</option><option value="Apprentice 6" >Apprentice 6</option><option value="Apprentice 7" >Apprentice 7</option><option value="Apprentice 8" >Apprentice 8</option><option value="Apprentice 9" >Apprentice 9</option><option value="Apprentice 10" >Apprentice 10</option><option value="Skilled 1" >Skilled 1</option><option value="Skilled 2" >Skilled 2</option><option value="Skilled 3" >Skilled 3</option><option value="Skilled 4" >Skilled 4</option><option value="Skilled 5" >Skilled 5</option><option value="Skilled 6" >Skilled 6</option><option value="Skilled 7" >Skilled 7</option><option value="Skilled 8" >Skilled 8</option><option value="Skilled 9" >Skilled 9</option><option value="Skilled 10" >Skilled 10</option><option value="Professional 1" >Professional 1</option><option value="Professional 2" >Professional 2</option><option value="Professional 3" >Professional 3</option><option value="Professional 4" >Professional 4</option><option value="Professional 5" >Professional 5</option><option value="Professional 6" >Professional 6</option><option value="Professional 7" >Professional 7</option><option value="Professional 8" >Professional 8</option><option value="Professional 9" >Professional 9</option><option value="Professional 10" >Professional 10</option><option value="Artisan 1" >Artisan 1</option><option value="Artisan 2" >Artisan 2</option><option value="Artisan 3" >Artisan 3</option><option value="Artisan 4" >Artisan 4</option><option value="Artisan 5" >Artisan 5</option><option value="Artisan 6" >Artisan 6</option><option value="Artisan 7" >Artisan 7</option><option value="Artisan 8" >Artisan 8</option><option value="Artisan 9" >Artisan 9</option><option value="Artisan 10" >Artisan 10</option><option value="Master 1" >Master 1</option><option value="Master 2" >Master 2</option><option value="Master 3" >Master 3</option><option value="Master 4" >Master 4</option><option value="Master 5" >Master 5</option><option value="Master 6" >Master 6</option><option value="Master 7" >Master 7</option><option value="Master 8" >Master 8</option><option value="Master 9" >Master 9</option><option value="Master 10" >Master 10</option><option value="Master 11" >Master 11</option><option value="Master 12" >Master 12</option><option value="Master 13" >Master 13</option><option value="Master 14" >Master 14</option><option value="Master 15" >Master 15</option><option value="Master 16" >Master 16</option><option value="Master 17" >Master 17</option><option value="Master 18" >Master 18</option><option value="Master 19" >Master 19</option><option value="Master 20" >Master 20</option><option value="Master 21" >Master 21</option><option value="Master 22" >Master 22</option><option value="Master 23" >Master 23</option><option value="Master 24" >Master 24</option><option value="Master 25" >Master 25</option><option value="Master 26" >Master 26</option><option value="Master 27" >Master 27</option><option value="Master 28" >Master 28</option><option value="Master 29" >Master 29</option><option value="Master 30" >Master 30</option><option value="Guru 1" >Guru 1</option><option value="Guru 2" >Guru 2</option><option value="Guru 3" >Guru 3</option><option value="Guru 4" >Guru 4</option><option value="Guru 5" >Guru 5</option><option value="Guru 6" >Guru 6</option><option value="Guru 7" >Guru 7</option><option value="Guru 8" >Guru 8</option><option value="Guru 9" >Guru 9</option><option value="Guru 10" >Guru 10</option><option value="Guru 11" >Guru 11</option><option value="Guru 12" >Guru 12</option><option value="Guru 13" >Guru 13</option><option value="Guru 14" >Guru 14</option><option value="Guru 15" >Guru 15</option><option value="Guru 16" >Guru 16</option><option value="Guru 17" >Guru 17</option><option value="Guru 18" >Guru 18</option><option value="Guru 19" >Guru 19</option><option value="Guru 20" >Guru 20</option></select>
+					<small class="help-block" ng-show="(!persoForm.cr.$pristine && persoForm.cr.$error.required) || (persoForm.$submitted && persoForm.cr.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.cp.$valid && !persoForm.cp.$pristine) || (!persoForm.cp.$valid && persoForm.$submitted)}">
+					<select  ng-disabled="perso.disabled" name="cp" ng-model="perso.regData.cp" class="form-control" id="cp" required><option style="display:none" value="">Rank percent</option><option value="0">0%</option><option value="1" >1%</option><option value="2" >2%</option><option value="3" >3%</option><option value="4" >4%</option><option value="5" >5%</option><option value="6" >6%</option><option value="7" >7%</option><option value="8" >8%</option><option value="9" >9%</option><option value="10" >10%</option><option value="11" >11%</option><option value="12" >12%</option><option value="13" >13%</option><option value="14" >14%</option><option value="15" >15%</option><option value="16" >16%</option><option value="17" >17%</option><option value="18" >18%</option><option value="19" >19%</option><option value="20" >20%</option><option value="21" >21%</option><option value="22" >22%</option><option value="23" >23%</option><option value="24" >24%</option><option value="25" >25%</option><option value="26" >26%</option><option value="27" >27%</option><option value="28" >28%</option><option value="29" >29%</option><option value="30" >30%</option><option value="31" >31%</option><option value="32" >32%</option><option value="33" >33%</option><option value="34" >34%</option><option value="35" >35%</option><option value="36" >36%</option><option value="37" >37%</option><option value="38" >38%</option><option value="39" >39%</option><option value="40" >40%</option><option value="41" >41%</option><option value="42" >42%</option><option value="43" >43%</option><option value="44" >44%</option><option value="45" >45%</option><option value="46" >46%</option><option value="47" >47%</option><option value="48" >48%</option><option value="49" >49%</option><option value="50" >50%</option><option value="51" >51%</option><option value="52" >52%</option><option value="53" >53%</option><option value="54" >54%</option><option value="55" >55%</option><option value="56" >56%</option><option value="57" >57%</option><option value="58" >58%</option><option value="59" >59%</option><option value="60" >60%</option><option value="61" >61%</option><option value="62" >62%</option><option value="63" >63%</option><option value="64" >64%</option><option value="65" >65%</option><option value="66" >66%</option><option value="67" >67%</option><option value="68" >68%</option><option value="69" >69%</option><option value="70" >70%</option><option value="71" >71%</option><option value="72" >72%</option><option value="73" >73%</option><option value="74" >74%</option><option value="75" >75%</option><option value="76" >76%</option><option value="77" >77%</option><option value="78" >78%</option><option value="79" >79%</option><option value="80" >80%</option><option value="81" >81%</option><option value="82" >82%</option><option value="83" >83%</option><option value="84" >84%</option><option value="85" >85%</option><option value="86" >86%</option><option value="87" >87%</option><option value="88" >88%</option><option value="89" >89%</option><option value="90" >90%</option><option value="91" >91%</option><option value="92" >92%</option><option value="93" >93%</option><option value="94" >94%</option><option value="95" >95%</option><option value="96" >96%</option><option value="97" >97%</option><option value="98" >98%</option><option value="99" >99%</option></select>
+					<small class="help-block" ng-show="(!persoForm.cp.$pristine && persoForm.cp.$error.required) || (persoForm.$submitted && persoForm.cp.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="row margin" >			
+					<div class="options" style="width:100%">
+						<span style="float:left"><img width="25px" height="25px" src="assets/img/clothes/cook.png">{{perso.secc}}%</span>
+						<input ng-click="perso.ckclothesF('0')" ng-disabled="perso.disabled" value="0" ng-model="perso.regData.cookingclothes" name="ck" type="radio" id="none"  ng-init="perso.regData.cookingclothes='0'" ng-check="true">
+						<label for="none">+0 or none</label>
+						<input ng-click="perso.ckclothesF('10')" ng-disabled="perso.disabled" value="10" ng-model="perso.regData.cookingclothes" name="ck" type="radio" id="un" >
+						<label for="un">+1</label>
+						<input ng-click="perso.ckclothesF('15')" ng-disabled="perso.disabled" value="15" ng-model="perso.regData.cookingclothes" name="ck" type="radio" id="deux" >
+						<label for="deux">+2</label>
+						<input ng-click="perso.ckclothesF('20')" ng-disabled="perso.disabled" value="20" ng-model="perso.regData.cookingclothes" name="ck" type="radio" id="trois" >
+						<label for="trois">+3</label>
+						<input ng-click="perso.ckclothesF('25')" ng-disabled="perso.disabled" value="25" ng-model="perso.regData.cookingclothes" name="ck" type="radio" id="quatre" >
+						<label for="quatre">+4</label>
+						<input ng-click="perso.ckclothesF('40')" ng-disabled="perso.disabled" value="40" ng-model="perso.regData.cookingclothes" name="ck" type="radio" id="cinque" >
+						<label for="cinque">+5</label>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<span><i class="fa fa-eyedropper" aria-hidden="true"></i> &emsp;&emsp; Alchemy informations</span><br><br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.ar.$valid && !persoForm.ar.$pristine) || (!persoForm.ar.$valid && persoForm.$submitted)}">					
+					<select  ng-disabled="perso.disabled" name="ar" ng-model="perso.regData.ar" class="form-control" id="ar" required><option style="display:none" value="">Rank</option><option value="Beginner 1">Beginner 1</option><option value="Beginner 2" >Beginner 2</option><option value="Beginner 3" >Beginner 3</option><option value="Beginner 4" >Beginner 4</option><option value="Beginner 5" >Beginner 5</option><option value="Beginner 6" >Beginner 6</option><option value="Beginner 7" >Beginner 7</option><option value="Beginner 8" >Beginner 8</option><option value="Beginner 9" >Beginner 9</option><option value="Beginner 10" >Beginner 10</option><option value="Apprentice 1" >Apprentice 1</option><option value="Apprentice 2" >Apprentice 2</option><option value="Apprentice 3" >Apprentice 3</option><option value="Apprentice 4" >Apprentice 4</option><option value="Apprentice 5" >Apprentice 5</option><option value="Apprentice 6" >Apprentice 6</option><option value="Apprentice 7" >Apprentice 7</option><option value="Apprentice 8" >Apprentice 8</option><option value="Apprentice 9" >Apprentice 9</option><option value="Apprentice 10" >Apprentice 10</option><option value="Skilled 1" >Skilled 1</option><option value="Skilled 2" >Skilled 2</option><option value="Skilled 3" >Skilled 3</option><option value="Skilled 4" >Skilled 4</option><option value="Skilled 5" >Skilled 5</option><option value="Skilled 6" >Skilled 6</option><option value="Skilled 7" >Skilled 7</option><option value="Skilled 8" >Skilled 8</option><option value="Skilled 9" >Skilled 9</option><option value="Skilled 10" >Skilled 10</option><option value="Professional 1" >Professional 1</option><option value="Professional 2" >Professional 2</option><option value="Professional 3" >Professional 3</option><option value="Professional 4" >Professional 4</option><option value="Professional 5" >Professional 5</option><option value="Professional 6" >Professional 6</option><option value="Professional 7" >Professional 7</option><option value="Professional 8" >Professional 8</option><option value="Professional 9" >Professional 9</option><option value="Professional 10" >Professional 10</option><option value="Artisan 1" >Artisan 1</option><option value="Artisan 2" >Artisan 2</option><option value="Artisan 3" >Artisan 3</option><option value="Artisan 4" >Artisan 4</option><option value="Artisan 5" >Artisan 5</option><option value="Artisan 6" >Artisan 6</option><option value="Artisan 7" >Artisan 7</option><option value="Artisan 8" >Artisan 8</option><option value="Artisan 9" >Artisan 9</option><option value="Artisan 10" >Artisan 10</option><option value="Master 1" >Master 1</option><option value="Master 2" >Master 2</option><option value="Master 3" >Master 3</option><option value="Master 4" >Master 4</option><option value="Master 5" >Master 5</option><option value="Master 6" >Master 6</option><option value="Master 7" >Master 7</option><option value="Master 8" >Master 8</option><option value="Master 9" >Master 9</option><option value="Master 10" >Master 10</option><option value="Master 11" >Master 11</option><option value="Master 12" >Master 12</option><option value="Master 13" >Master 13</option><option value="Master 14" >Master 14</option><option value="Master 15" >Master 15</option><option value="Master 16" >Master 16</option><option value="Master 17" >Master 17</option><option value="Master 18" >Master 18</option><option value="Master 19" >Master 19</option><option value="Master 20" >Master 20</option><option value="Master 21" >Master 21</option><option value="Master 22" >Master 22</option><option value="Master 23" >Master 23</option><option value="Master 24" >Master 24</option><option value="Master 25" >Master 25</option><option value="Master 26" >Master 26</option><option value="Master 27" >Master 27</option><option value="Master 28" >Master 28</option><option value="Master 29" >Master 29</option><option value="Master 30" >Master 30</option><option value="Guru 1" >Guru 1</option><option value="Guru 2" >Guru 2</option><option value="Guru 3" >Guru 3</option><option value="Guru 4" >Guru 4</option><option value="Guru 5" >Guru 5</option><option value="Guru 6" >Guru 6</option><option value="Guru 7" >Guru 7</option><option value="Guru 8" >Guru 8</option><option value="Guru 9" >Guru 9</option><option value="Guru 10" >Guru 10</option><option value="Guru 11" >Guru 11</option><option value="Guru 12" >Guru 12</option><option value="Guru 13" >Guru 13</option><option value="Guru 14" >Guru 14</option><option value="Guru 15" >Guru 15</option><option value="Guru 16" >Guru 16</option><option value="Guru 17" >Guru 17</option><option value="Guru 18" >Guru 18</option><option value="Guru 19" >Guru 19</option><option value="Guru 20" >Guru 20</option></select>
+					<small class="help-block" ng-show="(!persoForm.ar.$pristine && persoForm.ar.$error.required) || (persoForm.$submitted && persoForm.ar.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="input-field row margin" ng-class="{'has-error':(!persoForm.ap.$valid && !persoForm.ap.$pristine) || (!persoForm.ap.$valid && persoForm.$submitted)}">
+					<select  ng-disabled="perso.disabled" name="ap" ng-model="perso.regData.ap" class="form-control" id="ap" required><option style="display:none" value="">Rank percent</option><option value="0">0%</option><option value="1" >1%</option><option value="2" >2%</option><option value="3" >3%</option><option value="4" >4%</option><option value="5" >5%</option><option value="6" >6%</option><option value="7" >7%</option><option value="8" >8%</option><option value="9" >9%</option><option value="10" >10%</option><option value="11" >11%</option><option value="12" >12%</option><option value="13" >13%</option><option value="14" >14%</option><option value="15" >15%</option><option value="16" >16%</option><option value="17" >17%</option><option value="18" >18%</option><option value="19" >19%</option><option value="20" >20%</option><option value="21" >21%</option><option value="22" >22%</option><option value="23" >23%</option><option value="24" >24%</option><option value="25" >25%</option><option value="26" >26%</option><option value="27" >27%</option><option value="28" >28%</option><option value="29" >29%</option><option value="30" >30%</option><option value="31" >31%</option><option value="32" >32%</option><option value="33" >33%</option><option value="34" >34%</option><option value="35" >35%</option><option value="36" >36%</option><option value="37" >37%</option><option value="38" >38%</option><option value="39" >39%</option><option value="40" >40%</option><option value="41" >41%</option><option value="42" >42%</option><option value="43" >43%</option><option value="44" >44%</option><option value="45" >45%</option><option value="46" >46%</option><option value="47" >47%</option><option value="48" >48%</option><option value="49" >49%</option><option value="50" >50%</option><option value="51" >51%</option><option value="52" >52%</option><option value="53" >53%</option><option value="54" >54%</option><option value="55" >55%</option><option value="56" >56%</option><option value="57" >57%</option><option value="58" >58%</option><option value="59" >59%</option><option value="60" >60%</option><option value="61" >61%</option><option value="62" >62%</option><option value="63" >63%</option><option value="64" >64%</option><option value="65" >65%</option><option value="66" >66%</option><option value="67" >67%</option><option value="68" >68%</option><option value="69" >69%</option><option value="70" >70%</option><option value="71" >71%</option><option value="72" >72%</option><option value="73" >73%</option><option value="74" >74%</option><option value="75" >75%</option><option value="76" >76%</option><option value="77" >77%</option><option value="78" >78%</option><option value="79" >79%</option><option value="80" >80%</option><option value="81" >81%</option><option value="82" >82%</option><option value="83" >83%</option><option value="84" >84%</option><option value="85" >85%</option><option value="86" >86%</option><option value="87" >87%</option><option value="88" >88%</option><option value="89" >89%</option><option value="90" >90%</option><option value="91" >91%</option><option value="92" >92%</option><option value="93" >93%</option><option value="94" >94%</option><option value="95" >95%</option><option value="96" >96%</option><option value="97" >97%</option><option value="98" >98%</option><option value="99" >99%</option></select>
+					<small class="help-block" ng-show="(!persoForm.ap.$pristine && persoForm.ap.$error.required) || (persoForm.$submitted && persoForm.ap.$error.required)">This field is required</small>
+				</div>
+				<br>
+				<div class="row margin" >			
+					<div class="options" style="width:100%">
+						<span style="float:left"><img width="25px" height="25px" src="assets/img/clothes/alchemy.png">{{perso.alc}}%</span>
+						<input ng-click="perso.alcclothesF('0')" ng-disabled="perso.disabled" value="0" ng-model="perso.regData.alchemyclothes" name="alc" type="radio" id="alnone"  ng-init="perso.regData.alchemyclothes='0'" ng-check="true">
+						<label for="alnone">+0 or none</label>
+						<input ng-click="perso.alcclothesF('10')" ng-disabled="perso.disabled" value="10" ng-model="perso.regData.alchemyclothes" name="alc" type="radio" id="al1" >
+						<label for="al1">+1</label>
+						<input ng-click="perso.alcclothesF('15')" ng-disabled="perso.disabled" value="15" ng-model="perso.regData.alchemyclothes" name="alc" type="radio" id="al2" >
+						<label for="al2">+2</label>
+						<input ng-click="perso.alcclothesF('20')" ng-disabled="perso.disabled" value="20" ng-model="perso.regData.alchemyclothes" name="alc" type="radio" id="al3" >
+						<label for="al3">+3</label>
+						<input ng-click="perso.alcclothesF('25')" ng-disabled="perso.disabled" value="25" ng-model="perso.regData.alchemyclothes" name="alc" type="radio" id="al4" >
+						<label for="al4">+4</label>
+						<input ng-click="perso.alcclothesF('40')" ng-disabled="perso.disabled" value="40" ng-model="perso.regData.alchemyclothes" name="alc" type="radio" id="al5" >
+						<label for="al5">+5</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br><br><hr class="style14"><br><br>
+		
+		<div class="row">
+			<div class="col-6" >
+				<button ng-disabled="perso.disabled" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit"><span ng-hide="perso.loading" class="ng-scope">ADD CHARACTER</span><span ng-show="perso.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button> 
+			</div>
+			<div class="col-6" >
+				<a class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto" ng-click="perso.cancel()"><span ng-hide="perso.loading2" class="ng-scope">CANCEL</span><span ng-show="perso.loading2" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></a> 
+			</div>
+		</div>
+	</form>
+</div>
+<br><br>
+  <div class="row" style="padding: 0 30px 10px;">
+    <div class="show-hide-message" ng-show="perso.success_msg">
+        <div class="text-info ng-binding">{{ perso.success_msg }}</div>
+      </div>
+      <div class="show-hide-message" ng-show="perso.err_msg">
+        <div class="text-danger ng-binding"><pre>{{ perso.err_msg }}</pre></div>
+      </div>
+
+  </div>

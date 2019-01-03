@@ -1,0 +1,1066 @@
+<div class="page-header na_reach" >
+    <h1><img src="assets/img/cookUten/advenced.png" title="Cooking calculator">Complete Cooking Calculator </h1>
+</div>
+<br>
+<br>
+<h3>Choose your Calclator:</h3>
+<br>
+<div class="row margin" style="margin-bottom:2.5%">
+    <div class="col">
+        <button ng-disabled="cooking.dsblTime" ng-click="cooking.time()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Time
+        </button>
+    </div>
+    <div class="col">
+        <button ng-disabled="cooking.dsblqty" ng-click="cooking.quantities()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Recipes
+        </button>
+    </div>
+
+    <div class="col">
+        <button ng-disabled="cooking.dsblTurn" ng-click="cooking.turn()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Byproducts
+        </button>
+    </div>
+</div>
+<div class="row margin" style="margin-bottom:2.5%">
+    <div class="col">
+        <button ng-disabled="cooking.dsblxp" ng-click="cooking.xp()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Experience
+        </button>
+    </div>
+    <div class="col">
+        <button ng-disabled="cooking.dsbllvll" ng-click="cooking.lvll()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto; font-size:15px">
+            Leveling
+        </button>
+    </div>
+    
+</div>
+
+<div ng-show="cooking.expCalc">
+    <div ng-hide="cooking.calculated">
+
+        <div class="row margin" ng-show="cooking.enabled" ng-hide="!cooking.enabled" style="width:100%">
+            <h3>Leveling Calculator: <i style="font-size:15px" ng-show="!cooking.okok">13 Credits</i><br><i style="font-size:15px">batch numbers and ingredients quantities needed to level up your character rank</i></h3>
+            <hr class="style14">
+            <br>
+            <br>
+            <form class="register-form" id="cooking" style="width:100%" ng-submit="cooking.precook(cookData)" novalidate>
+                <h4>Character, product and rank desired:</h4>
+                <br>
+                <div class="row margin" style="margin:0 auto;width:90%">
+                    <div class="col-xs-12 col-sm-12">
+                        <select ng-disabled="cooking.disabled" class="chars" name="char" id="chars" ng-model="cookData.char" style="margin:0 auto; width:100%">
+                            <option style="display:none" value=""></option><option ng-repeat="x in cooking.chars" value="{{ x.name }}">{{ x.name+" : "+x.cookingLevel+" % of "+x.cookingRank }} </option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row margin" style="margin:0 auto;width:90%">
+                    <div class="col-xs-12 col-sm-12">
+                        <select ng-disabled="cooking.disabled" class="recipes" id="products" ng-model="cookData.product" style="margin:0 auto; width:100%">
+                            <option value=""></option><option ng-repeat="x in cooking.products" value="{{ x.Recipe }}">{{ x.Recipe }}</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row margin" style="margin:0 auto;width:90%">
+                    <div class="col-xs-12 col-sm-12">
+                        <select ng-disabled="cooking.disabledDR" class="lifes" name="life" id="lifes" ng-model="cookData.life" style="margin:0 auto; width:100%">
+                            <option value=""></option><option value="1">Beginner 1</option><option value="2">Beginner 2</option><option value="3">Beginner 3</option><option value="4">Beginner 4</option><option value="5">Beginner 5</option><option value="6">Beginner 6</option><option value="7">Beginner 7</option><option value="8">Beginner 8</option><option value="9">Beginner 9</option><option value="10">Beginner 10</option><option value="11">Apprentice 1</option><option value="12">Apprentice 2</option><option value="13">Apprentice 3</option><option value="14">Apprentice 4</option><option value="15">Apprentice 5</option><option value="16">Apprentice 6</option><option value="17">Apprentice 7</option><option value="18">Apprentice 8</option><option value="19">Apprentice 9</option><option value="20">Apprentice 10</option><option value="21">Skilled 1</option><option value="22">Skilled 2</option><option value="23">Skilled 3</option><option value="24">Skilled 4</option><option value="25">Skilled 5</option><option value="26">Skilled 6</option><option value="27">Skilled 7</option><option value="28">Skilled 8</option><option value="29">Skilled 9</option><option value="30">Skilled 10</option><option value="31">Professional 1</option><option value="32">Professional 2</option><option value="33">Professional 3</option><option value="34">Professional 4</option><option value="35">Professional 5</option><option value="36">Professional 6</option><option value="37">Professional 7</option><option value="38">Professional 8</option><option value="39">Professional 9</option><option value="40">Professional 10</option><option value="41">Artisan 1</option><option value="42">Artisan 2</option><option value="43">Artisan 3</option><option value="44">Artisan 4</option><option value="45">Artisan 5</option><option value="46">Artisan 6</option><option value="47">Artisan 7</option><option value="48">Artisan 8</option><option value="49">Artisan 9</option><option value="50">Artisan 10</option><option value="51">Master 1</option><option value="52">Master 2</option><option value="53">Master 3</option><option value="54">Master 4</option><option value="55">Master 5</option><option value="56">Master 6</option><option value="57">Master 7</option><option value="58">Master 8</option><option value="59">Master 9</option><option value="60">Master 10</option><option value="61">Master 11</option><option value="62">Master 12</option><option value="63">Master 13</option><option value="64">Master 14</option><option value="65">Master 15</option><option value="66">Master 16</option><option value="67">Master 17</option><option value="68">Master 18</option><option value="69">Master 19</option><option value="70">Master 20</option><option value="71">Master 21</option><option value="72">Master 22</option><option value="73">Master 23</option><option value="74">Master 24</option><option value="75">Master 25</option><option value="76">Master 26</option><option value="77">Master 27</option><option value="78">Master 28</option><option value="79">Master 29</option><option value="80">Master 30</option><option value="80">Guru 1</option><option value="82">Guru 2</option><option value="83">Guru 3</option><option value="84">Guru 4</option><option value="85">Guru 5</option><option value="86">Guru 6</option><option value="87">Guru 7</option><option value="88">Guru 8</option><option value="89">Guru 9</option><option value="90">Guru 10</option><option value="91">Guru 11</option><option value="92">Guru 12</option><option value="93">Guru 13</option><option value="94">Guru 14</option><option value="95">Guru 15</option><option value="96">Guru 16</option><option value="97">Guru 17</option><option value="98">Guru 18</option><option value="99">Guru 19</option><option value="100">Guru 20</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+
+                <hr class="style14">
+                <br>
+                <h4>Life Exp modifiers:</h4>
+                <div style="width:100%;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;">&emsp;<i class="fa fa-exclamation-triangle"></i>&emsp;Life Exp bonuses from : Valuepack, Guild buff and pets are adjusted in your dashboard &emsp;&emsp;</div><div style="width:100%;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;text-align:right"><button class="form-control btn" ng-click="location.path('/profile')"><i class="fa fa-edit"></i> Cick Here To Edit Account Exp Modifiers</button></div>
+                <br>
+                
+                <table class="table table-responsive" style="width:100%">
+
+                    <tr>
+                        <td>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                    <span><img width="25px" height="25px" src="assets/img/villa.png"> Villa Buff <span ng-show="!cooking.villa">not</span> activated : +<span ng-show="cooking.villa">1</span>0%</span><br ng-show="cooking.mobile">&emsp;&emsp;
+                                    <br>
+                                    <br>
+                                    <input ng-click="cooking.villaF('yes')" ng-disabled="cooking.disabled" ng-model="cookData.villa" ng-value="'10'" id="villa-on" class="toggle toggle-left" name="villa" value="10" type="radio">
+                                    <label ng-click="cooking.villaF('yes')" for="villa-on" class="btn1">Yes</label>
+                                    <input ng-click="cooking.villaF('no')" ng-disabled="cooking.disabled" ng-model="cookData.villa" ng-value="'0'" id="villa-off" class="toggle toggle-right" name="villa" value="0" type="radio" ng-checked="true" ng-init="cookData.villa='0'">
+                                    <label ng-click="cooking.villaF('no')" for="villa-off" class="btn1">No</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                    <span><img width="25px" height="25px" src="assets/img/lifescroll.png">[Loyalties] Extra Life EXP Scroll is <span ng-show="!cooking.scroll">not</span> activated : +<span ng-show="cooking.scroll">1</span>0%</span><br ng-show="cooking.mobile">&emsp;&emsp;
+                                    <br>
+                                    <br>
+                                    <input ng-click="cooking.scrollF('yes')" ng-disabled="cooking.disabled" ng-model="cookData.scroll" ng-value="'10'" id="scroll-on" class="toggle toggle-left" name="scroll" value="10" type="radio">
+                                    <label ng-click="cooking.scrollF('yes')" for="scroll-on" class="btn1">Yes</label>
+                                    <input ng-click="cooking.scrollF('no')" ng-disabled="cooking.disabled" ng-model="cookData.scroll" ng-value="'0'" id="scroll-off" class="toggle toggle-right" name="scroll" value="0" type="radio"  ng-checked="true" ng-init="cookData.scroll='0'">
+                                    <label ng-click="cooking.scrollF('no')" for="scroll-off" class="btn1">No</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                    <span><img width="25px" height="25px" src="assets/img/swift.png"> Perfume of Swiftness <span ng-show="!cooking.swift">not</span> activated : +<span ng-show="cooking.swift">1</span>0%</span><br ng-show="cooking.mobile">&emsp;&emsp;
+                                    <br>
+                                    <br>
+                                    <input ng-click="cooking.swiftF('yes')" ng-disabled="cooking.disabled" ng-model="cookData.swift" ng-value="'10'" id="swift-on" class="toggle toggle-left" name="swift" value="10" type="radio">
+                                    <label ng-click="cooking.swiftF('yes')" for="swift-on" class="btn1">Yes</label>
+                                    <input ng-click="cooking.swiftF('no')" ng-disabled="cooking.disabled" ng-model="cookData.swift" ng-value="'0'" id="swift-off" class="toggle toggle-right" name="swift" value="0" type="radio" ng-checked="true" ng-init="cookData.swift='0'">
+                                    <label ng-click="cooking.swiftF('no')" for="swift-off" class="btn1">No</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                    <div class="options">
+                                        <span style="float:left"><span ng-show="cooking.pearl=='0'">No </span>Pearl costume weared: {{ cooking.pearl }}%</span><br ng-show="cooking.mobile">
+
+                                        <input ng-click="cooking.pearlF('0')" ng-disabled="cooking.disabled" value="0" ng-model="cookData.pearl" name="pearl" type="radio" id="nop" ng-init="cookData.pearl='0'" ng-check="true">
+                                        <label for="nop">None</label><br ng-show="cooking.mobile">
+
+                                        <input ng-click="cooking.pearlF('10')" ng-disabled="cooking.disabled" value="10" ng-model="cookData.pearl" name="pearl" type="radio" id="tik">
+                                        <label for="tik"><img width="25px" height="25px" src="assets/img/cstm1.png">[Costume] Cook's Clothes</label><br ng-show="cooking.mobile">
+
+                                        <input ng-click="cooking.pearlF('15')" ng-disabled="cooking.disabled" value="15" ng-model="cookData.pearl" name="pearl" type="radio" id="prl">
+                                        <label for="prl"><img width="25px" height="25px" src="assets/img/cstm2.png">Canape Clothes</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                    <div class="options">
+                                        <span style="float:left"><span ng-show="cooking.gmb=='0'">No </span>GM's Blessing activated: {{ cooking.gmb }}%</span><br ng-show="cooking.mobile">
+
+                                        <input ng-click="cooking.gmbF('0')" ng-disabled="cooking.disabled" value="0" ng-model="cookData.gmb" name="gmb" type="radio" id="walo" ng-init="cookData.gmb='0'" ng-check="true">
+                                        <label for="walo">None</label><br ng-show="cooking.mobile">
+
+                                        <input ng-click="cooking.gmbF('10')" ng-disabled="cooking.disabled" value="10" ng-model="cookData.gmb" name="gmb" type="radio" id="one">
+                                        <label for="one"><img width="25px" height="25px" src="assets/img/gmb1.png">/<img width="25px" height="25px" src="assets/img/gmb2.png">GM's Blessing 1 OR 2</label><br ng-show="cooking.mobile">
+
+                                        <input ng-click="cooking.gmbF('15')" ng-disabled="cooking.disabled" value="15" ng-model="cookData.gmb" name="gmb" type="radio" id="three">
+                                        <label for="three"><img width="25px" height="25px" src="assets/img/gmb3.png">GM's Blessing 3</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="options">
+                                        <span style="float:left"><span ng-show="cooking.elix=='0'">No </span> Elixir activated: {{cooking.elix}}%</span><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.elixirF('0')" ng-disabled="cooking.disabled" value="0" ng-model="cookData.elixir" name="elixir" type="radio" id="nada" ng-init="cookData.elixir='0'" ng-check="true">
+                                        <label for="nada">None</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.elixirF('10')" ng-disabled="cooking.disabled" value="10" ng-model="cookData.elixir" name="elixir" type="radio" id="uno">
+                                        <label for="uno"><img width="25px" height="25px" src="assets/img/t.png">Elixir of Time</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.elixirF('15')" ng-disabled="cooking.disabled" value="15" ng-model="cookData.elixir" name="elixir" type="radio" id="dos">
+                                        <label for="dos"><img width="25px" height="25px" src="assets/img/ft.png">/<img width="25px" height="25px" src="assets/img/tt.png">Elixir of Flowing Time OR Time-Training Elixir</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="options">
+                                        <span style="float:left"><span ng-show="cooking.fd=='0'">No </span> Food activated: {{cooking.fd}}%</span><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.foodF('0')" ng-disabled="cooking.disabled" value="0" ng-model="cookData.food" name="food" type="radio" id="nfd" ng-init="cookData.food='0'" ng-check="true">
+                                        <label for="nfd">None</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.foodF('5')" ng-disabled="cooking.disabled" value="5" ng-model="cookData.food" name="food" type="radio" id="asd">
+                                        <label for="asd"><img width="25px" height="25px" src="assets/img/asd.png">Assorted Side Dishes</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.foodF('8')" ng-disabled="cooking.disabled" value="8" ng-model="cookData.food" name="food" type="radio" id="st">
+                                        <label for="st"><img width="25px" height="25px" src="assets/img/st.png">Sute Tea</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.foodF('10')" ng-disabled="cooking.disabled" value="10" ng-model="cookData.food" name="food" type="radio" id="wms">
+                                        <label for="wms"><img width="25px" height="25px" src="assets/img/wms.png">Whale Meat Salad</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.foodF('15')" ng-disabled="cooking.disabled" value="15" ng-model="cookData.food" name="food" type="radio" id="fwms">
+                                        <label for="fwms"><img width="25px" height="25px" src="assets/img/fwms.png">Fresh Whale Meat Salad</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+                <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12">
+                                    <select ng-disabled="cooking.disabled" class="others" id="others" ng-model="cookData.others" style="margin:0 auto; width:100%">
+                                        <option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option><option value="72">72</option><option value="73">73</option><option value="74">74</option><option value="75">75</option><option value="76">76</option><option value="77">77</option><option value="78">78</option><option value="79">79</option><option value="80">80</option><option value="81">81</option><option value="82">82</option><option value="83">83</option><option value="84">84</option><option value="85">85</option><option value="86">86</option><option value="87">87</option><option value="88">88</option><option value="89">89</option><option value="90">90</option><option value="91">91</option><option value="92">92</option><option value="93">93</option><option value="94">94</option><option value="95">95</option><option value="96">96</option><option value="97">97</option><option value="98">98</option><option value="99">99</option><option value="100">100</option>
+                                    </select>
+                                </div>
+                            </div>
+                <br>    
+                <hr class="style14">
+                <br>
+                <div style="width:80%;margin:0 auto">
+                    <button class="form-control btn" ng-disabled="cooking.disabled" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit"><span ng-hide="cooking.loading" class="ng-scope">Calculate</span><span ng-show="cooking.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>
+                </div>
+                <div class="is-hidden" id="qtyCredit3" ng-hide="cooking.calculated" style="text-align:center;width:100%"><span>-13 Credits</span></div>
+            </form>
+        </div>
+
+        <div class="row margin" ng-show="!cooking.enabled">
+            <button ng-click="location.path('/perso')" ng-disabled="dashboard.disabled" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto">ADD CHARACTER(s) WHO WILL COOK</button>
+        </div>
+    </div>
+
+    <div ng-show="cooking.calculated">
+        <h3>Leveling Calculator: <br><i style="font-size:15px">batch numbers and ingredients quantities needed to level up your character rank</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        <h4>with the following settings:</h4>
+        <br>
+        <table class="table table-stripped table-responsive">
+            <tr>
+                <th style="vertical-align:middle;text-align:center">Character name</th>
+                <th style="vertical-align:middle;text-align:center">Cooking Rank</th>
+                <th style="vertical-align:middle;text-align:center">Cooking Rank Level</th>
+                <th style="vertical-align:middle;text-align:center">Desired Rank</th>
+                <th style="vertical-align:middle;text-align:center">Recipe</th>
+                <th style="vertical-align:middle;text-align:center">Life Exp Bonus</th>
+            </tr>
+            <tr>
+                <th style="vertical-align:middle;text-align:center">{{cooking.name}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.rank}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.ranklevel}}%</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.life}}</th>
+                <th style="vertical-align:middle;text-align:center"><img src="/assets/img/recipes/{{cooking.recipe}}.png" class="img-flag" width="25px" height="25px" />&emsp;{{cooking.recipe}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.bonus}}%</th>
+            </tr>
+        </table>
+        <br>
+        <h4>Ingredients and their quantities for one {{cooking.recipe}} <img src="/assets/img/recipes/{{cooking.recipe}}.png" class="img-flag" width="40px" height="40px"/>:</h4>
+        <br>
+        <table class="table table-stripped table-responsive">
+            <tr>
+                <th style="vertical-align:middle;text-align:center">
+                    Ingredient
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient1 != ''">
+                    <img src="/assets/img/recipes/{{cooking.fullRecipe.Ingredient1}}.png" class="img-flag" width="25px" height="25px" />{{cooking.fullRecipe.Ingredient1}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient2 != ''">
+                    <img src="/assets/img/recipes/{{cooking.fullRecipe.Ingredient2}}.png" class="img-flag" width="25px" height="25px" />{{cooking.fullRecipe.Ingredient2}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient3 != ''">
+                    <img src="/assets/img/recipes/{{cooking.fullRecipe.Ingredient3}}.png" class="img-flag" width="25px" height="25px" />{{cooking.fullRecipe.Ingredient3}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient4 != ''">
+                    <img src="/assets/img/recipes/{{cooking.fullRecipe.Ingredient4}}.png" class="img-flag" width="25px" height="25px" />{{cooking.fullRecipe.Ingredient4}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient5 != ''">
+                    <img src="/assets/img/recipes/{{cooking.fullRecipe.Ingredient5}}.png" class="img-flag" width="25px" height="25px" />{{cooking.fullRecipe.Ingredient5}}
+                </th>
+            </tr>
+            <tr>
+                <th style="vertical-align:middle;text-align:center">
+                    Quantity
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient1 != ''">
+                    {{cooking.fullRecipe.Quanitiy1}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient2 != ''">
+                    {{cooking.fullRecipe.Quanitiy2}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient3 != ''">
+                    {{cooking.fullRecipe.Quanitiy3}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient4 != ''">
+                    {{cooking.fullRecipe.Quanitiy4}}
+                </th>
+                <th style="vertical-align:middle;text-align:center" ng-show="cooking.fullRecipe.Ingredient5 != ''">
+                    {{cooking.fullRecipe.Quanitiy5}}
+                </th>
+            </tr>
+        </table>
+        <div class="progress" ng-show="cooking.progOk">
+            <div class="progress-bar" role="progressbar" height="auto" aria-valuenow="{{cooking.prog}}" aria-valuemin="0" aria-valuemax="100" style="width:{{cooking.prog}}%">
+            </div>
+        </div>
+        <div id="xpResult"></div>
+        <br>
+        <hr class="style14">
+        <br>
+        <div class="row margin">
+            <div class="col"><button ng-show="cooking.back || cooking.prog==100" style="float:right" class="form-control" ng-click="cooking.calculated=false">Back</button></div>
+        </div>
+    </div>
+</div>
+
+<div ng-show="cooking.qtyCalc">
+    <div>
+        <h3>Quantities Calculator: <i style="font-size:15px" ng-show="!cooking.okok">23 Credits</i> <br><i style="font-size:15px">ingredients <i class="fa fa-arrows-h"></i> recipe &emsp;&emsp; ingredients <i class="fa fa-arrows-h"></i> ingredients</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        <div class="row margin" style="margin:0 auto;width:90%">
+            <div class="col-xs-12 col-sm-12">
+                <select ng-disabled="cooking.disabled" class="recipes3" id="products" ng-model="cookData.product" style="margin:0 auto; width:100%">
+                    <option value=""></option>
+                    <option ng-repeat="x in cooking.products" value="{{ x.Recipe }}">{{ x.Recipe }}</option>
+                </select>
+            </div>
+            <div class="is-hidden" id="qtyCredit1" style="text-align:center;width:100%"><span>-23 Credits</span></div>
+        </div>
+        <br>
+        <div id="calc"></div>
+
+        
+    </div>
+</div>
+
+<div ng-show="cooking.xpCalc">
+    <div ng-hide="cooking.calculated2">
+        <div ng-show="cooking.enabled">
+        <h3>Experience Calculator: <i style="font-size:15px" ng-show="!cooking.okok">7 Credits</i><br> <i style="font-size:15px"> Experience and levels gained with an amount of crafted product</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        <form class="register-form" id="experince" style="width:100%" ng-submit="cooking.preexperince(expData)" novalidate>
+            <div class="row margin" style="margin:0 auto;width:90%">
+                <div class="col-xs-12 col-sm-12">
+                    <select ng-disabled="cooking.disabled" class="chars2" name="char" id="chars2" ng-model="expData.char" style="margin:0 auto; width:100%">
+                        <option style="display:none" value=""></option>
+                        <option ng-repeat="x in cooking.chars" value="{{ x.name }}">{{ x.name+" : "+x.cookingLevel+" % of "+x.cookingRank }} </option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row margin" style="margin:0 auto;width:90%">
+                <div class="col-xs-12 col-sm-12">
+                    <select ng-disabled="cooking.disabled" class="recipes2" id="products" ng-model="expData.product" style="margin:0 auto; width:100%">
+                        <option value=""></option>
+                        <option ng-repeat="x in cooking.products" value="{{ x.Recipe }}">{{ x.Recipe }}</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row margin" style="margin:0 auto;width:89%">
+                <input  class="form-control" type="number" min="0" ng-model="expData.amount" placeholder='How many time you will cook the recipe'>
+            </div>
+            <br>
+            <hr class="style14">
+            <br>
+            <h4>Life Exp modifiers:</h4>
+                <div style="width:100%;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;">&emsp;<i class="fa fa-exclamation-triangle"></i>&emsp;Life Exp bonuses from : Valuepack, Guild buff and pets are adjusted in your dashboard &emsp;&emsp;</div><div style="width:100%;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;text-align:right"><button class="form-control btn" ng-click="location.path('/profile')"><i class="fa fa-edit"></i> Cick Here To Edit Account Exp Modifiers</button></div><br>
+                
+            <table class="table table-responsive" style="width:100%">
+                <tr>
+                    <td>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                <span><img width="25px" height="25px" src="assets/img/villa.png"> Villa Buff <span ng-show="!cooking.villa2">not</span> activated : +<span ng-show="cooking.villa2">1</span>0%</span><br ng-show="cooking.mobile">&emsp;&emsp;
+                                <br>
+                                <br>
+                                <input ng-click="cooking.villa2F('yes')" ng-disabled="cooking.disabled" ng-model="expData.villa2" ng-value="'10'" id="villa2-on" class="toggle toggle-left" name="villa2" value="10" type="radio">
+                                <label ng-click="cooking.villa2F('yes')" for="villa2-on" class="btn1">Yes</label>
+                                <input ng-click="cooking.villa2F('no')" ng-disabled="cooking.disabled" ng-model="expData.villa2" ng-value="'0'" id="villa2-off" class="toggle toggle-right" name="villa2" value="0" type="radio" ng-checked="true" ng-init="expData.villa2='0'">
+                                <label ng-click="cooking.villa2F('no')" for="villa2-off" class="btn1">No</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                <span><img width="25px" height="25px" src="assets/img/lifescroll.png">[Loyalties] Extra Life EXP Scroll is <span ng-show="!cooking.scroll2">not</span> activated : +<span ng-show="cooking.scroll2">1</span>0%</span><br ng-show="cooking.mobile">&emsp;&emsp;
+                                <br>
+                                <br>
+                                <input ng-click="cooking.scroll2F('yes')" ng-disabled="cooking.disabled" ng-model="expData.scroll2" ng-value="'10'" id="scroll2-on" class="toggle toggle-left" name="scroll2" value="10" type="radio">
+                                <label ng-click="cooking.scroll2F('yes')" for="scroll2-on" class="btn1">Yes</label>
+                                <input ng-click="cooking.scroll2F('no')" ng-disabled="cooking.disabled" ng-model="expData.scroll2" ng-value="'0'" id="scroll2-off" class="toggle toggle-right" name="scroll2" value="0" type="radio"  ng-checked="true" ng-init="expData.scroll2='0'">
+                                <label ng-click="cooking.scroll2F('no')" for="scroll2-off" class="btn1">No</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                <span><img width="25px" height="25px" src="assets/img/swift.png"> Perfume of Swiftness <span ng-show="!cooking.swift2">not</span> activated : +<span ng-show="cooking.swift2">1</span>0%</span><br ng-show="cooking.mobile">&emsp;&emsp;
+                                <br>
+                                <br>
+                                <input ng-click="cooking.swift2F('yes')" ng-disabled="cooking.disabled" ng-model="expData.swift2" ng-value="'10'" id="swift2-on" class="toggle toggle-left" name="swift2" value="10" type="radio">
+                                <label ng-click="cooking.swift2F('yes')" for="swift2-on" class="btn1">Yes</label>
+                                <input ng-click="cooking.swift2F('no')" ng-disabled="cooking.disabled" ng-model="expData.swift2" ng-value="'0'" id="swift2-off" class="toggle toggle-right" name="swift2" value="0" type="radio" ng-checked="true" ng-init="expData.swift2='0'">
+                                <label ng-click="cooking.swift2F('no')" for="swift2-off" class="btn1">No</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                <div class="options">
+                                    <span style="float:left"><span ng-show="cooking.pearl2=='0'">No </span>Pearl costume weared: {{ cooking.pearl2 }}%</span><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.pearl2F('0')" ng-disabled="cooking.disabled" value="0" ng-model="expData.pearl2" name="pearl2" type="radio" id="nop2" ng-init="expData.pearl2='0'" ng-check="true">
+                                    <label for="nop2">None</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.pearl2F('10')" ng-disabled="cooking.disabled" value="10" ng-model="expData.pearl2" name="pearl2" type="radio" id="tik2">
+                                    <label for="tik2"><img width="25px" height="25px" src="assets/img/cstm1.png">[Costume] Cook's Clothes</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.pearl2F('15')" ng-disabled="cooking.disabled" value="15" ng-model="expData.pearl2" name="pearl2" type="radio" id="prl2">
+                                    <label for="prl2"><img width="25px" height="25px" src="assets/img/cstm2.png">Canape Clothes</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br> </td>
+                    </tr>
+                    <tr>
+                    <td>
+                        <br>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                <div class="options">
+                                    <span style="float:left"><span ng-show="cooking.gmb2=='0'">No </span>GM's Blessing activated: {{ cooking.gmb2 }}%</span><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.gmb2F('0')" ng-disabled="cooking.disabled" value="0" ng-model="expData.gmb2" name="gmb2" type="radio" id="walo2" ng-init="expData.gmb2='0'" ng-check="true">
+                                    <label for="walo2">None</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.gmb2F('10')" ng-disabled="cooking.disabled" value="10" ng-model="expData.gmb2" name="gmb2" type="radio" id="one2">
+                                    <label for="one2"><img width="25px" height="25px" src="assets/img/gmb1.png">/<img width="25px" height="25px" src="assets/img/gmb2.png">GM's Blessing 1 OR 2</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.gmb2F('15')" ng-disabled="cooking.disabled" value="15" ng-model="expData.gmb2" name="gmb2" type="radio" id="three2">
+                                    <label for="three2"><img width="25px" height="25px" src="assets/img/gmb3.png">GM's Blessing 3</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="options">
+                                        <span style="float:left"><span ng-show="cooking.elix2=='0'">No </span> Elixir activated: {{cooking.elix2}}%</span><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.elixir2F('0')" ng-disabled="cooking.disabled" value="0" ng-model="expData.elixir2" name="elixir2" type="radio" id="nada2" ng-init="expData.elixir2='0'" ng-check="true">
+                                        <label for="nada2">None</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.elixir2F('10')" ng-disabled="cooking.disabled" value="10" ng-model="expData.elixir2" name="elixir2" type="radio" id="uno2">
+                                        <label for="uno2"><img width="25px" height="25px" src="assets/img/t.png">Elixir2 of Time</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.elixir2F('15')" ng-disabled="cooking.disabled" value="15" ng-model="expData.elixir2" name="elixir2" type="radio" id="dos2">
+                                        <label for="dos2"><img width="25px" height="25px" src="assets/img/ft.png">/<img width="25px" height="25px" src="assets/img/tt.png">Elixir of Flowing Time OR Time-Training Elixir</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br>
+                            <div class="row margin" style="margin:0 auto;width:90%">
+                                <div class="col-xs-12 col-sm-12">
+                                    <div class="options">
+                                        <span style="float:left"><span ng-show="cooking.fd2=='0'">No </span> Food activated: {{cooking.fd2}}%</span><br ng-show="cooking.mobile">  
+                                        <input ng-click="cooking.food2F('0')" ng-disabled="cooking.disabled" value="0" ng-model="expData.food2" name="food2" type="radio" id="nfd2" ng-init="expData.food2='0'" ng-check="true">
+                                        <label for="nfd2">None</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.food2F('5')" ng-disabled="cooking.disabled" value="5" ng-model="expData.food2" name="food2" type="radio" id="asd2">
+                                        <label for="asd2"><img width="25px" height="25px" src="assets/img/asd.png">Assorted Side Dishes</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.food2F('8')" ng-disabled="cooking.disabled" value="8" ng-model="expData.food2" name="food2" type="radio" id="st2">
+                                        <label for="st2"><img width="25px" height="25px" src="assets/img/st.png">Sute Tea</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.food2F('10')" ng-disabled="cooking.disabled" value="10" ng-model="expData.food2" name="food2" type="radio" id="wms2">
+                                        <label for="wms2"><img width="25px" height="25px" src="assets/img/wms.png">Whale Meat Salad</label><br ng-show="cooking.mobile">
+                                        <input ng-click="cooking.food2F('15')" ng-disabled="cooking.disabled" value="15" ng-model="expData.food2" name="food2" type="radio" id="fwms2">
+                                        <label for="fwms2"><img width="25px" height="25px" src="assets/img/fwms.png">Fresh Whale Meat Salad</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <div class="row margin" style="margin:0 auto;width:90%">
+                    <div class="col-xs-12 col-sm-12">
+                        <select ng-disabled="cooking.disabled" class="others2" id="others2" ng-model="expData.others2" style="margin:0 auto; width:100%">
+                            <option value=""></option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option><option value="60">60</option><option value="61">61</option><option value="62">62</option><option value="63">63</option><option value="64">64</option><option value="65">65</option><option value="66">66</option><option value="67">67</option><option value="68">68</option><option value="69">69</option><option value="70">70</option><option value="71">71</option><option value="72">72</option><option value="73">73</option><option value="74">74</option><option value="75">75</option><option value="76">76</option><option value="77">77</option><option value="78">78</option><option value="79">79</option><option value="80">80</option><option value="81">81</option><option value="82">82</option><option value="83">83</option><option value="84">84</option><option value="85">85</option><option value="86">86</option><option value="87">87</option><option value="88">88</option><option value="89">89</option><option value="90">90</option><option value="91">91</option><option value="92">92</option><option value="93">93</option><option value="94">94</option><option value="95">95</option><option value="96">96</option><option value="97">97</option><option value="98">98</option><option value="99">99</option><option value="100">100</option>
+                        </select>
+                    </div>
+                </div>
+                <br>    
+                <hr class="style14">
+                <br>    
+            <div style="width:80%;margin:0 auto">
+                <button class="form-control btn" ng-disabled="cooking.disabled" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit"><span ng-hide="cooking.loading" class="ng-scope">Calculate</span><span ng-show="cooking.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>                
+            </div>
+            <div class="is-hidden" id="qtyCredit2" style="text-align:center;width:100%"><span>-7 Credits</span></div>
+        </form>
+
+        <div id="calc"></div>        
+        </div>
+        <div class="row margin" ng-show="!cooking.enabled">
+            <button ng-click="location.path('/perso')" ng-disabled="dashboard.disabled" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto">ADD CHARACTER(s) WHO WILL COOK</button>
+        </div>
+    </div>
+    <div ng-show="cooking.calculated2">
+        <h3>Experience Calculator: <br> <i style="font-size:15px"> Experience and levels gained with an amount of crafted product</i></h3>
+        <hr class="style14">
+        <br>
+        <h4>with the following settings:</h4>
+        <br>
+        <table class="table table-stripped table-responsive">
+            <tr>
+                <th style="vertical-align:middle;text-align:center">Character name</th>
+                <th style="vertical-align:middle;text-align:center">Cooking Rank</th>
+                <th style="vertical-align:middle;text-align:center">Cooking Rank Level</th>
+                <th style="vertical-align:middle;text-align:center">Recipe</th>
+                <th style="vertical-align:middle;text-align:center">Amount</th>
+                <th style="vertical-align:middle;text-align:center">Life Exp Bonus</th>
+            </tr>
+            <tr>
+                <th style="vertical-align:middle;text-align:center">{{cooking.name2}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.rank2}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.ranklevel2}}%</th>
+                <th style="vertical-align:middle;text-align:center"><img src="/assets/img/recipes/{{cooking.recipe2}}.png" class="img-flag" width="25px" height="25px" />&emsp;{{cooking.recipe2}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.amount}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.bonus2}}%</th>
+            </tr>
+        </table>
+        <br>
+         <hr class="style14">
+        <br>
+        <h3>You have the following Results</h3><br>
+        <table class="table table-stripped table-responsive" ng-show="cooking.expCant">
+            <tr>
+                <th style="vertical-align:middle;text-align:center">Total experience gained</th>
+                <th style="vertical-align:middle;text-align:center">Reached rank</th>
+                <th style="vertical-align:middle;text-align:center">percentage of the rank</th>
+            </tr>
+            <tr>
+                <th style="vertical-align:middle;text-align:center">{{cooking.tot_xp}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.rnk}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.prctRnk}}%</th>
+            </tr>
+        </table>
+        <br>
+        <div class="row margin">
+            <div class="col"><button  style="float:right" class="form-control" ng-click="cooking.calculated2=false">Back</button></div>
+            <div class="col" ng-show="cooking.expCant"><button ng-show="cooking.calculated2" style="float:right" class="form-control" ng-click="cooking.update(cooking.name2,cooking.rnk,cooking.prctRnk)">Update character's cooking level </button></div>
+        </div>        
+    </div>   
+</div>
+
+<div ng-show="cooking.timeCalc">
+    <div ng-hide="cooking.calculated3">
+        <h3>Time Calculator: <i style="font-size:15px">Premium only</i> <br> <i style="font-size:15px"> Time to go AFK</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        <form class="register-form" id="time" style="width:100%" ng-submit="cooking.pretime(timeData)" novalidate>
+            <div class="row margin" style="margin:0 auto;width:89%">
+                <input  class="form-control" type="number" min="0" ng-model="timeData.amount" placeholder='How many time you will cook the recipe'>
+            </div>
+            <br>
+            <hr class="style14">
+            <br>
+            <h4>Cooking time modifiers:</h4>
+            <br>           
+            <table class="table table-responsive" style="width:100%">
+                <tr>
+                    <td>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12" style="  margin:0 auto;">
+                                <span><img width="25px" height="25px" src="assets/img/cstm2.png"> Pearl Costume <span ng-show="!cooking.checkcanape0()">not</span> weared : <span ng-show="cooking.checkcanape0()">-2 sec</span></span><br ng-show="cooking.mobile">&emsp;&emsp;
+                                <br>
+                                <br>
+                                <input ng-click="cooking.canapeF('yes')" ng-disabled="cooking.disabled" ng-model="timeData.canape" ng-value="-2" id="canape-on" class="toggle toggle-left" name="canape" value="-2" type="radio" ng-checked="cooking.checkcanape0()" ng-init="timeData.canape=cooking.cnp">
+                                <label ng-click="cooking.canapeF('yes')" for="canape-on" class="btn1">Yes</label>
+                                <input ng-click="cooking.canapeF('no')" ng-disabled="cooking.disabled" ng-model="timeData.canape" ng-value="'0'" id="canape-off" class="toggle toggle-right" name="canape" value="0" type="radio" ng-checked="cooking.checkcanape1()">
+                                <label ng-click="cooking.canapeF('no')" for="canape-off" class="btn1">No</label>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <br>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="options">
+                                    <span style="float:left"><span ng-show="cooking.fd3=='0'">No </span> Food activated:<span ng-hide="cooking.fd3=='0'"> {{cooking.fd3}} sec</span></span>
+                                    <br>  <br>  
+
+                                    <input ng-click="cooking.food3F('0')" ng-disabled="cooking.disabled" value="0" ng-model="timeData.food3" name="food3" type="radio" id="nfd4" ng-checked="cooking.checkfd30()" ng-init="timeData.food3=cooking.fd3">
+                                    <label for="nfd4">None</label>
+                                    <br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.food3F('-0.3')" ng-disabled="cooking.disabled" value="-0.3" ng-model="timeData.food3" name="food3" type="radio" id="teffb" ng-checked="cooking.checkfd31()">
+                                    <label for="teffb"><img width="25px" height="25px" src="assets/img/teffb.png">Teff Bread</label>
+                                    <br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.food3F('-0.5')" ng-disabled="cooking.disabled" value="-0.5" ng-model="timeData.food3" name="food3" type="radio" id="teffs" ng-checked="cooking.checkfd32()">
+                                    <label for="teffs"><img width="25px" height="25px" src="assets/img/teffs.png">Teff Sandwich</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="options">
+                                <span style="float:left">Silver Embroidered Cook's Clothes:<span ng-hide="cooking.ck=='0'"> {{cooking.ck}} sec</span></span><br><br> 
+
+                                <input ng-click="cooking.ckclothesF('0')" ng-disabled="cooking.disabled" value="0" ng-model="timeData.cookingclothes" name="ck" type="radio" id="cknone"  ng-init="timeData.cookingclothes=cooking.ck" ng-checked="cooking.checkck0()">
+                                <label for="cknone">none</label><br ng-show="cooking.mobile">
+
+
+                                <input ng-click="cooking.ckclothesF('-1')" ng-disabled="cooking.disabled" value="-1" ng-model="timeData.cookingclothes" name="ck" type="radio" id="ck0" ng-checked="cooking.ck == '-1'" ng-checked="cooking.checkck1()">
+                                <label for="ck0"><img width="35px" height="35px" src="assets/img/clothes/c0.png">+0</label><br ng-show="cooking.mobile">
+
+
+                                <input ng-click="cooking.ckclothesF('-2')" ng-disabled="cooking.disabled" value="-2" ng-model="timeData.cookingclothes" name="ck" type="radio" id="ck1" ng-checked="cooking.ck == '-2'" ng-checked="cooking.checkck2()">
+                                <label for="ck1"><img width="35px" height="35px" src="assets/img/clothes/c1.png">+1</label><br ng-show="cooking.mobile">
+
+
+                                <input ng-click="cooking.ckclothesF('-3')" ng-disabled="cooking.disabled" value="-3" ng-model="timeData.cookingclothes" name="ck" type="radio" id="ck2" ng-checked="cooking.ck == '-3'" ng-checked="cooking.checkck3()">
+                                <label for="ck2"><img width="35px" height="35px" src="assets/img/clothes/c2.png">+2</label><br ng-show="cooking.mobile">
+
+
+                                <input ng-click="cooking.ckclothesF('-4')" ng-disabled="cooking.disabled" value="-4" ng-model="timeData.cookingclothes" name="ck" type="radio" id="ck3" ng-checked="cooking.ck == '-4'" ng-checked="cooking.checkck4()">
+                                <label for="ck3"><img width="35px" height="35px" src="assets/img/clothes/c3.png">+3</label><br ng-show="cooking.mobile">
+
+
+                                <input ng-click="cooking.ckclothesF('-5')" ng-disabled="cooking.disabled" value="-5" ng-model="timeData.cookingclothes" name="ck" type="radio" id="ck4" ng-checked="cooking.ck == '-5'" ng-checked="cooking.checkck5()">
+                                <label for="ck4"><img width="35px" height="35px" src="assets/img/clothes/c4.png">+4</label><br ng-show="cooking.mobile">
+
+
+                                <input ng-click="cooking.ckclothesF('-7')" ng-disabled="cooking.disabled" value="-7" ng-model="timeData.cookingclothes" name="ck" type="radio" id="ck5" ng-checked="cooking.ck == '-7'" ng-checked="cooking.checkck6()">
+                                <label for="ck5"><img width="35px" height="35px" src="assets/img/clothes/c5.png">+5</label>
+                            </div>
+                            </div>
+                        </div>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="options">
+                                    <span style="float:left"><span ng-show="cooking.as=='0'">No </span> Alchemy/Spirit stone activated:<span ng-hide="cooking.as=='0.0'"> {{cooking.as2}} sec</span></span><br><br> 
+
+                                    <input ng-check="cooking.checkas0()" ng-click="cooking.asF('0')" ng-disabled="cooking.disabled" value="0" ng-model="timeData.as" name="as" type="radio" id="nfd5" ng-init="timeData.as=cooking.as">
+                                    <label for="nfd5">None</label>
+                                    <br ng-show="cooking.mobile">                                    
+
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas1()" ng-click="cooking.asF('-0.5')" ng-disabled="cooking.disabled" value="-0.5" ng-model="timeData.as" name="as" type="radio" id="imprfct">
+                                    <label for="imprfct"><img width="25px" height="25px" src="assets/img/a_stone/Imperfect.png">Imperfect</label>
+                                    <br ng-show="cooking.mobile">
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas2()" ng-click="cooking.asF('-0.7')" ng-disabled="cooking.disabled" value="-0.7" ng-model="timeData.as" name="as" type="radio" id="rou">
+                                    <label for="rou"><img width="25px" height="25px" src="assets/img/a_stone/rough.png">Rough</label>
+                                    <br ng-show="cooking.mobile">
+
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas3()" ng-click="cooking.asF('-0.9')" ng-disabled="cooking.disabled" value="-0.9" ng-model="timeData.as" name="as" type="radio" id="pol">
+                                    <label for="pol"><img width="25px" height="25px" src="assets/img/a_stone/Polished.png">Polished</label>
+                                    <br ng-show="cooking.mobile">
+
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas4()" ng-click="cooking.asF('-1.10')" ng-disabled="cooking.disabled" value="-1.10" ng-model="timeData.as" name="as" type="radio" id="strd">
+                                    <label for="strd"><img width="25px" height="25px" src="assets/img/a_stone/Sturdy.png">Sturdy</label>
+                                    <br ng-show="cooking.mobile">
+
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas5()" ng-click="cooking.asF('-1.1')" ng-disabled="cooking.disabled" value="-1.1" ng-model="timeData.as" name="as" type="radio" id="spirit">
+                                    <label for="spirit"><img width="25px" height="25px" src="assets/img/a_stone/spirit.png">Spirit</label>
+                                    <br ng-show="cooking.mobile">
+
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas6()" ng-click="cooking.asF('-1.4')" ng-disabled="cooking.disabled" value="-1.4" ng-model="timeData.as" name="as" type="radio" id="Sharp">
+                                    <label for="Sharp"><img width="25px" height="25px" src="assets/img/a_stone/Sharp.png">Sharp</label>
+                                    <br ng-show="cooking.mobile">
+
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas7()" ng-click="cooking.asF('-1.7')" ng-disabled="cooking.disabled" value="-1.7" ng-model="timeData.as" name="as" type="radio" id="Resplendent">
+                                    <label for="Resplendent"><img width="25px" height="25px" src="assets/img/a_stone/Resplendent.png">Resplendent</label><br ng-show="cooking.mobile">
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas8()" ng-click="cooking.asF('-2')" ng-disabled="cooking.disabled" value="-2" ng-model="timeData.as" name="as" type="radio" id="Splendid">
+                                    <label for="Splendid"><img width="25px" height="25px" src="assets/img/a_stone/Splendid.png">Splendid</label><br ng-show="cooking.mobile">
+                                    <!--**********************-->
+                                    <input ng-check="cooking.checkas9()" ng-click="cooking.asF('-2.5')" ng-disabled="cooking.disabled" value="-2.5" ng-model="timeData.as" name="as" type="radio" id="Shining">
+                                    <label for="Shining"><img width="25px" height="25px" src="assets/img/a_stone/Shining.png">Shining</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                        <div class="row margin" style="margin:0 auto;width:90%">
+                            <div class="col-xs-12 col-sm-12">
+                                <div class="options">
+                                    <span style="float:left">Cooking utensil used:<span ng-hide="cooking.cu=='0' || cooking.cu=='-0'"> {{cooking.cu}} sec</span></span><br><br>                                      
+                                    <input ng-click="cooking.cuF('-0')" ng-disabled="cooking.disabled" value="-0" ng-model="timeData.cu" name="cu" type="radio" id="basic" ng-init="timeData.cu=cooking.cu" ng-check="cooking.checkcu0()">
+                                    <label for="basic"><img width="25px" height="25px" src="assets/img/cookUten/basic.png">Basic</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.cuF('0')" ng-disabled="cooking.disabled" value="0" ng-model="timeData.cu" name="cu" type="radio" id="inter" ng-check="cooking.checkcu1()">
+                                    <label for="inter"><img width="25px" height="25px" src="assets/img/cookUten/interm.png">Intermediate</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.cuF('-1')" ng-disabled="cooking.disabled" value="-1" ng-model="timeData.cu" name="cu" type="radio" id="advaa" ng-check="cooking.checkcu2()">
+                                    <label for="advaa"><img width="25px" height="25px" src="assets/img/cookUten/advenced.png">Advanced</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.cuF('+5')" ng-disabled="cooking.disabled" value="+5" ng-model="timeData.cu" name="cu" type="radio" id="balenos" ng-check="cooking.checkcu3()"> 
+                                    <label for="balenos"><img width="25px" height="25px" src="assets/img/cookUten/balenos.png">Balenos Traditional</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.cuF('+6')" ng-disabled="cooking.disabled" value="+6" ng-model="timeData.cu" name="cu" type="radio" id="serendia" ng-check="cooking.checkcu4()">
+                                    <label for="serendia"><img width="25px" height="25px" src="assets/img/cookUten/serendia.png">Serendia Traditional</label><br ng-show="cooking.mobile">
+
+                                    <input ng-click="cooking.cuF('+7')" ng-disabled="cooking.disabled" value="+7" ng-model="timeData.cu" name="cu" type="radio" id="calpheon" ng-check="cooking.checkcu5()">
+                                    <label for="calpheon"><img width="25px" height="25px" src="assets/img/cookUten/calpheon.png">Calpheon Traditional</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+                <br>    
+                <hr class="style14">
+                <br>    
+            <div style="width:80%;margin:0 auto">
+                <button class="form-control btn" ng-disabled="cooking.disabled" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit"><span ng-hide="cooking.loading" class="ng-scope">Launch</span><span ng-show="cooking.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>                
+            </div>
+            <div class="is-hidden" id="qtyCredit4" style="text-align:center;width:100%"><span>-23 Credits</span></div>
+        </form>
+    </div>
+    <div ng-show="cooking.calculated3">
+        <h3>Time Calculator: <br> <i style="font-size:15px"> Time to go AFK</i></h3>
+        <hr class="style14">
+        <br>
+        <h4>with the following settings:</h4>
+        <br>
+        <table class="table table-stripped table-responsive">
+            <tr>
+                <th style="vertical-align:middle;text-align:center">Products</th>
+                <th style="vertical-align:middle;text-align:center">Time Reduced</th>
+                <th style="vertical-align:middle;text-align:center">Time for 1 production</th>
+            </tr>
+            <tr>
+                <th style="vertical-align:middle;text-align:center">{{cooking.amount}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.timereduced}} sec</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.ctime}} sec</th>
+            </tr>
+        </table>
+        <br>
+         <hr class="style14">
+        <br>
+        <div ng-show="true">
+        <h3>You have the following Results</h3><br>
+        <div style="width:100%;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;"><i class="fa fa-exclamation-triangle"></i>&emsp;500 ms (0.5 sec): In Game average latency between each cooked recipe is added to the formula<br>&emsp;<i>Your IG latency may vary (0.5sec is an average)</i></div><br>
+        <table class="table table-stripped table-responsive">
+            <tr>
+                <th style="vertical-align:middle;text-align:center"><i class="fa fa-clock-o"></i>&emsp;Session's total time</th>
+                <th style="vertical-align:middle;text-align:center"><i class="fa fa-calendar-check-o"></i>&emsp;Session ends:</th>
+                <th style="vertical-align:middle;text-align:center"><img width="20px" height="20px" src="assets/img/a_stone/Imperfect.png">&emsp;Alchemy stone durability needed</th>
+                <th style="vertical-align:middle;text-align:center"><img width="20px" height="20px" src="assets/img/cookUten/basic.png">&emsp;Cooking utensil needed</th>
+            </tr>
+            <tr>
+                <th style="vertical-align:middle;text-align:center">{{cooking.timeck1}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.finishD1}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.asdura}}</th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.cuNeed}}</th>
+            </tr>
+        </table>
+        </div>
+        <br>
+        <div ng-show="cooking.live">
+        <h3>Live timer</h3><br>
+        <br>
+        <span>Session progress: {{(cooking.prog2).toFixed(2)}}%</span> 
+        <div class="progress" ng-show="cooking.progOk2">
+            <div class="progress-bar" role="progressbar" height="auto" aria-valuenow="{{cooking.prog2}}" aria-valuemin="0" aria-valuemax="{{cooking.max}}" style="width:{{cooking.prog2}}%">
+            </div>
+        </div>
+        <br>
+        <table class="table table-stripped table-responsive">
+            <tr>
+                <th style="vertical-align:middle;text-align:center">Remaining Products</th>
+                <th style="vertical-align:middle;text-align:center">Session end in:</th>
+            </tr>
+            <tr>
+                <th style="vertical-align:middle;text-align:center">
+                    {{cooking.amount2}}<br>
+                    <div class="progress" ng-show="cooking.progOk3" style="width:80%;margin:0 auto">
+                        <div class="bar" height="auto" style="width:{{cooking.prog3}}%;background-color: #929292;">
+                        </div>
+                    </div>
+                </th>
+                <th style="vertical-align:middle;text-align:center">{{cooking.timeck}}</th>
+            </tr>
+        </table>
+        </div>
+        <br>
+        <div class="row margin">
+            <div class="col"><button ng-disabled="cooking.disabledt" ng-show="cooking.calculated3" class="form-control" ng-click="cooking.calculated3=false">Back</button></div>
+            <div class="col"><button class="form-control" ng-click="cooking.stopTime()">Stop</button></div>
+        </div>     
+    </div>    
+</div>
+
+<div ng-show="cooking.turnCalc">
+    <div>
+        <h3>Byproducts Calculator: <i style="font-size:15px" ng-show="!cooking.okok">11 Credits</i><br> <i style="font-size:15px"> Average Byproducts gained</i></h3>
+        <hr class="style14">
+        <br>
+        <br>
+        
+        <form class="register-form" id="time" style="width:100%" ng-submit="cooking.preturn(turnData)" novalidate>
+            <div class="row margin" style="margin:0 auto;width:89%">
+                <input  class="form-control" type="number" min="0" ng-model="turnData.amount" placeholder='How many time you will cook the recipe'>
+            </div>
+                <br>    
+            <div style="width:80%;margin:0 auto">
+                <button class="form-control btn" ng-disabled="cooking.disabled" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit"><span ng-hide="cooking.loading" class="ng-scope">Calculate</span><span ng-show="cooking.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>                
+            </div>
+            <div class="is-hidden" id="qtyCredit5" style="text-align:center;width:100%"><span>-11 Credits</span></div>
+        </form>
+    </div>
+    
+    <div ng-show="cooking.calculated4">
+        <br><hr class="style14"><br>
+        <div style="width:100%;background-color: rgba(0, 0, 0, .15);padding: 9.5px;border: none;"><i class="fa fa-exclamation-triangle"></i>&emsp;These results are based on our tests "20% is the maximum margin of error" </div><br>
+        <h4>Byproducts Results</h4>
+        <hr class="style14">
+        <br>
+        <table class="table table-stripped table-responsive">
+            <tr>
+                <th style="width:20%;vertical-align:top;text-align:center">Dish with More Ingredients<br><img src="assets/img/Dish with More Ingredients.png" width="30px" height="30px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.beerMin}}</td>
+                            <td>{{cooking.beerMax}}</td>
+                        </tr>
+                    </table>
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">Dish with Weird Texture<br><img src="assets/img/Dish with Weird Texture.png" width="30px" height="30px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.silverMin}}</td>
+                            <td>{{cooking.silverMax}}</td>
+                        </tr>
+                    </table>
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">Taken Out Food<br><img src="assets/img/Taken Out Food.png" width="30px" height="30px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.xpMin}}</td>
+                            <td>{{cooking.xpMax}}</td>
+                        </tr>
+                    </table>
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">Strongly Seasoned Dish<br><img src="assets/img/Strongly Seasoned Dish.png" width="30px" height="30px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.milkMin}}</td>
+                            <td>{{cooking.milkMax}}</td>
+                        </tr>
+                    </table>
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">Dish with Poorly Prepared Ingredients<br><img src="assets/img/Dish with Poorly Prepared Ingredients.png" width="30px" height="30px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.cpMin}}</td>
+                            <td>{{cooking.cpMax}}</td>
+                        </tr>
+                    </table>
+                </th>
+            </tr>           
+        </table>
+        <br>
+        <h4>Exchange items</h4>
+        <hr class="style14">
+        <br>
+        <table class="table table-stripped table-responsive">            
+            <tr>
+                <th style="width:20%;vertical-align:top;text-align:center">
+                    Beer<br>
+                    <img src="assets/img/beer.png" width="25px" height="25px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.beermin}}</td>
+                            <td>{{cooking.beermax}}</td>
+                        </tr>
+                    </table>
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">
+                    Silver<br>
+                    <img src="assets/img/silver.png" width="25px" height="25px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.silvermin}}</td>
+                            <td>{{cooking.silvermax}}</td>
+                        </tr>
+                    </table>
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">
+                    Cooking EXP<br>
+                    <img src="assets/img/skillExp.png" width="25px" height="25px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.xpmin}}</td>
+                            <td>{{cooking.xpmax}}</td>
+                        </tr>
+                    </table>
+                    <button ng-click="location.path('/converter')" class="form-control btn btn-s">EXP TO LEVEL</button>                
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">
+                    Milk<br>
+                    <img src="assets/img/milk.png" width="25px" height="25px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.milkmin}}</td>
+                            <td>{{cooking.milkmax}}</td>
+                        </tr>
+                    </table>
+                </th>
+                <th style="width:20%;vertical-align:top;text-align:center">
+                    Contribution Points EXP<br>
+                    <img src="assets/img/cp.png" width="25px" height="25px">
+                    <table style="width:100%">
+                        <tr>
+                            <td>{{cooking.cpmin}}</td>
+                            <td>{{cooking.cpmax}}</td>
+                        </tr>
+                    </table>
+                    <button ng-click="location.path('/converter')" class="form-control btn btn-s">EXP TO LEVEL</button>
+                </th>                
+            </tr>            
+        </table>
+        <div class="row margin">
+            <div class="col"><button  style="float:right" class="form-control" ng-click="cooking.calculated4=false">Clear</button></div>
+        </div>
+    </div>
+    <br>
+    <div class="codebox">
+        <dt style="height:22px; text-align: center;">            
+            <input type="button" value="Show Custom byproduct numbers" class="form-control btn" style="width:auto;" onclick="var spoiler = $(this).parents('.codebox').find('.contents').toggle('slow'); if ( this.value == 'Hide' ) { this.value = 'Show Custom byproduct numbers'; } else { this.value = 'Hide'; }; return false;">
+        </dt>
+        <br>
+        <div class="contents" name="spoiler" style="display: none;">
+            <table class="table table-stripped table-responsive">
+                <tr>
+                    <th style="width:20%;vertical-align:middle;text-align:center">Dish with More Ingredients<br>
+                        <table style="width:100%">
+                            <tr>
+                                
+                                <td style="width:50%">
+                                    <img src="assets/img/Dish with More Ingredients.png" width="30px" height="30px"><br><input type="number" ng-model="dwmi" ng-keyup="cooking.dwmif(dwmi)" min="2" class="form-control" placeholder="min 2" ></td>
+                                <td style="width:50%">
+                                    <img src="assets/img/beer.png" width="25px" height="25px"><br>
+                                    {{cooking.dwmi}}
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th style="width:20%;vertical-align:middle;text-align:center">Dish with Weird Texture<br>
+                        <table style="width:100%">
+                            <tr>
+                                <td style="width:50%">
+                                    <img src="assets/img/Dish with Weird Texture.png" width="30px" height="30px"><br>
+                                    <input type="number" min="5" class="form-control" placeholder="min 5" ng-keyup="cooking.dwwtf(dwwt)" ng-model="dwwt"></td>
+                                <td style="width:50%">
+                                    <img src="assets/img/silver.png" width="25px" height="25px"><br>
+                                    {{cooking.dwwt}}
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th style="width:20%;vertical-align:middle;text-align:center">Taken Out Food<br>
+                        <table style="width:100%">
+                            <tr>
+                                <td style="width:50%">
+                                    <img src="assets/img/Taken Out Food.png" width="30px" height="30px"><br><input type="number" min="1" class="form-control" ng-model="tof" ng-keyup="cooking.toff(tof)" placeholder="min 5"></td>
+                                <td style="width:50%">
+                                    <img src="assets/img/skillExp.png" width="25px" height="25px"><br>
+                                    {{cooking.tof}}
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th style="width:20%;vertical-align:middle;text-align:center">Strongly Seasoned Dish<br>
+                        <table style="width:100%">
+                            <tr>
+                                <td style="width:50%"><img src="assets/img/Strongly Seasoned Dish.png" width="30px" height="30px"><br><input type="number" min="3" ng-model="ssd" ng-keyup="cooking.ssdf(ssd)" class="form-control" placeholder="min 3"></td>
+                                <td style="width:50%">
+                                    <img src="assets/img/milk.png" width="25px" height="25px"><br>
+                                    {{cooking.ssd}}
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                    <th style="width:20%;vertical-align:middle;text-align:center">Dish with Poorly Prepared Ingredients<br>
+                        <table style="width:100%">
+                            <tr>
+                                <td style="width:50%">
+                                    <img src="assets/img/Dish with Poorly Prepared Ingredients.png" width="30px" height="30px"><br><input type="number" min="5" ng-model="dwppi" ng-keyup="cooking.dwppif(dwppi)" class="form-control" placeholder="min 5"></td>
+                                <td style="width:50%">
+                                    <img src="assets/img/cp.png" width="25px" height="25px"><br>
+                                    {{cooking.dwppi}}
+                                </td>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>           
+            </table>
+        </div>
+        </div>
+</div>
+<br>
+<br>
+<div class="row" style="padding: 0 30px 10px;">
+    <div class="show-hide-message" ng-show="cooking.success_msg">
+        <div class="text-info ng-binding">{{ cooking.success_msg }}</div>
+    </div>
+    <small class="show-hide-message" ng-show="cooking.err_msg">
+		<pre>{{ cooking.err_msg }}</pre>
+	</small>
+
+</div>

@@ -1,0 +1,1785 @@
+{
+   "Recipe": "Alchemy Stone",
+   "Level": "Skilled 1",
+   "Buff": "Chance to create alchemy stone of destruction, protection, or life",
+   "Quanitiy1": "9",
+   "Ingredient1": "Shining Powder",
+   "Quanitiy2": "6",
+   "Ingredient2": "Sinner's Blood",
+   "Quanitiy3": "10",
+   "Ingredient3": "Clear Liquid Reagent",
+   "Quanitiy4": "10",
+   "Ingredient4": "Pure Powder Reagent",
+   "Quanitiy5": "7",
+   "Ingredient5": "Powder Of Time"
+}
+{
+   "Recipe": "Antidote Elixir",
+   "Level": "Beginner 1",
+   "Buff": "Cures poison",
+   "Quanitiy1": "1",
+   "Ingredient1": "Pure Powder Reagent",
+   "Quanitiy2": "2",
+   "Ingredient2": "Farm Blood",
+   "Quanitiy3": "3",
+   "Ingredient3": "Olive Oil",
+   "Quanitiy4": "1",
+   "Ingredient4": "Wild Grass",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Clear Liquid Reagent",
+   "Level": "Beginner 1",
+   "Buff": "Alchemy ingredient",
+   "Quanitiy1": "1",
+   "Ingredient1": "Salt",
+   "Quanitiy2": "1",
+   "Ingredient2": "Sunrise Herb",
+   "Quanitiy3": "1",
+   "Ingredient3": "Wild Grass",
+   "Quanitiy4": "1",
+   "Ingredient4": "Purified Water",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Clown's Blood",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Spirit's Leaf",
+   "Quanitiy2": "1",
+   "Ingredient2": "Powder Of Darkness",
+   "Quanitiy3": "1",
+   "Ingredient3": "Clear Liquid Reagent",
+   "Quanitiy4": "2",
+   "Ingredient4": "Beast Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Defense Elixir",
+   "Level": "Apprentice 1",
+   "Buff": "All damage reduction +5 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clear Liquid Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "6",
+   "Ingredient3": "Ash Sap",
+   "Quanitiy4": "5",
+   "Ingredient4": "Farm Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Amity",
+   "Level": "Apprentice 1",
+   "Buff": "+20% amity for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Legendary Beast's Blood",
+   "Quanitiy2": "3",
+   "Ingredient2": "Black Stone Powder",
+   "Quanitiy3": "6",
+   "Ingredient3": "Ash Sap",
+   "Quanitiy4": "5",
+   "Ingredient4": "Fire Flake Flower",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Assassination",
+   "Level": "Skilled 1",
+   "Buff": "Back attack damage +50% for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Regeneration",
+   "Quanitiy2": "5",
+   "Ingredient2": "Pure Powder Reagent",
+   "Quanitiy3": "2",
+   "Ingredient3": "Trace Of Memory",
+   "Quanitiy4": "2",
+   "Ingredient4": "Red Tree Lump",
+   "Quanitiy5": "4",
+   "Ingredient5": "Amanita Mushroom"
+}
+{
+   "Recipe": "Elixir Of Burn Removal",
+   "Level": "Beginner 1",
+   "Buff": "Cures burning",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clear Liquid Reagent",
+   "Quanitiy2": "1",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "2",
+   "Ingredient3": "Fruit",
+   "Quanitiy4": "2",
+   "Ingredient4": "Wild Grass",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Carnage",
+   "Level": "Skilled 1",
+   "Buff": "Down attack damage +50% for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Corruption",
+   "Quanitiy2": "7",
+   "Ingredient2": "Pure Powder Reagent",
+   "Quanitiy3": "3",
+   "Ingredient3": "Trace Of The Earth",
+   "Quanitiy4": "2",
+   "Ingredient4": "Spirit's Leaf",
+   "Quanitiy5": "2",
+   "Ingredient5": "Tiger Mushroom"
+}
+{
+   "Recipe": "Elixir Of Concentration",
+   "Level": "Apprentice 1",
+   "Buff": "+8 accuracy for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clear Liquid Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Cloud Mushroom",
+   "Quanitiy3": "2",
+   "Ingredient3": "Wild Grass",
+   "Quanitiy4": "3",
+   "Ingredient4": "Monster Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Death",
+   "Level": "Skilled 1",
+   "Buff": "Extra damage +30 on critical hit for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Tranquility",
+   "Quanitiy2": "6",
+   "Ingredient2": "Clear Liquid Reagent",
+   "Quanitiy3": "2",
+   "Ingredient3": "Trace Of Death",
+   "Quanitiy4": "7",
+   "Ingredient4": "Ash Sap",
+   "Quanitiy5": "2",
+   "Ingredient5": "Ancient Mushroom"
+}
+{
+   "Recipe": "Elixir Of Deep Sea",
+   "Level": "Skilled 1",
+   "Buff": "All AP +10, +100 stamina, +100 max HP, back/down/air attack damage increase for 20 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of The Abyss",
+   "Quanitiy2": "2",
+   "Ingredient2": "Coral Crystal",
+   "Quanitiy3": "10",
+   "Ingredient3": "Clear Liquid Reagent",
+   "Quanitiy4": "10",
+   "Ingredient4": "Arrow Mushroom",
+   "Quanitiy5": "10",
+   "Ingredient5": "White Cedar Sap"
+}
+{
+   "Recipe": "Elixir Of Demihuman Hunt",
+   "Level": "Apprentice 1",
+   "Buff": "Damage vs demihuman +10 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Sinner's Blood",
+   "Quanitiy2": "3",
+   "Ingredient2": "Black Stone Powder",
+   "Quanitiy3": "4",
+   "Ingredient3": "Fir Sap",
+   "Quanitiy4": "4",
+   "Ingredient4": "Arrow Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Detection",
+   "Level": "Skilled 1",
+   "Buff": "Critical hit damage +50% for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Storms",
+   "Quanitiy2": "6",
+   "Ingredient2": "Pure Powder Reagent",
+   "Quanitiy3": "3",
+   "Ingredient3": "Trace Of Savagery",
+   "Quanitiy4": "2",
+   "Ingredient4": "Old Tree Bark",
+   "Quanitiy5": "3",
+   "Ingredient5": "Truffle Mushroom"
+}
+{
+   "Recipe": "Elixir Of Draining",
+   "Level": "Skilled 1",
+   "Buff": "HP steal +3 on critical hit for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Fortitude",
+   "Quanitiy2": "4",
+   "Ingredient2": "Clear Liquid Reagent",
+   "Quanitiy3": "2",
+   "Ingredient3": "Trace Of Forest",
+   "Quanitiy4": "4",
+   "Ingredient4": "Birch Sap",
+   "Quanitiy5": "3",
+   "Ingredient5": "Hump Mushroom"
+}
+{
+   "Recipe": "Elixir Of Endurance",
+   "Level": "Apprentice 1",
+   "Buff": "Max stamina +100 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Pure Powder Reagent",
+   "Quanitiy2": "2",
+   "Ingredient2": "Dwarf Mushroom",
+   "Quanitiy3": "5",
+   "Ingredient3": "Birch Sap",
+   "Quanitiy4": "4",
+   "Ingredient4": "Monster Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Energy",
+   "Level": "Apprentice 1",
+   "Buff": "MP recovery +10 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Pure Powder Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "4",
+   "Ingredient3": "Critter Blood",
+   "Quanitiy4": "2",
+   "Ingredient4": "MP Potion (Small)",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Frenzy",
+   "Level": "Skilled 1",
+   "Buff": "All DP -10, all AP +20 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Regeneration",
+   "Quanitiy2": "5",
+   "Ingredient2": "Clear Liquid Reagent",
+   "Quanitiy3": "3",
+   "Ingredient3": "Trace Of Battle",
+   "Quanitiy4": "5",
+   "Ingredient4": "Cedar Sap",
+   "Quanitiy5": "2",
+   "Ingredient5": "Ghost Mushroom"
+}
+{
+   "Recipe": "Elixir Of Fury",
+   "Level": "Apprentice 1",
+   "Buff": "All attack +10 for 5 min",
+   "Quanitiy1": "3",
+   "Ingredient1": "Purified Water",
+   "Quanitiy2": "1",
+   "Ingredient2": "Ash Sap",
+   "Quanitiy3": "4",
+   "Ingredient3": "Monster Blood",
+   "Quanitiy4": "4",
+   "Ingredient4": "Dwarf Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Hemostasis",
+   "Level": "Beginner 1",
+   "Buff": "Cures bleeding",
+   "Quanitiy1": "1",
+   "Ingredient1": "Pure Powder Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "1",
+   "Ingredient3": "Ash Sap",
+   "Quanitiy4": "1",
+   "Ingredient4": "Cloud Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Human Hunt",
+   "Level": "Apprentice 1",
+   "Buff": "Damage vs human +6 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clown's Blood",
+   "Quanitiy2": "3",
+   "Ingredient2": "Black Stone Powder",
+   "Quanitiy3": "5",
+   "Ingredient3": "Maple Sap",
+   "Quanitiy4": "5",
+   "Ingredient4": "Fortune Teller Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Life",
+   "Level": "Apprentice 1",
+   "Buff": "Max HP +100 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Pure Powder Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Silver Azalea",
+   "Quanitiy3": "5",
+   "Ingredient3": "Critter Blood",
+   "Quanitiy4": "3",
+   "Ingredient4": "HP Potion (Small)",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Mentality",
+   "Level": "Apprentice 1",
+   "Buff": "Max MP +100 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clear Liquid Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "5",
+   "Ingredient3": "Ash Sap",
+   "Quanitiy4": "3",
+   "Ingredient4": "MP Potion (Small)",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Penetration",
+   "Level": "Skilled 1",
+   "Buff": "Back attack extra damage +30 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Corruption",
+   "Quanitiy2": "6",
+   "Ingredient2": "Clear Liquid Reagent",
+   "Quanitiy3": "3",
+   "Ingredient3": "Trace Of Violence",
+   "Quanitiy4": "5",
+   "Ingredient4": "Pine Sap",
+   "Quanitiy5": "3",
+   "Ingredient5": "Bluffer Mushroom"
+}
+{
+   "Recipe": "Elixir Of Resistance",
+   "Level": "Apprentice 1",
+   "Buff": "Debuff resistance against monsters +10% for 5 min",
+   "Quanitiy1": "3",
+   "Ingredient1": "Purified Water",
+   "Quanitiy2": "1",
+   "Ingredient2": "Birch Sap",
+   "Quanitiy3": "7",
+   "Ingredient3": "Beast Blood",
+   "Quanitiy4": "3",
+   "Ingredient4": "Cloud Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Seal",
+   "Level": "Apprentice 1",
+   "Buff": "+10 sec underwater breathing for 5 min",
+   "Quanitiy1": "5",
+   "Ingredient1": "Purified Water",
+   "Quanitiy2": "4",
+   "Ingredient2": "Beast Blood",
+   "Quanitiy3": "1",
+   "Ingredient3": "Birch Sap",
+   "Quanitiy4": "3",
+   "Ingredient4": "Dwarf Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Shock",
+   "Level": "Skilled 1",
+   "Buff": "+2 critical hit chance for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clown's Blood",
+   "Quanitiy2": "3",
+   "Ingredient2": "Powder Of Time",
+   "Quanitiy3": "7",
+   "Ingredient3": "Cedar Sap",
+   "Quanitiy4": "5",
+   "Ingredient4": "Tiger Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Sky",
+   "Level": "Skilled 1",
+   "Buff": "Air attack damage +50% for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Tranquility",
+   "Quanitiy2": "6",
+   "Ingredient2": "Pure Powder Reagent",
+   "Quanitiy3": "4",
+   "Ingredient3": "Trace Of Ascension",
+   "Quanitiy4": "3",
+   "Ingredient4": "Bloody Tree Knot",
+   "Quanitiy5": "5",
+   "Ingredient5": "Emperor Mushroom"
+}
+{
+   "Recipe": "Elixir Of Spells",
+   "Level": "Apprentice 1",
+   "Buff": "+2 casting speed for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Tyrant's Blood",
+   "Quanitiy2": "2",
+   "Ingredient2": "Powder Of Darkness",
+   "Quanitiy3": "3",
+   "Ingredient3": "Maple Sap",
+   "Quanitiy4": "5",
+   "Ingredient4": "Fire Flake Flower",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Swiftness",
+   "Level": "Apprentice 1",
+   "Buff": "+2 movement speed for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Legendary Beast's Blood",
+   "Quanitiy2": "2",
+   "Ingredient2": "Powder Of Darkness",
+   "Quanitiy3": "5",
+   "Ingredient3": "Birch Sap",
+   "Quanitiy4": "5",
+   "Ingredient4": "Arrow Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Time",
+   "Level": "Apprentice 1",
+   "Buff": "+10% life EXP for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Wise Man's Blood",
+   "Quanitiy2": "2",
+   "Ingredient2": "Powder Of Time",
+   "Quanitiy3": "5",
+   "Ingredient3": "Maple Sap",
+   "Quanitiy4": "7",
+   "Ingredient4": "Fire Flake Flower",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Training",
+   "Level": "Apprentice 1",
+   "Buff": "+8% horse EXP for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Legendary Beast's Blood",
+   "Quanitiy2": "2",
+   "Ingredient2": "Powder Of Crevice",
+   "Quanitiy3": "5",
+   "Ingredient3": "Pine Sap",
+   "Quanitiy4": "7",
+   "Ingredient4": "Silver Azalea",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Will",
+   "Level": "Apprentice 1",
+   "Buff": "Damage from monsters -15% for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Pure Powder Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "6",
+   "Ingredient3": "Beast Blood",
+   "Quanitiy4": "4",
+   "Ingredient4": "Sunrise Herb",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Wind",
+   "Level": "Apprentice 1",
+   "Buff": "+2 attack speed for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Wise Man's Blood",
+   "Quanitiy2": "2",
+   "Ingredient2": "Powder Of Darkness",
+   "Quanitiy3": "5",
+   "Ingredient3": "Pine Sap",
+   "Quanitiy4": "5",
+   "Ingredient4": "Fortune Teller Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Elixir Of Wings",
+   "Level": "Apprentice 1",
+   "Buff": "Jump height increase for 5 min",
+   "Quanitiy1": "5",
+   "Ingredient1": "Purified Water",
+   "Quanitiy2": "4",
+   "Ingredient2": "Monster Blood",
+   "Quanitiy3": "1",
+   "Ingredient3": "Ash Sap",
+   "Quanitiy4": "2",
+   "Ingredient4": "Silver Azalea",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of Abundance",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of Abundance",
+   "Quanitiy2": "6",
+   "Ingredient2": "Birch Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Trace Of Ascension",
+   "Quanitiy4": "6",
+   "Ingredient4": "Cloud Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of Crimson Flame",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of Crimson Flame",
+   "Quanitiy2": "6",
+   "Ingredient2": "Ash Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Trace Of Ascension",
+   "Quanitiy4": "6",
+   "Ingredient4": "Dwarf Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of Destruction",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of Destruction",
+   "Quanitiy2": "6",
+   "Ingredient2": "Pine Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Powder Of Flame",
+   "Quanitiy4": "6",
+   "Ingredient4": "Silver Azalea",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of Enchantment",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of Enchantment",
+   "Quanitiy2": "6",
+   "Ingredient2": "Ash Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Powder Of Darkness",
+   "Quanitiy4": "6",
+   "Ingredient4": "Fire Flake Flower",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of Magic Power",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of Magic Power",
+   "Quanitiy2": "6",
+   "Ingredient2": "Birch Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Powder Of Darkness",
+   "Quanitiy4": "6",
+   "Ingredient4": "Dry Mane Grass",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of Nature",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of Nature",
+   "Quanitiy2": "6",
+   "Ingredient2": "Maple Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Trace Of The Earth",
+   "Quanitiy4": "6",
+   "Ingredient4": "Fortune Teller Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of Perfection",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of Perfection",
+   "Quanitiy2": "6",
+   "Ingredient2": "Maple Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Powder Of Flame",
+   "Quanitiy4": "6",
+   "Ingredient4": "Sunrise Herb",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Essence Of The Sun",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "2",
+   "Ingredient1": "Fruit Of The Sun",
+   "Quanitiy2": "6",
+   "Ingredient2": "Pine Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Trace Of The Earth",
+   "Quanitiy4": "6",
+   "Ingredient4": "Arrow Mushroom",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Exp Elixir",
+   "Level": "Apprentice 1",
+   "Buff": "+10% experience for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clown's Blood",
+   "Quanitiy2": "5",
+   "Ingredient2": "Pine Sap",
+   "Quanitiy3": "2",
+   "Ingredient3": "Powder Of Flame",
+   "Quanitiy4": "7",
+   "Ingredient4": "Dry Mane Grass",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Fisher's Elixir",
+   "Level": "Apprentice 1",
+   "Buff": "+2 fishing speed for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Wise Man's Blood",
+   "Quanitiy2": "2",
+   "Ingredient2": "Powder Of Flame",
+   "Quanitiy3": "3",
+   "Ingredient3": "Fir Sap",
+   "Quanitiy4": "6",
+   "Ingredient4": "Sunrise Herb",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Gem Polisher",
+   "Level": "Apprentice 1",
+   "Buff": "Used to make highest quality gemstones",
+   "Quanitiy1": "2",
+   "Ingredient1": "Trace Of Origin",
+   "Quanitiy2": "1",
+   "Ingredient2": "Pure Powder Reagent",
+   "Quanitiy3": "4",
+   "Ingredient3": "Processed Coal",
+   "Quanitiy4": "6",
+   "Ingredient4": "Purified Water",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Golden Hand Elixir",
+   "Level": "Skilled 1",
+   "Buff": "+2 luck for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Storms",
+   "Quanitiy2": "4",
+   "Ingredient2": "Clear Liquid Reagent",
+   "Quanitiy3": "3",
+   "Ingredient3": "Trace Of Hunting",
+   "Quanitiy4": "6",
+   "Ingredient4": "Fir Sap",
+   "Quanitiy5": "4",
+   "Ingredient5": "Fog Mushroom"
+}
+{
+   "Recipe": "Grim Reaper's Elixir",
+   "Level": "Skilled 1",
+   "Buff": "HP steal +1 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Oil Of Fortitude",
+   "Quanitiy2": "4",
+   "Ingredient2": "Pure Powder Reagent",
+   "Quanitiy3": "4",
+   "Ingredient3": "Trace Of Origin",
+   "Quanitiy4": "2",
+   "Ingredient4": "Monk's Branch",
+   "Quanitiy5": "2",
+   "Ingredient5": "Sky Mushroom"
+}
+{
+   "Recipe": "Herbal Gunpowder",
+   "Level": "Apprentice 10",
+   "Buff": "Used in making siege weapons",
+   "Quanitiy1": "1",
+   "Ingredient1": "Insectivore Plant Powder",
+   "Quanitiy2": "1",
+   "Ingredient2": "Powder Of Darkness",
+   "Quanitiy3": "",
+   "Ingredient3": "",
+   "Quanitiy4": "",
+   "Ingredient4": "",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Herbal Poison",
+   "Level": "Apprentice 10",
+   "Buff": "Used in making siege weapons",
+   "Quanitiy1": "1",
+   "Ingredient1": "Insectivore Plant Sap",
+   "Quanitiy2": "5",
+   "Ingredient2": "Amanita Mushroom",
+   "Quanitiy3": "",
+   "Ingredient3": "",
+   "Quanitiy4": "",
+   "Ingredient4": "",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Khalk's Elixir",
+   "Level": "Skilled 1",
+   "Buff": "All debuff resistance +10%, damage reduction +15, max HP +100, +5% moving speed for 20 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Fugitive Khalk's Skin",
+   "Quanitiy2": "10",
+   "Ingredient2": "White Cedar Sap",
+   "Quanitiy3": "7",
+   "Ingredient3": "Trace Of Chaos",
+   "Quanitiy4": "10",
+   "Ingredient4": "Purified Water",
+   "Quanitiy5": "2",
+   "Ingredient5": "Oil Of Corruption"
+}
+{
+   "Recipe": "Leather Glaze",
+   "Level": "Apprentice 1",
+   "Buff": "Used to process supreme furs/hides/feathers",
+   "Quanitiy1": "3",
+   "Ingredient1": "Maple Sap",
+   "Quanitiy2": "3",
+   "Ingredient2": "Trace Of Ascension",
+   "Quanitiy3": "1",
+   "Ingredient3": "Clear Liquid Reagent",
+   "Quanitiy4": "2",
+   "Ingredient4": "Powder Of Darkness",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Legendary Beast's Blood",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Spirit's Leaf",
+   "Quanitiy2": "1",
+   "Ingredient2": "Trace Of The Earth",
+   "Quanitiy3": "1",
+   "Ingredient3": "Pure Powder Reagent",
+   "Quanitiy4": "2",
+   "Ingredient4": "Vermin Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Looney Elixir",
+   "Level": "Apprentice 1",
+   "Buff": "Chance to gain higher-grade knowledge +3%",
+   "Quanitiy1": "4",
+   "Ingredient1": "Moss Tree Sap",
+   "Quanitiy2": "2",
+   "Ingredient2": "Volcanic Umbrella Mushroom",
+   "Quanitiy3": "3",
+   "Ingredient3": "Powder Of Flame",
+   "Quanitiy4": "5",
+   "Ingredient4": "Red Tree Lump",
+   "Quanitiy5": "1",
+   "Ingredient5": "Violet Flower"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Absorption",
+ "Level":"Skilled 1",
+   "Buff": "Weapon: HP recovery +1 on attack",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Abundance",
+   "Quanitiy3": "10",
+   "Ingredient3": "Melted Lead Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Wise Man's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Adamantine",
+ "Level":"Apprentice 1",
+   "Buff": "Boots: +10% knockback/floating resistance",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Nature - Adamantine",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Nature",
+   "Quanitiy4": "2",
+   "Ingredient4": "Sapphire",
+   "Quanitiy5": "6",
+   "Ingredient5": "Silver Azalea"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Agility",
+ "Level":"Apprentice 1",
+   "Buff": "Helmet: +2 evasion",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Enchantment - Agility",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of The Sun",
+   "Quanitiy4": "2",
+   "Ingredient4": "Melted Silver Shard",
+   "Quanitiy5": "4",
+   "Ingredient5": "Cloud Mushroom"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Air Attack",
+ "Level":"Skilled 1",
+   "Buff": "Sub-Weapon: Additional air attack damage +1 level",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Magic Power",
+   "Quanitiy3": "10",
+   "Ingredient3": "Melted Platinum Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Wise Man's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Armor",
+ "Level":"Apprentice 1",
+   "Buff": "All Equipment: Damage reduction +2",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Abundance - Armor",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Magic Power",
+   "Quanitiy4": "3",
+   "Ingredient4": "Translucent Crystal",
+   "Quanitiy5": "4",
+   "Ingredient5": "Ash Sap"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Ascension",
+ "Level":"Apprentice 1",
+   "Buff": "Boots: +35 jump height",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Nature - Ascension",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Magic Power",
+   "Quanitiy4": "2",
+   "Ingredient4": "Topaz",
+   "Quanitiy5": "6",
+   "Ingredient5": "Fire Flake Flower"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Assault",
+ "Level":"Apprentice 1",
+   "Buff": "Gloves: +2 attack speed",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of the Sun - Assault",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Enchantment",
+   "Quanitiy4": "2",
+   "Ingredient4": "Emerald",
+   "Quanitiy5": "5",
+   "Ingredient5": "Critter Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Back Attack",
+ "Level":"Skilled 1",
+   "Buff": "Sub-Weapon: Additional back attack damage +1 level",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of The Sun",
+   "Quanitiy3": "10",
+   "Ingredient3": "Melted Silver Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Sinner's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Carnage (Beast)",
+ "Level":"Apprentice 1",
+   "Buff": "All Equipment: Additional damage to beasts +2 *text reads for demihumans, maybe a bug*",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Crimson Flame - Carnage (Beast)",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Enchantment",
+   "Quanitiy4": "10",
+   "Ingredient4": "Melted Zinc Shard",
+   "Quanitiy5": "5",
+   "Ingredient5": "Vermin Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Carnage (Demihuman)",
+ "Level":"Apprentice 1",
+   "Buff": "All Equipment: Additional damage to demihumans +2",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Crimson Flame - Carnage (Demihuman)",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Nature",
+   "Quanitiy4": "10",
+   "Ingredient4": "Melted Copper Shard",
+   "Quanitiy5": "5",
+   "Ingredient5": "Beast Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Carnage (Human)",
+ "Level":"Apprentice 1",
+   "Buff": "All Equipment: Additional damage to humans +2",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Crimson Flame - Carnage (Human)",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of The Sun",
+   "Quanitiy4": "10",
+   "Ingredient4": "Melted Tin Shard",
+   "Quanitiy5": "5",
+   "Ingredient5": "Monster Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Counter Attack",
+ "Level":"Skilled 1",
+   "Buff": "Sub-Weapon: Additional counter attack damage +1 level",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Crimson Flame",
+   "Quanitiy3": "10",
+   "Ingredient3": "Melted Zinc Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Tyrant's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Critical",
+ "Level":"Skilled 1",
+   "Buff": "Sub-Weapon: Additional critical hit damage +1 level",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Perfection",
+   "Quanitiy3": "5",
+   "Ingredient3": "Polished Opal",
+   "Quanitiy4": "3",
+   "Ingredient4": "Legendary Beast's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Down Attack",
+ "Level":"Skilled 1",
+   "Buff": "Sub-Weapon: Additional down attack damage +1 level",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Enchantment",
+   "Quanitiy3": "2",
+   "Ingredient3": "Melted Gold Shard",
+   "Quanitiy4": "2",
+   "Ingredient4": "Tyrant's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Durability",
+ "Level":"Skilled 1",
+   "Buff": "Weapon: Durability reduction resistance +10%",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Crimson Flame",
+   "Quanitiy3": "10",
+   "Ingredient3": "Melted Iron Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Clown's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Endurance",
+ "Level":"Apprentice 1",
+   "Buff": "Boots: Max Stamina +150",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Nature - Endurance",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Perfection",
+   "Quanitiy4": "2",
+   "Ingredient4": "Topaz",
+   "Quanitiy5": "6",
+   "Ingredient5": "Dry Mane Grass"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Energy",
+ "Level":"Skilled 1",
+   "Buff": "Boots: Max energy +10",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Perfection",
+   "Quanitiy3": "5",
+   "Ingredient3": "Ruby",
+   "Quanitiy4": "3",
+   "Ingredient4": "Tyrant's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Evasion",
+ "Level":"Skilled 1",
+   "Buff": "Chest: Special attack evasion +10%",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Nature",
+   "Quanitiy3": "5",
+   "Ingredient3": "Mud Crystal",
+   "Quanitiy4": "3",
+   "Ingredient4": "Clown's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Experience",
+ "Level":"Apprentice 1",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy1": "1",
+   "Ingredient2": "Magic Crystal of Enchantment - Experience",
+   "Quanitiy2": "1",
+   "Ingredient3": "Fruit of Abundance",
+   "Quanitiy3": "1",
+   "Ingredient4": "Polished Opal",
+   "Quanitiy4": "2",
+   "Ingredient5": "Everlasting Herb",
+   "Quanitiy5": "2",
+   "Buff": "Combat Exp +10%"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Extraction",
+ "Level":"Skilled 1",
+   "Buff": "Weapon: MP/WP/SP recovery +1 on attack",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Nature",
+   "Quanitiy3": "10",
+   "Ingredient3": "Melted Copper Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Legendary Beast's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Falling",
+ "Level":"Apprentice 1",
+   "Buff": "Boots: Fall damage -15% *not sure about recipe for NA*",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Nature - Falling",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Enchantment",
+   "Quanitiy4": "2",
+   "Ingredient4": "Ruby",
+   "Quanitiy5": "5",
+   "Ingredient5": "Wild Grass"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Heal",
+ "Level":"Apprentice 1",
+   "Buff": "Chest: HP recovery +3",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Abundance - Healing",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Crimson Flame",
+   "Quanitiy4": "3",
+   "Ingredient4": "Green Crystal",
+   "Quanitiy5": "5",
+   "Ingredient5": "Fir Sap"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Intimidation",
+ "Level":"Apprentice 1",
+   "Buff": "Helmet: +10% knockdown/bound resistance",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Enchantment - Intimidation",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Abundance",
+   "Quanitiy4": "3",
+   "Ingredient4": "Red Crystal",
+   "Quanitiy5": "5",
+   "Ingredient5": "Arrow Mushroom"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Magic Attack",
+ "Level":"Skilled 1",
+   "Buff": "Gloves: Magic AP +2",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of The Sun",
+   "Quanitiy3": "5",
+   "Ingredient3": "Diamond",
+   "Quanitiy4": "3",
+   "Ingredient4": "Sinner's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Magic Defense",
+ "Level":"Skilled 1",
+   "Buff": "Chest: Magic damage reduction +2",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Magic Power",
+   "Quanitiy3": "5",
+   "Ingredient3": "Melted Silver Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Sinner's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Melee Attack",
+ "Level":"Skilled 1",
+   "Buff": "Gloves: Melee AP +2",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Abundance",
+   "Quanitiy3": "5",
+   "Ingredient3": "Topaz",
+   "Quanitiy4": "3",
+   "Ingredient4": "Wise Man's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Melee Defense",
+ "Level":"Skilled 1",
+   "Buff": "Chest: Melee damage reduction +2",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of The Sun",
+   "Quanitiy3": "5",
+   "Ingredient3": "Red Crystal",
+   "Quanitiy4": "3",
+   "Ingredient4": "Wise Man's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Memory",
+ "Level":"Apprentice 1",
+   "Buff": "Helmet: +2 casting speed",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Enchantment - Memory",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Crimson Flame",
+   "Quanitiy4": "3",
+   "Ingredient4": "Mud Crystal",
+   "Quanitiy5": "5",
+   "Ingredient5": "Fortune Teller Mushroom"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Patience",
+ "Level":"Apprentice 1",
+   "Buff": "Chest: Max MP/WP/SP +35",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Abundance - Patience",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Destruction",
+   "Quanitiy4": "3",
+   "Ingredient4": "Red Crystal",
+   "Quanitiy5": "5",
+   "Ingredient5": "Birch Sap"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Power",
+ "Level":"Apprentice 1",
+   "Buff": "Weapon: AP +2",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Crimson Flame - Power",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Abundance",
+   "Quanitiy4": "7",
+   "Ingredient4": "Melted Lead Shard",
+   "Quanitiy5": "4",
+   "Ingredient5": "Farm Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Precision",
+ "Level":"Apprentice 1",
+   "Buff": "Gloves: +8 all accuracy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of the Sun - Precision",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Destruction",
+   "Quanitiy4": "2",
+   "Ingredient4": "Emerald",
+   "Quanitiy5": "6",
+   "Ingredient5": "Silk Honey Grass"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Precision",
+ "Level":"Apprentice 1",
+   "Buff": "Weapon: All accuracy +8",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Crimson Flame - Precision",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Crimson Flame",
+   "Quanitiy4": "10",
+   "Ingredient4": "Melted Iron Shard",
+   "Quanitiy5": "5",
+   "Ingredient5": "Critter Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Ranged Attack",
+ "Level":"Skilled 1",
+   "Buff": "Gloves: Ranged AP +2",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Nature",
+   "Quanitiy3": "5",
+   "Ingredient3": "Emerald",
+   "Quanitiy4": "3",
+   "Ingredient4": "Legendary Beast's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Ranged Defense",
+ "Level":"Skilled 1",
+   "Buff": "Chest: Ranged damage reduction +2",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Enchantment",
+   "Quanitiy3": "5",
+   "Ingredient3": "Green Crystal",
+   "Quanitiy4": "3",
+   "Ingredient4": "Legendary Beast's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Resonance",
+ "Level":"Apprentice 1",
+   "Buff": "Chest: MP/WP/SP recovery +3",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Abundance - Resonance",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Abundance",
+   "Quanitiy4": "3",
+   "Ingredient4": "Melted Silver Shard",
+   "Quanitiy5": "5",
+   "Ingredient5": "Pine Sap"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Siege",
+ "Level":"Skilled 1",
+   "Buff": "Chest: Siege weapon evasion +10%",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Abundance",
+   "Quanitiy3": "5",
+   "Ingredient3": "Translucent Crystal",
+   "Quanitiy4": "3",
+   "Ingredient4": "Clown's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Speed Attack",
+ "Level":"Skilled 1",
+   "Buff": "Sub-Weapon: Additional speed attack damage +1 level",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Destruction",
+   "Quanitiy3": "10",
+   "Ingredient3": "Melted Tin Shard",
+   "Quanitiy4": "3",
+   "Ingredient4": "Sinner's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Strength",
+ "Level":"Apprentice 1",
+   "Buff": "Gloves: Weight Limit +15LT",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of the Sun - Boulder",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Crimson Flame",
+   "Quanitiy4": "2",
+   "Ingredient4": "Diamond",
+   "Quanitiy5": "5",
+   "Ingredient5": "Maple Sap"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Sturdiness",
+ "Level":"Apprentice 1",
+   "Buff": "Gloves: +10% grapple resistance",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of the Sun - Sturdiness",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Perfection",
+   "Quanitiy4": "2",
+   "Ingredient4": "Diamond",
+   "Quanitiy5": "5",
+   "Ingredient5": "Farm Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Swiftness",
+ "Level":"Apprentice 1",
+   "Buff": "Boots: +2 movement speed",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Nature - Swiftness",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of The Sun",
+   "Quanitiy4": "2",
+   "Ingredient4": "Ruby",
+   "Quanitiy5": "5",
+   "Ingredient5": "Sunrise Herb"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Underwater Breathing Increase",
+ "Level":"Skilled 1",
+   "Buff": "Boots: Breath gauage +15 sec",
+   "Quanitiy1": "2",
+   "Ingredient1": "Green Magic Crystal",
+   "Quanitiy2": "2",
+   "Ingredient2": "Essence Of Destruction",
+   "Quanitiy3": "5",
+   "Ingredient3": "Sapphire",
+   "Quanitiy4": "3",
+   "Ingredient4": "Clown's Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Valor",
+ "Level":"Apprentice 1",
+   "Buff": "Gloves: +2 critical hit rate",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of the Sun - Valor",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Destruction",
+   "Quanitiy4": "3",
+   "Ingredient4": "Translucent Crystal",
+   "Quanitiy5": "5",
+   "Ingredient5": "Beast Blood"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Vigor",
+ "Level":"Apprentice 1",
+   "Buff": "Chest: Max HP +35",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Abundance - Vigor",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Perfection",
+   "Quanitiy4": "3",
+   "Ingredient4": "Mud Crystal",
+   "Quanitiy5": "5",
+   "Ingredient5": "Maple Sap"
+}
+{
+   "Recipe": "Magic Crystal of Infinity - Vision",
+ "Level":"Apprentice 1",
+   "Buff": "Helmet: +15m vision range",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Enchantment - Vision",
+   "Quanitiy2": "1",
+   "Ingredient2": "Green Magic Crystal",
+   "Quanitiy3": "1",
+   "Ingredient3": "Fruit Of Nature",
+   "Quanitiy4": "3",
+   "Ingredient4": "Green Crystal",
+   "Quanitiy5": "5",
+   "Ingredient5": "Dwarf Mushroom"
+}
+{
+   "Recipe": "Marking Reagent",
+   "Level": "Skilled 5",
+   "Buff": "Displays target player's name. 5 min cooldown/duration",
+   "Quanitiy1": "1",
+   "Ingredient1": "Magic Crystal of Enchantment - Vision",
+   "Quanitiy2": "1",
+   "Ingredient2": "Sinner's Blood",
+   "Quanitiy3": "10",
+   "Ingredient3": "Herbal Gunpowder",
+   "Quanitiy4": "10",
+   "Ingredient4": "Sticky Liquid",
+   "Quanitiy5": "5",
+   "Ingredient5": "Black Stone Powder"
+}
+{
+   "Recipe": "Metal Solvent",
+   "Level": "Apprentice 1",
+   "Buff": "Used to process pure crystals",
+   "Quanitiy1": "3",
+   "Ingredient1": "Melted Iron Shard",
+   "Quanitiy2": "2",
+   "Ingredient2": "Trace Of Savagery",
+   "Quanitiy3": "1",
+   "Ingredient3": "Clear Liquid Reagent",
+   "Quanitiy4": "4",
+   "Ingredient4": "Rough Stone",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Oil Of Corruption",
+   "Level": "Skilled 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Fruit Of The Sun",
+   "Quanitiy2": "1",
+   "Ingredient2": "Sinner's Blood",
+   "Quanitiy3": "1",
+   "Ingredient3": "Powder Of Darkness",
+   "Quanitiy4": "1",
+   "Ingredient4": "Spirit's Leaf",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Oil Of Fortitude",
+   "Level": "Skilled 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Fruit Of Nature",
+   "Quanitiy2": "1",
+   "Ingredient2": "Clown's Blood",
+   "Quanitiy3": "1",
+   "Ingredient3": "Powder Of Flame",
+   "Quanitiy4": "1",
+   "Ingredient4": "Monk's Branch",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Oil Of Regeneration",
+   "Level": "Skilled 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Fruit Of Crimson Flame",
+   "Quanitiy2": "1",
+   "Ingredient2": "Legendary Beast's Blood",
+   "Quanitiy3": "1",
+   "Ingredient3": "Powder Of Crevice",
+   "Quanitiy4": "1",
+   "Ingredient4": "Red Tree Lump",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Oil Of Storms",
+   "Level": "Skilled 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Fruit Of Abundance",
+   "Quanitiy2": "1",
+   "Ingredient2": "Tyrant's Blood",
+   "Quanitiy3": "1",
+   "Ingredient3": "Powder Of Time",
+   "Quanitiy4": "1",
+   "Ingredient4": "Old Tree Bark",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Oil Of The Abyss",
+   "Level": "Skilled 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Deep Sea Fruit",
+   "Quanitiy2": "1",
+   "Ingredient2": "Tyrant's Blood",
+   "Quanitiy3": "10",
+   "Ingredient3": "Powder Of Time",
+   "Quanitiy4": "5",
+   "Ingredient4": "Bloody Tree Knot",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Oil Of Tranquility",
+   "Level": "Skilled 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Fruit Of Magic Power",
+   "Quanitiy2": "1",
+   "Ingredient2": "Wise Man's Blood",
+   "Quanitiy3": "1",
+   "Ingredient3": "Powder Of Earth",
+   "Quanitiy4": "1",
+   "Ingredient4": "Bloody Tree Knot",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Perfume Of Courage",
+   "Level": "Skilled 1",
+   "Buff": "+25 all attack, +200 max HP, +5 attack speed, +5 casting speed, +5 movement speed for 20 min",
+   "Quanitiy1": "2",
+   "Ingredient1": "Clear Liquid Reagent",
+   "Quanitiy2": "4",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "6",
+   "Ingredient3": "Bloody Tree Knot",
+   "Quanitiy4": "3",
+   "Ingredient4": "Trace Of Violence",
+   "Quanitiy5": "1",
+   "Ingredient5": "Blue Whale Oil"
+}
+{
+   "Recipe": "Perfume Of Swiftness",
+   "Level": "Skilled 1",
+   "Buff": "+200 weight limit, +20% life EXP, +5 movement speed, +5 gathering speed, +5 fishing speed for 20 min",
+   "Quanitiy1": "2",
+   "Ingredient1": "Clear Liquid Reagent",
+   "Quanitiy2": "4",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "4",
+   "Ingredient3": "Powder Of Time",
+   "Quanitiy4": "6",
+   "Ingredient4": "Everlasting Herb",
+   "Quanitiy5": "1",
+   "Ingredient5": "Blue Whale Oil"
+}
+{
+   "Recipe": "Plywood Hardener",
+   "Level": "Apprentice 1",
+   "Buff": "Used to process sturdy plywood",
+   "Quanitiy1": "1",
+   "Ingredient1": "Pure Powder Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Bloody Tree Knot",
+   "Quanitiy3": "4",
+   "Ingredient3": "Fir Sap",
+   "Quanitiy4": "3",
+   "Ingredient4": "Trace Of The Earth",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Pure Powder Reagent",
+   "Level": "Beginner 1",
+   "Buff": "Alchemy ingredient",
+   "Quanitiy1": "1",
+   "Ingredient1": "Sugar",
+   "Quanitiy2": "1",
+   "Ingredient2": "Silver Azalea",
+   "Quanitiy3": "1",
+   "Ingredient3": "Wild Grass",
+   "Quanitiy4": "1",
+   "Ingredient4": "Purified Water",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Resurrection Elixir",
+   "Level": "Apprentice 1",
+   "Buff": "HP recovery +10 for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Clear Liquid Reagent",
+   "Quanitiy2": "3",
+   "Ingredient2": "Purified Water",
+   "Quanitiy3": "3",
+   "Ingredient3": "Sunrise Herb",
+   "Quanitiy4": "2",
+   "Ingredient4": "HP Potion (Small)",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Sinner's Blood",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Bloody Tree Knot",
+   "Quanitiy2": "1",
+   "Ingredient2": "Powder Of Flame",
+   "Quanitiy3": "1",
+   "Ingredient3": "Clear Liquid Reagent",
+   "Quanitiy4": "2",
+   "Ingredient4": "Farm Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Tyrant's Blood",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Monk's Branch",
+   "Quanitiy2": "1",
+   "Ingredient2": "Trace Of Savagery",
+   "Quanitiy3": "1",
+   "Ingredient3": "Pure Powder Reagent",
+   "Quanitiy4": "2",
+   "Ingredient4": "Monster Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Weenie Elixir",
+   "Level": "Apprentice 1",
+   "Buff": "Knowledge gain chance +7%",
+   "Quanitiy1": "4",
+   "Ingredient1": "Moss Tree Sap",
+   "Quanitiy2": "2",
+   "Ingredient2": "Blue Umbrella Mushroom",
+   "Quanitiy3": "3",
+   "Ingredient3": "Powder Of Time",
+   "Quanitiy4": "5",
+   "Ingredient4": "Monk's Branch",
+   "Quanitiy5": "1",
+   "Ingredient5": "Sky Blue Flower"
+}
+{
+   "Recipe": "Whale Tendon Elixir",
+   "Level": "Skilled 1",
+   "Buff": "All damage reduction +100 for 20 sec",
+   "Quanitiy1": "5",
+   "Ingredient1": "Purified Water",
+   "Quanitiy2": "2",
+   "Ingredient2": "Clear Liquid Reagent",
+   "Quanitiy3": "1",
+   "Ingredient3": "Clown's Blood",
+   "Quanitiy4": "12",
+   "Ingredient4": "Ash Sap",
+   "Quanitiy5": "1",
+   "Ingredient5": "Blue Whale Tendon"
+}
+{
+   "Recipe": "Whale Tendon Potion",
+   "Level": "Apprentice 1",
+   "Buff": "Heals HP by +500, Heals MP/WP/SP by +300",
+   "Quanitiy1": "8",
+   "Ingredient1": "Purified Water",
+   "Quanitiy2": "3",
+   "Ingredient2": "HP Potion (Medium)",
+   "Quanitiy3": "3",
+   "Ingredient3": "MP Potion (Medium)",
+   "Quanitiy4": "1",
+   "Ingredient4": "Blue Whale Tendon",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Wise Man's Blood",
+   "Level": "Apprentice 1",
+   "Buff": "Used in Alchemy",
+   "Quanitiy1": "1",
+   "Ingredient1": "Monk's Branch",
+   "Quanitiy2": "1",
+   "Ingredient2": "Trace Of Ascension",
+   "Quanitiy3": "1",
+   "Ingredient3": "Clear Liquid Reagent",
+   "Quanitiy4": "2",
+   "Ingredient4": "Critter Blood",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+{
+   "Recipe": "Worker's Elixir",
+   "Level": "Apprentice 1",
+   "Buff": "+2 gathering speed for 5 min",
+   "Quanitiy1": "1",
+   "Ingredient1": "Sinner's Blood",
+   "Quanitiy2": "2",
+   "Ingredient2": "Powder Of Flame",
+   "Quanitiy3": "4",
+   "Ingredient3": "Ash Sap",
+   "Quanitiy4": "6",
+   "Ingredient4": "Silver Azalea",
+   "Quanitiy5": "",
+   "Ingredient5": ""
+}
+ {
+   "Recipe": "Spirit Perfume Elixir",
+   "Level": "Skilled 1",
+   "Ingredient1": "Dead Tree Essence",
+   "Quanitiy1": "1",
+   "Ingredient2": "Fruit of Nature",
+   "Quanitiy2": "1",
+   "Ingredient3": "Loopy Tree Sap",
+   "Quanitiy3": "10",
+   "Ingredient4": "Powder of Darkness",
+   "Quanitiy4": "10",
+   "Ingredient5": "Violet Flower",
+   "Quanitiy5": "2",
+   "Buff": "MAX HP +300,Critical Hit Rate +5 ,MP/WP/SP +3 per every good hit" 
+}  

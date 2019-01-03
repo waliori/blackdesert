@@ -1,0 +1,140 @@
+<div class="page-header"><h1>{{main.username}}'s Profile</h1></div>
+<br><br>
+
+
+<div class="row margin" style="width:100%;margin:0 auto">
+	<h3>Account informations:</h3>
+	<table class='table table-responsive' style="width:100%;text-align:center">
+		<tr>
+			<th style="text-align:center">Username</th>
+			<th style="text-align:center">E mail</th>
+			<th style="text-align:center">Account type</th>
+		</tr>
+		<tr>
+			<td>{{main.username}}</td>
+			<td>{{main.useremail}}</td>
+			<td>{{main.permission}}</td>
+		</tr>
+	</table>
+</div>
+<br><br><hr class="style14"><br><br>
+
+<div class="row margin" style="margin-bottom:2.5%">
+    <div class="col">
+        <button href="" ng-click="dashboard.chars()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto">
+            Characters informations
+        </button>
+    </div>
+    <div class="col">
+        <button href="" ng-click="dashboard.life()" class="box und" style="white-space:normal !important;word-wrap:break-word;height:auto">
+            Account Life Exp modifiers
+        </button>
+    </div>
+</div>
+
+
+<div class="row margin" ng-hide="dashboard.charsHide">
+	<div class="col s12 z-depth-6 card-panel title ng-scope">
+		<table class='table table-responsive' style="text-align:center">
+			<tr>
+				<th style="text-align:center">Name</th>
+				<th style="text-align:center" class='hidden-xs'>Class</th>
+				<th style="text-align:center" class='hidden-xs'>Level</th>
+				<th style="text-align:center">Gathering</th>
+				<th style="text-align:center">Processing</th>
+				<th style="text-align:center">Cooking</th>
+				<th style="text-align:center">Alchemy</th>
+				<th style="text-align:center">Manage</th>
+			</tr>
+			<tr ng-repeat="x in dashboard.persos">
+				<td style="white-space:normal !important;word-wrap:break-word;height:auto;vertical-align:middle;">{{x.name}}</td>
+				<td style="white-space:normal !important;word-wrap:break-word;height:auto;vertical-align:middle;" class='hidden-xs'>{{x.class}}</td>
+				<td style="white-space:normal !important;word-wrap:break-word;height:auto;vertical-align:middle;" class='hidden-xs'>{{x.level}}</td>
+				<td style="white-space:normal !important;word-wrap:break-word;height:auto;vertical-align:middle;">{{x.gatheringLevel+" % of "+x.gatheringRank}}<br><br>+{{x.gatheringCloth}}% EXP (clothes)</td>
+				<td style="white-space:normal !important;word-wrap:break-word;height:auto;vertical-align:middle;">{{x.processingLevel+" % of "+x.processingRank}}<br><br>+{{x.processingCloth}}% EXP (clothes)</td>
+				<td style="white-space:normal !important;word-wrap:break-word;height:auto;vertical-align:middle;">{{x.cookingLevel+" % of "+x.cookingRank}}<br><br>+{{x.cookingCloth}}% EXP (clothes)</td>
+				<td style="white-space:normal !important;word-wrap:break-word;height:auto;vertical-align:middle;">{{x.alchemyLevel+" % of "+x.alchemyRank}}<br><br>+{{x.alchemyCloth}}% EXP (clothes)</td>
+				<td>
+					<button ng-disabled="dashboard.disabled" ng-click="dashboard.edit(x)" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;width:auto;height:auto;margin:2%">
+						Edit
+					</button>
+					<button ng-disabled="dashboard.disabled" ng-click="dashboard.delete(x)" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;width:auto;height:auto;margin:2%">
+						Delete
+					</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="row margin" style="width:80%;margin: 0 auto;">
+		<div class="col-12">
+			<button ng-click="location.path('/perso')" ng-disabled="dashboard.disabled" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto">Add a Character</button>
+		</div>
+	</div>	
+</div>
+
+
+<div class="row margin" ng-hide="dashboard.lifeHide">
+	<span style="margin:0 auto" ng-show="dashboard.currexp">Current Exp modifiers : {{dashboard.currexp}}%</span>
+	<form class="register-form" name="lifeForm" id="cooking" style="width:100%" ng-submit="dashboard.lifeexp(cookData)" novalidate>
+		<table class="table">
+			
+			<tr>
+				<td><div class="row margin" style="margin:0 auto;width:90%">		
+					<div class="col-xs-12 col-sm-12" style="  margin:0 auto;" >	
+						<span><img width="25px" height="25px" src="assets/img/vp.png"> Value pack is <span ng-show="!dashboard.valuepack">not</span> activated : +<span ng-show="dashboard.valuepack">1</span>0%</span>&emsp;&emsp;<br><br>			
+						<input ng-click="dashboard.vp('yes')" ng-disabled="dashboard.disabled" ng-model="cookData.valuepack" ng-value="'10'" id="toggle-on" class="toggle toggle-left" name="toggle" value="10" type="radio">
+						<label ng-click="dashboard.vp('yes')" for="toggle-on" class="btn1">Yes</label>
+						<input ng-click="dashboard.vp('no')" ng-disabled="dashboard.disabled" ng-model="cookData.valuepack" ng-value="'0'" id="toggle-off" class="toggle toggle-right" name="toggle" value="0" type="radio" ng-checked="true"  ng-init="cookData.valuepack='0'">
+						<label ng-click="dashboard.vp('no')" for="toggle-off" class="btn1">No</label>				
+					</div>
+				</div></td>
+			</tr>
+			
+			<tr>
+				<td><div class="row margin" style="margin:0 auto;width:90%">		
+					<div class="col-xs-12 col-sm-12" style="  margin:0 auto;" >	
+						<span><img width="25px" height="25px" src="assets/img/guild.png"> Guild Buff (Experienced Cry) <span ng-show="!dashboard.guild">not</span> activated : +<span ng-show="dashboard.guild">1</span>0%</span>&emsp;&emsp;<br><br>			
+						<input ng-click="dashboard.guildF('yes')" ng-disabled="dashboard.disabled" ng-model="cookData.guild" ng-value="'10'" id="guild-on" class="toggle toggle-left" name="guild" value="10" type="radio" >
+						<label ng-click="dashboard.guildF('yes')" for="guild-on" class="btn1">Yes</label>
+						<input ng-click="dashboard.guildF('no')" ng-disabled="dashboard.disabled" ng-model="cookData.guild" ng-value="'0'" id="guild-off" class="toggle toggle-right" name="guild" value="0" type="radio" ng-checked="true"  ng-init="cookData.guild='0'">
+						<label ng-click="dashboard.guildF('no')" for="guild-off" class="btn1">No</label>				
+					</div>
+				</div></td>
+			</tr>
+
+			<tr>
+				<td><br>
+					<div class="input-field row margin" ng-class="{'has-error':(!lifeForm.pets.$valid && !lifeForm.pets.$pristine  && !dashboard.disabled2) || (!lifeForm.pets.$valid && lifeForm.$submitted && !dashboard.disabled2)}" style="margin:0 auto; width:90%">
+						<div class="col" style="width:25px;padding:0"><img src="assets/img/pet.png" class="img-flag" width="25px" height="25px"/> Pets:</div>
+						<div class="col-11" style="width:100%">
+							<select style="margin:0 auto; width:100%" ng-disabled="dashboard.disabled2" name="pets" ng-model="cookData.pets" class="pets" id="pets" required><option value=""></option><option value="0">0</option><option value="1" >1</option><option value="2" >2</option><option value="3" >3</option><option value="4" >4</option><option value="5" >5</option><option value="6" >6</option><option value="7" >7</option><option value="8" >8</option><option value="9" >9</option><option value="10" >10</option><option value="11" >11</option><option value="12" >12</option><option value="13" >13</option><option value="14" >14</option><option value="15" >15</option><option value="16" >16</option><option value="17" >17</option><option value="18" >18</option><option value="19" >19</option><option value="20" >20</option><option value="21" >21</option><option value="22" >22</option><option value="23" >23</option><option value="24" >24</option><option value="25" >25</option><option value="26" >26</option><option value="27" >27</option><option value="28" >28</option><option value="29" >29</option><option value="30" >30</option><option value="31" >31</option><option value="32" >32</option><option value="33" >33</option><option value="34" >34</option><option value="35" >35</option><option value="36" >36</option><option value="37" >37</option><option value="38" >38</option><option value="39" >39</option><option value="40" >40</option><option value="41" >41</option><option value="42" >42</option><option value="43" >43</option><option value="44" >44</option><option value="45" >45</option><option value="46" >46</option><option value="47" >47</option><option value="48" >48</option><option value="49" >49</option><option value="50" >50</option><option value="51" >51</option><option value="52" >52</option><option value="53" >53</option><option value="54" >54</option><option value="55" >55</option><option value="56" >56</option><option value="57" >57</option><option value="58" >58</option><option value="59" >59</option><option value="60" >60</option><option value="61" >61</option><option value="62" >62</option><option value="63" >63</option><option value="64" >64</option><option value="65" >65</option><option value="66" >66</option><option value="67" >67</option><option value="68" >68</option><option value="69" >69</option><option value="70" >70</option><option value="71" >71</option><option value="72" >72</option><option value="73" >73</option><option value="74" >74</option><option value="75" >75</option><option value="76" >76</option><option value="77" >77</option><option value="78" >78</option><option value="79" >79</option><option value="80" >80</option><option value="81" >81</option><option value="82" >82</option><option value="83" >83</option><option value="84" >84</option><option value="85" >85</option><option value="86" >86</option><option value="87" >87</option><option value="88" >88</option><option value="89" >89</option><option value="90" >90</option><option value="91" >91</option><option value="92" >92</option><option value="93" >93</option><option value="94" >94</option><option value="95" >95</option><option value="96" >96</option><option value="97" >97</option><option value="98" >98</option><option value="99" >99</option><option value="100" >100</option></select>
+						</div>
+
+					</div>	<br>	
+				</td>
+			</tr>
+			
+			<tr>
+				<td><br><br><div style="width:80%;margin:0 auto">
+					<button class="form-control btn" ng-disabled="dashboard.disabled" style="white-space:normal !important;word-wrap:break-word;height:auto" type="submit"><span ng-hide="dashboard.loading" class="ng-scope">Modify Life EXP</span><span ng-show="dashboard.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button> 
+				</div></td>
+			</tr>
+			
+		</table>
+		
+		
+	</form>
+</div>
+
+<div class="row margin" ng-hide="dashboard.BgHide">
+	
+</div>
+
+<div class="row" style="padding: 0 30px 10px;"><!--err succ-->
+	<div class="show-hide-message" ng-show="dashboard.success_msg">
+		<div class="text-info ng-binding">{{ dashboard.success_msg }}</div>
+	</div>
+	<small class="show-hide-message" ng-show="dashboard.err_msg">
+		<pre>{{ dashboard.err_msg }}</pre>
+	</small>
+</div>

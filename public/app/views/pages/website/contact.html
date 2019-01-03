@@ -1,0 +1,20 @@
+<div class="page-header"><h1><img src="assets/img/mail.png" title="Contact">&emsp;Contact us</h1></div>
+<form name="contactForm" ng-submit="contact.sendMail(d)">
+	<textarea ng-disabled="contact.disabled" class="form-control" rows="4" type="text-area" ng-model="d.contact_msg" placeholder="Enter your message here" style="resize: vertical;"></textarea>
+	<br>
+	<button ng-disabled="contact.disabled" class="form-control btn" type="submit">
+		<span ng-hide="contact.loading" class="ng-scope">Send</span>
+		<span ng-show="contact.loading" class="ng-hide">
+			<i class="fa fa-spinner fa-spin"></i>
+		</span>
+	</button>
+</form>
+<br><br>
+<div class="row" style="padding: 0 30px 10px;">
+    <div class="show-hide-message" ng-show="contact.success_msg">
+        <div class="text-info ng-binding">{{ contact.success_msg }}</div>
+    </div>
+    <small class="show-hide-message" ng-show="contact.err_msg">
+		<pre>{{ contact.err_msg }}</pre>
+	</small>
+</div>

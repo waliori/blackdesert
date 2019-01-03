@@ -1,0 +1,41 @@
+<div class="page-header">
+  <h1>Username request page</h1>
+</div>
+
+<div id="login-page" class="row">
+    <div class="col s12 z-depth-6 card-panel title ng-scope">
+      <form class="register-form" name="userForm" ng-submit="username.sendUsername(userData, userForm.$valid)" novalidate>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="mdi-social-person-outline prefix"></i>
+            
+            <label for="email" class="center-align"></label>
+            <input ng-disabled="username.disabled" id="email" name="email" type="email" class="input-lg form-control m-b-5 ng-validng-touched" placeholder="Type in your email" ng-model="username.userData.email" required>
+          </div>
+        </div>
+
+        <div class="row margin">
+          <div class="input-field col s12">
+          	<label for="submit" ></label>
+            <button ng-disabled="username.disabled" id="submit" type="submit" class="form-control btn" style="white-space:normal !important;word-wrap:break-word;height:auto"><span ng-hide="username.loading" class="ng-scope">Submit</span><span ng-show="username.loading" class="ng-hide"><i class="fa fa-spinner fa-spin"></i></span></button>
+          </div>
+        </div>
+        
+      </form>
+
+    </div>
+  </div>
+  <br><br>
+
+  <div class="row" style="padding: 0 30px 10px; ">
+    <div class="show-hide-message" ng-show="username.success_msg">
+        <div class="text-info ng-binding">{{ username.success_msg }}</div>
+    </div>
+    <div class="show-hide-message col s6" ng-show="username.err_msg">
+        <div class="text-danger ng-binding col">
+          {{ username.err_msg }}
+        </div>
+    </div>
+
+  </div>
+    
