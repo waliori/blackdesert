@@ -20,7 +20,7 @@ app.use(express.static(__dirname+'/public'))
 app.use('/api',appRoutes)
 
 
-mongo.connect('mongodb://waliori:motdepass@ds117965.mlab.com:17965/bdoteach', { useMongoClient: true }, function(err){
+mongo.connect('mongodb://account:password@ds117965.mlab.com:17965/database', { useMongoClient: true }, function(err){
 	if (err) {
 		console.log("not conn"+ err);
 	}else{
@@ -28,8 +28,8 @@ mongo.connect('mongodb://waliori:motdepass@ds117965.mlab.com:17965/bdoteach', { 
 	}
 })
 
-var clientId = 'AQGz8svscaS_xfLEChlqdL0Xx85VLk-PrarO7EQBft5JIqmw-_mnw6LGI6qTkpejFcPG2y1BUZxZGBvg'
-var secret = 'EMWtzNPiI_QxlmYYvHVLT_c_JwV9SbYri2znsLKre7Iyfi9CE2nrEmCTGzViJZI9VpJVg-zBjkV5ve_f'
+var clientId = ''
+var secret = ''
 //P-0BA476087C938431GGWBCCCY
 
 paypal.configure({
